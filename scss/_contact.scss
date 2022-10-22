@@ -1,0 +1,70 @@
+/**========================================================================
+ *                           contact
+ *========================================================================**/
+.contactForm {
+  width: 100%;
+  font-size: 1.7rem;
+  &-inputContainer {
+    margin: 2rem 0;
+    &--name {
+      width: 100%;
+      &:first-child {
+        margin-right: 5px;
+      }
+    }
+    width: 100%;
+  }
+  &-inputContainer-btn {
+    display: flex;
+    justify-content: center;
+  }
+  &-inputContainer-flex {
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  &-label {
+    width: 100%;
+    font-size: 1.9;
+  }
+  &-name {
+    background-color: $color-form-transparent;
+    border: 2px solid $color-light-gray;
+    width: 100%;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    margin-top: 7px;
+  }
+  &-email {
+    background-color: $color-form-transparent;
+    border: 2px solid $color-light-gray;
+    width: 100%;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    margin-top: 7px;
+  }
+  &-subject {
+    background-color: $color-form-transparent;
+    border: 2px solid $color-light-gray;
+    width: 100%;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    margin-top: 7px;
+  }
+  &-message {
+    background-color: $color-form-transparent;
+    border: 2px solid $color-light-gray;
+    width: 100%;
+    font-size: 1.7rem;
+    padding: 2rem 0;
+    height: 10rem;
+    margin-top: 7px;
+  }
+  &-btn {
+    background-color: transparent;
+    border: 2px solid $color-light-gray;
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+  }
+}

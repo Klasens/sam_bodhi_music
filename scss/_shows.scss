@@ -1,0 +1,31 @@
+/**========================================================================
+ *                          shows
+ *========================================================================**/
+
+.showList {
+  width: 50%;
+  &-setGroup {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid $color-dark-gray-transparent;
+
+    > * {
+      margin: 1rem 0;
+    }
+  }
+  &-date {
+    font-size: 1.8rem;
+  }
+  &-location {
+    font-size: 1.4rem;
+  }
+  &-performers {
+    font-size: 2rem;
+  }
+  &-tickets {
+    font-size: 1.8rem;
+    color: $color-link;
+  }
+}

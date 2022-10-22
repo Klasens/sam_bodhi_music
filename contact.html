@@ -54,21 +54,43 @@
         </li>
       </ul>
     </nav>
-    <section class="mainContent-centered">
-      <div class="mainContent-form">
-        <form class="contactForm">
-          <label for="firstName">First Name:</label>
-          <input type="text" name="firstName" />
-          <label for="lastName">Last Name:</label>
-          <input type="text" name="lastName" />
-          <label for="email">Email:</label>
-          <input type="text" name="email" />
-          <label for="subject">Subject:</label>
-          <input type="text" name="subject" />
-          <label for="message">Message:</label>
-          <input type="text" name="message" />
-          <input type="submit" value="submit" />
-        </form>
+
+    <section class="mainContent">
+      <div class="mainContent-centered">
+        <h3 class="mainContent-heading">Contact</h3>
+        <div class="mainContent-form">
+          <form class="contactForm">
+            <div class="contactForm-inputContainer-flex">
+              <div class="contactForm-inputContainer--name">
+                <label class="contactForm-label" for="firstName">
+                  First Name:
+                </label>
+                <input class="contactForm-name" type="text" name="firstName" />
+              </div>
+              <div class="contactForm-inputContainer--name">
+                <label class="contactForm-label" for="lastName">
+                  Last Name:
+                </label>
+                <input class="contactForm-name" type="text" name="lastName" />
+              </div>
+            </div>
+            <div class="contactForm-inputContainer">
+              <label class="contactForm-label" for="email">Email:</label>
+              <input class="contactForm-email" type="text" name="email" />
+            </div>
+            <div class="contactForm-inputContainer">
+              <label class="contactForm-label" for="subject">Subject:</label>
+              <input class="contactForm-subject" type="text" name="subject" />
+            </div>
+            <div class="contactForm-inputContainer">
+              <label class="contactForm-label" for="message">Message:</label>
+              <input class="contactForm-message" type="text" name="message" />
+            </div>
+            <div class="contactForm-inputContainer-btn">
+              <input class="contactForm-btn" type="submit" value="submit" />
+            </div>
+          </form>
+        </div>
       </div>
     </section>
     <section class="contactBooking">

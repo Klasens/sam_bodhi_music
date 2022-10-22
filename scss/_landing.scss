@@ -1,0 +1,41 @@
+/**========================================================================
+ *                           landing
+ *========================================================================**/
+
+.landing {
+  height: 100vh;
+  background-image: url('../img/sam_bodi_landing.jpg');
+  background-size: 50% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--main {
+      color: $color-white;
+      font-size: 10rem;
+    }
+
+    &--secondary {
+      color: $color-white;
+      font-size: 4rem;
+    }
+  }
+}
+
+.landing-btn {
+  border: none;
+  color: $color-dark-gray;
+  border-radius: 4px;
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  background-color: $color-off-white-transparent;
+  cursor: pointer;
+}

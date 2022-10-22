@@ -1,0 +1,40 @@
+/**========================================================================
+ *                           navBar
+ *========================================================================**/
+.navBar {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-dark-gray;
+  &-logo {
+    padding: 0 3rem;
+    font-size: 5rem;
+    color: $color-white;
+  }
+  &-list {
+    display: flex;
+    list-style: none;
+    padding: 0 3rem;
+    font-size: 1.8rem;
+    color: $color-white;
+    &--item {
+      padding: 0 2rem;
+      text-decoration: underline;
+    }
+  }
+}
+
+//Unique nav for landing page
+
+.landing-navBar {
+  height: 10vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-gray-transparent;
+}

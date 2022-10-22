@@ -1,0 +1,22 @@
+/**========================================================================
+ *                           contactBooking
+ *========================================================================**/
+.contactBooking {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-off-white-transparent;
+  &-logo {
+    padding: 0 3rem;
+    font-size: 3rem;
+    color: $color-dark-gray;
+  }
+  &-info {
+    &--text {
+      padding: 0 3rem;
+      font-size: 1.8rem;
+      color: $color-dark-gray;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+/**========================================================================
+ *                           mainContent
+ *========================================================================**/
+
+//MAIN LAYOUT
+.mainContent {
+  height: 90vh;
+
+  &-shows {
+    height: auto;
+  }
+
+  &-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 3rem 0;
+  }
+  &-twoColumn {
+    display: flex;
+    height: 100%;
+    padding: 3rem 0;
+  }
+  &-multiColumn {
+    display: flex;
+    height: 100%;
+    padding: 3rem 0;
+  }
+}
+//TWO COLUMN
+.mainContent {
+  &-leftColumn {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+  &-rightColumn {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+}
+
+//MULTI COLUMN
+.mainContent-column {
+  width: 20%;
+  margin: 0 2rem;
+}
+//UNIVERSAL HEADING
+.mainContent-heading {
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.mainContent-form {
+  width: 85%;
+}

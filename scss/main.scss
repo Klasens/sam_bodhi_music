@@ -2,9 +2,19 @@
  **                                                    MAIN
  *=======================================================================================================================**/
 
-@import "variables";
-@import "media-breakpoints";
-@import "mixins";
-@import "base";
-
-
+//Base Settings
+@import 'variables';
+@import 'media-breakpoints';
+@import 'mixins';
+@import 'base';
+//Universal Selectors
+@import 'mainContent';
+@import 'navBar';
+@import 'contactBooking';
+//Page Specific Selectors
+@import 'setList';
+@import 'about';
+@import 'shows';
+@import 'video';
+@import 'contact';
+@import 'landing';
