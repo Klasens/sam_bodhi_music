@@ -4,8 +4,6 @@
 
 //MAIN LAYOUT
 .mainContent {
-  height: 90vh;
-
   &-shows {
     height: auto;
   }
@@ -56,6 +54,7 @@
   font-size: 5rem;
   text-transform: uppercase;
   text-align: center;
+  font-weight: 300;
 }
 
 .mainContent-form {

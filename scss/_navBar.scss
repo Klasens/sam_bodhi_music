@@ -2,7 +2,7 @@
  *                           navBar
  *========================================================================**/
 .navBar {
-  height: 10vh;
+  height: 13vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,7 +16,7 @@
     display: flex;
     list-style: none;
     padding: 0 3rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: $color-white;
     &--item {
       padding: 0 2rem;
@@ -28,7 +28,7 @@
 //Unique nav for landing page
 
 .landing-navBar {
-  height: 10vh;
+  height: 13vh;
   width: 100%;
   position: absolute;
   top: 0;

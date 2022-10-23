@@ -13,10 +13,15 @@
     color: $color-dark-gray;
   }
   &-info {
+    flex-basis: 100%;
     &--text {
+      text-align: center;
       padding: 0 3rem;
       font-size: 1.8rem;
       color: $color-dark-gray;
     }
+  }
+  &-highlight {
+    color: $color-link;
   }
 }

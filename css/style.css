@@ -51,27 +51,31 @@ a {
   height: 100%;
   border-radius: 4px; }
 
+.margin-top {
+  margin-top: 3rem; }
+
 /**========================================================================
  *                           mainContent
  *========================================================================**/
-.mainContent {
-  height: 90vh; }
-  .mainContent-shows {
-    height: auto; }
-  .mainContent-centered {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    padding: 3rem 0; }
-  .mainContent-twoColumn {
-    display: flex;
-    height: 100%;
-    padding: 3rem 0; }
-  .mainContent-multiColumn {
-    display: flex;
-    height: 100%;
-    padding: 3rem 0; }
+.mainContent-shows {
+  height: auto; }
+
+.mainContent-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 3rem 0; }
+
+.mainContent-twoColumn {
+  display: flex;
+  height: 100%;
+  padding: 3rem 0; }
+
+.mainContent-multiColumn {
+  display: flex;
+  height: 100%;
+  padding: 3rem 0; }
 
 .mainContent-leftColumn {
   padding: 2rem;
@@ -94,7 +98,8 @@ a {
 .mainContent-heading {
   font-size: 5rem;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  font-weight: 300; }
 
 .mainContent-form {
   width: 85%; }
@@ -103,11 +108,11 @@ a {
  *                           navBar
  *========================================================================**/
 .navBar {
-  height: 10vh;
+  height: 13vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #494949; }
+  background-color: #6e6e6e; }
   .navBar-logo {
     padding: 0 3rem;
     font-size: 5rem;
@@ -116,14 +121,14 @@ a {
     display: flex;
     list-style: none;
     padding: 0 3rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: white; }
     .navBar-list--item {
       padding: 0 2rem;
       text-decoration: underline; }
 
 .landing-navBar {
-  height: 10vh;
+  height: 13vh;
   width: 100%;
   position: absolute;
   top: 0;
@@ -131,7 +136,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(100, 100, 100, 0.136); }
+  background-color: rgba(0, 0, 0, 0.35); }
 
 /**========================================================================
  *                           contactBooking
@@ -141,22 +146,24 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(233, 233, 233, 0.799); }
+  background-color: rgba(204, 203, 203, 0.799); }
   .contactBooking-logo {
     padding: 0 3rem;
     font-size: 3rem;
-    color: #494949; }
-  .contactBooking-info--text {
-    padding: 0 3rem;
-    font-size: 1.8rem;
-    color: #494949; }
+    color: #6e6e6e; }
+  .contactBooking-info {
+    flex-basis: 100%; }
+    .contactBooking-info--text {
+      text-align: center;
+      padding: 0 3rem;
+      font-size: 1.8rem;
+      color: #6e6e6e; }
+  .contactBooking-highlight {
+    color: #0000ee; }
 
 /**========================================================================
  *                          setList
  *========================================================================**/
-.margin-top {
-  margin-top: 2rem; }
-
 .songInfo {
   margin-bottom: 1rem; }
   .songInfo--title {
@@ -177,11 +184,12 @@ a {
   align-items: center; }
 
 .about-subHeading {
-  font-size: 2.5rem;
-  margin: 2rem 0; }
+  font-size: 4rem;
+  margin: 2rem 0;
+  font-weight: 300; }
 
 .about-text {
-  width: 80%;
+  width: 85%;
   line-height: 1.5;
   font-size: 1.7rem; }
 
@@ -268,7 +276,8 @@ a {
     border: 2px solid #aeacac;
     padding: 1rem 2rem;
     font-size: 1.7rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    cursor: pointer; }
 
 /**========================================================================
  *                           landing
@@ -285,7 +294,9 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Dancing Script', cursive; }
     .landing-header--main {
       color: white;
       font-size: 10rem; }
@@ -294,11 +305,14 @@ a {
       font-size: 4rem; }
 
 .landing-btn {
-  border: none;
-  color: #494949;
-  border-radius: 4px;
-  padding: 0.5rem 2rem;
-  margin-top: 1rem;
-  font-size: 2rem;
-  background-color: rgba(233, 233, 233, 0.799);
-  cursor: pointer; }
+  margin-top: 2rem;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1rem 2rem;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.4s; }
+  .landing-btn:hover {
+    background-color: rgba(255, 102, 0, 0.571); }
