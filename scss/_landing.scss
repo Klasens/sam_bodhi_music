@@ -10,6 +10,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  @include respond(break-850) {
+    background-size: 100%;
+  }
 
   &-header {
     display: flex;
@@ -22,6 +26,9 @@
     &--main {
       color: $color-white;
       font-size: 10rem;
+      @include respond(break-850) {
+        text-align: center;
+      }
     }
 
     &--secondary {

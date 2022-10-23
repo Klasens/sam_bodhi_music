@@ -4,6 +4,9 @@
 
 .showList {
   width: 50%;
+  @include respond(break-600) {
+    width: 90%;
+  }
   &-setGroup {
     margin: 2rem 0;
     display: flex;
