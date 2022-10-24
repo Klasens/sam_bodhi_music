@@ -56,9 +56,30 @@
 }
 
 //Mobile Nav
+
+.mobileNav-logo {
+  // padding: 2.4rem 1.6rem;
+  font-size: 1.8rem;
+  margin: 0 1rem;
+  color: $color-white;
+}
+
+.mobileNav-container {
+  background-color: $color-black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include respond(break-850X) {
+    display: none;
+  }
+  // overflow: hidden;
+  // height: 10px;
+}
+
 .topnav {
   overflow: hidden;
   background-color: $color-black;
+  border-top: 2px solid $color-orange;
   position: static;
   top: 0;
   left: 0;
@@ -81,12 +102,13 @@
 
 .icon {
   overflow: hidden;
+  border-left: 2px solid $color-orange;
   background-color: $color-black;
   color: $color-white;
   font-size: 1.8rem;
   padding: 1.4rem 1.6rem;
   display: block;
-  position: absolute;
+  // position: absolute;
   right: 0;
   top: 0;
   z-index: 10;
