@@ -866,7 +866,9 @@ a {
           text-align: center; } }
     .landing-header--secondary {
       color: white;
-      font-size: 4rem; }
+      font-size: 4rem;
+      font-family: 'Roboto';
+      font-size: 3rem; }
 
 .landing-btn {
   margin-top: 2rem;
