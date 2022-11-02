@@ -1,7 +1,34 @@
 /**========================================================================
  *                           landing
  *========================================================================**/
+.landing-arrow {
+  font-size: 6rem;
+  color: $color-white;
+  position: absolute;
+  bottom: 4rem;
+  right: 50%;
+  cursor: pointer;
+  animation: scrollArrow 4s infinite ease-in-out;
+  @include respond(break-850) {
+    display: none;
+  }
+}
 
+@keyframes scrollArrow {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.4);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .landing {
   height: 100vh;
 
@@ -16,11 +43,11 @@
   background-repeat: no-repeat;
   position: relative;
   @include respond(break-850) {
-    background-size: 100%;
+    background-position: 75%;
   }
 
   &-header {
-    height: 100vh;
+    height: 100%;
     margin: 0 2rem;
     width: 50%;
     text-align: center;
@@ -30,6 +57,9 @@
     align-items: center;
     text-transform: uppercase;
     font-family: 'Dancing Script', cursive;
+    @include respond(break-850) {
+      width: 90%;
+    }
 
     &--main {
       color: $color-white;
@@ -72,7 +102,7 @@
       rgba(0, 0, 0, 0.45),
       rgba(0, 0, 0, 0.45)
     ),
-    url('../img/sam-bodhi-landing3.jpg');
+    url('../img/sam-bodhi-landing3.JPG');
   // background-image: url('../img/sam-bodhi-landing2.jpg');
   background-size: cover;
   background-repeat: no-repeat;

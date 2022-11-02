@@ -72,6 +72,12 @@
   @include respond(break-850X) {
     display: none;
   }
+  @include respond(break-850) {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    top: 0;
+  }
   // overflow: hidden;
   // height: 10px;
 }
@@ -85,6 +91,10 @@
   left: 0;
   display: none;
   z-index: 10;
+  @include respond(break-850) {
+    position: fixed;
+    top: 0;
+  }
 }
 
 // .topnav #myLinks {
