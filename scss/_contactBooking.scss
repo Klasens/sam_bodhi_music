@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $color-gray;
+  border-top: 2px solid $color-dark-gray;
   &-logo {
     padding: 0 3rem;
     font-size: 3rem;
@@ -22,9 +22,16 @@
       padding: 0 3rem;
       font-size: 1.8rem;
       color: $color-black;
+      @include respond(break-850) {
+        // display: none;
+        padding: 2rem 0;
+      }
     }
   }
   &-highlight {
+    color: $color-dark-purple;
+  }
+  &-link {
     color: $color-link;
   }
 }
