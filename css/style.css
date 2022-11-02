@@ -785,12 +785,9 @@ a {
  *========================================================================**/
 .landing {
   height: 100vh;
-  background-image: url("../img/sam_bodi_landing.jpg");
-  background-size: 50% auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/sam-bodhi-landing2-cropped.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
   /**============================================
    *             Mobile Small - 600
@@ -824,6 +821,10 @@ a {
     .landing {
       background-size: 100%; } }
   .landing-header {
+    height: 100vh;
+    margin: 0 2rem;
+    width: 50%;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -833,6 +834,7 @@ a {
     .landing-header--main {
       color: white;
       font-size: 10rem;
+      margin: 0 auto;
       /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -881,4 +883,207 @@ a {
   color: white;
   transition: background-color 0.4s; }
   .landing-btn:hover {
+    background-color: rgba(255, 102, 0, 0.571); }
+
+.landing2 {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/sam-bodhi-landing3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-850X) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+  @media (max-width: 53.125em) {
+    .landing2 {
+      background-size: 100%; } }
+  .landing2-header2 {
+    height: 100vh;
+    margin: 0 2rem;
+    padding-top: 10rem;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Dancing Script', cursive; }
+    .landing2-header2--main2 {
+      color: white;
+      font-size: 10rem;
+      margin: 0 auto;
+      /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+      /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+      /**============================================
+   *                Tablet - 1000
+@include respond(break-850X) {}
+   *=============================================**/
+      /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+      /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+      /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+      /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+      @media (max-width: 53.125em) {
+        .landing2-header2--main2 {
+          text-align: center; } }
+    .landing2-header2--secondary2 {
+      color: white;
+      font-size: 4rem;
+      font-family: 'Roboto';
+      font-size: 3rem; }
+
+.landing2-btn2 {
+  margin-top: 2rem;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1rem 2rem;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.4s; }
+  .landing2-btn2:hover {
+    background-color: rgba(255, 102, 0, 0.571); }
+
+.landing3 {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/sam-bodhi-landing4-cropped.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-850X) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+  @media (max-width: 53.125em) {
+    .landing3 {
+      background-size: 100%; } }
+  .landing3-header3 {
+    height: 100vh;
+    padding-top: 10rem;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Dancing Script', cursive; }
+    .landing3-header3--main3 {
+      color: white;
+      font-size: 10rem;
+      margin: 0 auto;
+      /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+      /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+      /**============================================
+   *                Tablet - 1000
+@include respond(break-850X) {}
+   *=============================================**/
+      /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+      /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+      /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+      /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+      @media (max-width: 53.125em) {
+        .landing3-header3--main3 {
+          text-align: center; } }
+    .landing3-header3--secondary3 {
+      color: white;
+      font-size: 4rem;
+      font-family: 'Roboto';
+      font-size: 3rem; }
+
+.landing3-btn3 {
+  margin-top: 2rem;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1rem 2rem;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.4s; }
+  .landing3-btn3:hover {
     background-color: rgba(255, 102, 0, 0.571); }
