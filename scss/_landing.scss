@@ -4,18 +4,26 @@
 
 .landing {
   height: 100vh;
-  background-image: url('../img/sam_bodi_landing.jpg');
-  background-size: 50% auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url('../img/sam-bodhi-landing2-cropped.jpg');
+  // background-image: url('../img/sam-bodhi-landing2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
   @include respond(break-850) {
     background-size: 100%;
   }
 
   &-header {
+    height: 100vh;
+    margin: 0 2rem;
+    width: 50%;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,6 +34,7 @@
     &--main {
       color: $color-white;
       font-size: 10rem;
+      margin: 0 auto;
       @include respond(break-850) {
         text-align: center;
       }
@@ -41,6 +50,133 @@
 }
 
 .landing-btn {
+  margin-top: 2rem;
+  background-color: transparent;
+  border: 2px solid $color-white;
+  padding: 1rem 2rem;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: $color-white;
+  transition: background-color 0.4s;
+  &:hover {
+    background-color: $color-red;
+  }
+}
+
+.landing2 {
+  height: 100vh;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url('../img/sam-bodhi-landing3.jpg');
+  // background-image: url('../img/sam-bodhi-landing2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  @include respond(break-850) {
+    background-size: 100%;
+  }
+
+  &-header2 {
+    height: 100vh;
+    margin: 0 2rem;
+    padding-top: 10rem;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Dancing Script', cursive;
+
+    &--main2 {
+      color: $color-white;
+      font-size: 10rem;
+      margin: 0 auto;
+      @include respond(break-850) {
+        text-align: center;
+      }
+    }
+
+    &--secondary2 {
+      color: $color-white;
+      font-size: 4rem;
+      font-family: 'Roboto';
+      font-size: 3rem;
+    }
+  }
+}
+
+.landing2-btn2 {
+  margin-top: 2rem;
+  background-color: transparent;
+  border: 2px solid $color-white;
+  padding: 1rem 2rem;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: $color-white;
+  transition: background-color 0.4s;
+  &:hover {
+    background-color: $color-red;
+  }
+}
+
+.landing3 {
+  height: 100vh;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url('../img/sam-bodhi-landing4-cropped.jpg');
+  // background-image: url('../img/sam-bodhi-landing2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  @include respond(break-850) {
+    background-size: 100%;
+  }
+
+  &-header3 {
+    height: 100vh;
+    // margin: 0 40%;
+    // padding-right: 25rem;
+    padding-top: 10rem;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Dancing Script', cursive;
+
+    &--main3 {
+      color: $color-white;
+      font-size: 10rem;
+      margin: 0 auto;
+      @include respond(break-850) {
+        text-align: center;
+      }
+    }
+
+    &--secondary3 {
+      color: $color-white;
+      font-size: 4rem;
+      font-family: 'Roboto';
+      font-size: 3rem;
+    }
+  }
+}
+
+.landing3-btn3 {
   margin-top: 2rem;
   background-color: transparent;
   border: 2px solid $color-white;
