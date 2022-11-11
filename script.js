@@ -6,7 +6,6 @@ const scrollArrow = document.querySelector('#landingArrow');
 const scrollToLanding = document.querySelector('#landingBio');
 
 function displayMobileLinks() {
-  console.log('teste');
   if (mobileLinks.style.display === 'block') {
     mobileLinks.style.display = 'none';
   } else {
@@ -16,7 +15,6 @@ function displayMobileLinks() {
 
 mobileNav.addEventListener('click', displayMobileLinks);
 scrollArrow.addEventListener('click', function (e) {
-  console.log('test');
   e.preventDefault();
   scrollToLanding.scrollIntoView({ behavior: 'smooth' });
 });
