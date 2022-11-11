@@ -89,3 +89,14 @@
 .mainContent-form {
   width: 85%;
 }
+
+.mainContent-video {
+  display: flex;
+  justify-content: center;
+  height: 75vh;
+  padding: 5rem 0;
+
+  &--src {
+    width: 100%;
+  }
+}
