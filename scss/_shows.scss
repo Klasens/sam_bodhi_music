@@ -4,6 +4,14 @@
 
 .showList {
   width: 50%;
+  background-color: rgb(255, 255, 255);
+  // background-image: linear-gradient(
+  //   to bottom,
+  //   rgba(255, 255, 255, 0.8),
+  //   rgba(255, 255, 255, 0.8),
+  //   rgba(255, 255, 255, 0.8)
+  // );
+  z-index: 1;
   @include respond(break-600) {
     width: 90%;
   }
@@ -31,4 +39,21 @@
     font-size: 1.8rem;
     color: $color-link;
   }
+}
+.video-background-left {
+  position: absolute;
+  width: 30%;
+  z-index: -1;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.video-background-right {
+  position: absolute;
+  width: 30%;
+  z-index: -1;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) rotateY(180deg);
 }

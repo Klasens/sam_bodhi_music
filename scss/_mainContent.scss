@@ -9,9 +9,18 @@
   }
   &-shows {
     height: auto;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.92),
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.92)
+    );
   }
 
   &-centered {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,8 +38,8 @@
   }
   &-multiColumn {
     display: flex;
-    height: 100%;
     padding: 3rem 0;
+    justify-content: center;
     @include respond(break-600) {
       flex-direction: column;
       align-items: center;
@@ -69,7 +78,6 @@
 
 //MULTI COLUMN
 .mainContent-column {
-  width: 20%;
   margin: 0 2rem;
   @include respond(break-600) {
     width: 80%;

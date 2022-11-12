@@ -93,8 +93,12 @@ a {
     .mainContent {
       height: min-content; } }
   .mainContent-shows {
-    height: auto; }
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.92)); }
   .mainContent-centered {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -138,8 +142,8 @@ a {
         padding: 0; } }
   .mainContent-multiColumn {
     display: flex;
-    height: 100%;
     padding: 3rem 0;
+    justify-content: center;
     /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -284,7 +288,6 @@ a {
       display: none; } }
 
 .mainContent-column {
-  width: 20%;
   margin: 0 2rem;
   /**============================================
    *             Mobile Small - 600
@@ -808,6 +811,8 @@ a {
  *========================================================================**/
 .showList {
   width: 50%;
+  background-color: white;
+  z-index: 1;
   /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -856,6 +861,22 @@ a {
   .showList-tickets {
     font-size: 1.8rem;
     color: #0000ee; }
+
+.video-background-left {
+  position: absolute;
+  width: 30%;
+  z-index: -1;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%); }
+
+.video-background-right {
+  position: absolute;
+  width: 30%;
+  z-index: -1;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) rotateY(180deg); }
 
 /**========================================================================
  *                           video
