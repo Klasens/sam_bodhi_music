@@ -2,13 +2,16 @@
  *                           contactBooking
  *========================================================================**/
 .contactBooking {
+  position: relative;
   height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-top: 2px solid $color-dark-gray;
   &-logo {
-    padding: 0 3rem;
+    position: absolute;
+    left: 0;
+    padding-left: 2rem;
     font-size: 3rem;
     color: $color-black;
     @include respond(break-850) {

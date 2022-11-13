@@ -30,6 +30,22 @@
   <!-------------------------------- HTML ------------------------------>
 
   <body>
+    <div class="mobileNav-container">
+      <div class="mobileNav-logo">SBJ</div>
+      <div class="mobileNav-text">Sam Bodhi Jazz</div>
+      <span class="icon" id="mobileNav"><i class="fa fa-bars"></i></span>
+    </div>
+    <div class="topnav">
+      <!-- <a href="index.html" class="active">SBJ</a> -->
+      <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="shows.html">Shows</a>
+        <!-- <a href="setList.html">Song List</a> -->
+        <a href="contact.html">Contact</a>
+        <a href="video.html">Video</a>
+      </div>
+    </div>
     <nav class="navBar">
       <div class="navBar-logo">SBJ</div>
       <ul class="navBar-list">
@@ -42,9 +58,9 @@
         <li class="navBar-list--item">
           <a href="shows.html">Shows</a>
         </li>
-        <li class="navBar-list--item">
+        <!-- <li class="navBar-list--item">
           <a href="setList.html">Set List</a>
-        </li>
+        </li> -->
         <li class="navBar-list--item">
           <a href="contact.html">Contact</a>
         </li>
@@ -53,13 +69,44 @@
         </li>
       </ul>
     </nav>
-    <section class="mainContent">
-      <div class="mainContent-centered">
-        <h3 class="mainContent-heading">Sample</h3>
-        <div class="mainContent-video">
-          <video controls="controls" class="mainContent-video">
-            <source src="img/sam_bodhi-v1.mp4" type="video/mp4" />
-          </video>
+    <section class="videoPage">
+      <div class="videoPage-outterContainer">
+        <div class="videoPage-accentContainer">
+          <div class="videoPage-innerContainer">
+            <div class="videoPage-demoContainer">
+              <h3 class="videoPage-header">Demo</h3>
+              <div class="videoPage-videoContainer">
+                <iframe
+                  class="videoPage-video"
+                  src="https://www.youtube.com/embed/k3fV3c3v02Y?start=4"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="videoPage-songLinks-container">
+              <h4 class="videoPage-songLinks-header">More Sam Bodhi:</h4>
+              <ul class="videoPage-songLinks-list">
+                <li class="videoPage-songLinks-listItem">
+                  <a href="#" class="videoPage-link">Take 5</a>
+                </li>
+                <li class="videoPage-songLinks-listItem">
+                  <a href="#" class="videoPage-link">Autumn in New York</a>
+                </li>
+                <li class="videoPage-songLinks-listItem">
+                  <a href="#" class="videoPage-link">Fly Me to the Moon</a>
+                </li>
+                <li class="videoPage-songLinks-listItem">
+                  <a href="#" class="videoPage-link">The Lady is a Tramp</a>
+                </li>
+                <li class="videoPage-songLinks-listItem">
+                  <a href="#" class="videoPage-link">My Funny Valentine</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -1,3 +1,142 @@
 /**========================================================================
  *                           video
  *========================================================================**/
+
+.videoPage {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include respond(break-850) {
+    height: auto;
+  }
+  &-outterContainer {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(
+      to bottom,
+      rgb(45, 45, 45),
+      rgb(70, 70, 70) 10%,
+      rgb(45, 45, 45)
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include respond(break-850) {
+      padding-bottom: 1rem;
+    }
+  }
+
+  &-accentContainer {
+    height: 90%;
+    width: 95%;
+    border-radius: 20px;
+    background-color: rgba(31, 80, 153, 0.114);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include respond(break-850) {
+      padding: 1rem 0;
+    }
+  }
+  &-innerContainer {
+    height: 90%;
+    width: 90%;
+    border-radius: 20px;
+    // box-shadow: 10px 5px 5px rgb(172, 133, 73);
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.8) 15%,
+        rgba(255, 255, 255, 1) 20% 80%,
+        rgba(255, 255, 255, 0.8) 85%
+      ),
+      linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.8) 15%,
+        rgba(255, 255, 255, 1) 20% 80%,
+        rgba(255, 255, 255, 0.8) 85%
+      );
+    display: flex;
+    align-items: center;
+    @include respond(break-850) {
+      flex-direction: column;
+    }
+  }
+
+  &-demoContainer {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &-videoContainer {
+    height: 80%;
+    width: 70%;
+    background-color: $color-black;
+    margin-bottom: 1rem;
+    @include respond(break-850) {
+      height: 30rem;
+      width: 100%;
+    }
+  }
+  &-songLinks-container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    @include respond(break-850) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &-video {
+    width: 100%;
+    height: 100%;
+  }
+
+  &-header {
+    margin-bottom: 2rem;
+    font-size: 6rem;
+    color: $color-black;
+    font-weight: 300;
+    @include respond(break-850) {
+      font-size: 4rem;
+    }
+  }
+}
+
+.videoPage-songLinks {
+  &-header {
+    font-size: 4rem;
+    font-weight: 400;
+    @include respond(break-850) {
+      font-size: 3rem;
+    }
+  }
+  &-list {
+    list-style: none;
+  }
+  &-listItem {
+    padding: 1rem 0;
+    text-decoration: underline;
+  }
+}
+
+.videoPage-link {
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: $color-link;
+  @include respond(break-850) {
+    font-size: 1.5rem;
+  }
+}
+
+.u-margin-top-1rem-mobile {
+  margin-top: 1rem;
+}

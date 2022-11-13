@@ -7,25 +7,34 @@
   @include respond(break-850) {
     height: min-content;
   }
+  margin-bottom: 1rem;
   &-shows {
     height: auto;
     position: relative;
     overflow: hidden;
-    background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.92),
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0.92)
-    );
   }
 
   &-centered {
     position: relative;
+    z-index: 1;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
-    padding: 3rem 0;
+    width: 100%;
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.85) 20%,
+        rgba(255, 255, 255, 1) 25% 75%,
+        rgba(255, 255, 255, 0.85) 80%
+      ),
+      linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.6) 5%,
+        rgba(255, 255, 255, 0) 10% 75%,
+        rgba(255, 255, 255, 0.6) 95%
+      );
   }
   &-twoColumn {
     display: flex;
@@ -79,6 +88,9 @@
 //MULTI COLUMN
 .mainContent-column {
   margin: 0 2rem;
+  border-left: 1px solid $color-black;
+  border-right: 1px solid $color-black;
+  padding: 0 1rem;
   @include respond(break-600) {
     width: 80%;
   }
@@ -92,8 +104,22 @@
   text-transform: uppercase;
   text-align: center;
   font-weight: 300;
+  width: 100%;
+  overflow: hidden;
+  background-color: $color-white;
+  padding: 2rem 0;
 }
 
+.mainContent-heading--shows {
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  width: 50%;
+  overflow: hidden;
+  background-color: $color-white;
+  padding: 2rem 0;
+}
 .mainContent-form {
   width: 85%;
 }
