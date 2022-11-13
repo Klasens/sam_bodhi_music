@@ -71,6 +71,30 @@
       @include respond(break-850) {
         text-align: center;
       }
+      &2 {
+        color: $color-white;
+        font-size: 8rem;
+        margin: 0 auto;
+        font-family: 'Roboto';
+      }
+      &3 {
+        color: $color-white;
+        font-size: 13rem;
+        margin: 0 auto;
+        font-family: 'Teko', sans-serif;
+      }
+      &4 {
+        color: $color-white;
+        font-size: 9rem;
+        margin: 0 auto;
+        font-family: 'Chakra Petch', sans-serif;
+      }
+      &5 {
+        color: $color-white;
+        font-size: 9rem;
+        margin: 0 auto;
+        font-family: 'Architects Daughter', cursive;
+      }
     }
 
     &--secondary {

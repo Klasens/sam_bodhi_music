@@ -5,6 +5,9 @@
   width: 80%;
   font-size: 1.7rem;
   margin: 0 auto;
+  @include respond(break-850) {
+    width: 100%;
+  }
   &-inputContainer {
     margin: 2rem 0;
     &--name {

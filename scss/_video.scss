@@ -73,6 +73,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include respond(break-850) {
+      width: 100%;
+    }
   }
   &-videoContainer {
     height: 80%;
@@ -98,9 +101,6 @@
   &-video {
     width: 100%;
     height: 100%;
-    @include respond(break-850) {
-      width: 50rem;
-    }
   }
 
   &-header {
