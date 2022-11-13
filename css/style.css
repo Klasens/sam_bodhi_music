@@ -497,7 +497,7 @@ a {
   font-size: 1.8rem; }
 
 .mobileNav-container {
-  background-color: rgba(187, 187, 187, 0.136);
+  background-color: rgba(0, 0, 0, 0.95);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -608,6 +608,7 @@ a {
 
 .topnav a {
   color: white;
+  background-color: rgba(0, 0, 0, 0.95);
   padding: 1.4rem 1.6rem;
   text-decoration: none;
   font-size: 1.7rem;
@@ -617,7 +618,7 @@ a {
 .icon {
   overflow: hidden;
   border-left: 2px solid rgba(255, 102, 0, 0.815);
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.95);
   color: white;
   font-size: 1.8rem;
   padding: 1.4rem 1.6rem;
@@ -658,7 +659,7 @@ a {
       display: none; } }
 
 .topnav a:hover {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.95);
   color: #333333; }
 
 .active {
@@ -1208,7 +1209,38 @@ a {
         text-align: center; } }
   .videoPage-video {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+    /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+    /**============================================
+   *                Tablet - 1000
+@include respond(break-850X) {}
+   *=============================================**/
+    /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+    /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+    @media (max-width: 53.125em) {
+      .videoPage-video {
+        width: 50rem; } }
   .videoPage-header {
     margin-bottom: 2rem;
     font-size: 6rem;
