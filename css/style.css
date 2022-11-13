@@ -36,7 +36,6 @@
   box-sizing: border-box; }
 
 html {
-  background: white;
   color: #333333;
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 62.5%;
@@ -498,7 +497,7 @@ a {
   font-size: 1.8rem; }
 
 .mobileNav-container {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(187, 187, 187, 0.136);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -569,7 +568,6 @@ a {
 
 .topnav {
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.75);
   border-top: 2px solid rgba(255, 102, 0, 0.815);
   position: static;
   top: 0;

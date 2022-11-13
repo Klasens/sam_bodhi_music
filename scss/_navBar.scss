@@ -69,7 +69,7 @@
   font-size: 1.8rem;
 }
 .mobileNav-container {
-  background-color: $color-black-transparent;
+  background-color: $color-form-transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,7 +87,6 @@
 
 .topnav {
   overflow: hidden;
-  background-color: $color-black-transparent;
   border-top: 2px solid $color-orange;
   position: static;
   top: 0;
