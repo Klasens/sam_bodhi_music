@@ -52,14 +52,14 @@
   &-header {
     height: 100%;
     margin: 0 2rem;
-    width: 50%;
+    width: 55%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Roboto';
     @include respond(break-850) {
       width: 90%;
     }
@@ -68,6 +68,7 @@
       color: $color-white;
       font-size: 10rem;
       margin: 0 auto;
+      font-weight: 300;
       @include respond(break-850) {
         text-align: center;
       }
@@ -99,9 +100,9 @@
 
     &--secondary {
       color: $color-white;
-      font-size: 4rem;
+      font-weight: 300;
       font-family: 'Roboto';
-      font-size: 3rem;
+      font-size: 4rem;
     }
   }
 }

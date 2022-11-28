@@ -1,10 +1,51 @@
 /**========================================================================
  *                           contact
  *========================================================================**/
+.mainContent-contact {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url('../img/sam-bodhi-blue.jpg'), url('../img/sam-bodhi-red.jpg'),
+    url('../img/sam-bodhi-green.jpg');
+  background-size: contain, 50%, contain;
+  background-position: left, center, right;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  z-index: 10;
+  margin: 0;
+}
+
+.mainContent-heading--contact {
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem 0;
+  color: $color-white;
+}
+.mainContent-centered--contact {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 3rem;
+}
 .contactForm {
+  opacity: 0;
   width: 80%;
   font-size: 1.7rem;
   margin: 0 auto;
+  animation: fadeIn 1s 2s forwards;
+  & > * {
+    color: $color-white;
+  }
   @include respond(break-850) {
     width: 100%;
   }
@@ -21,6 +62,7 @@
   &-inputContainer-btn {
     display: flex;
     justify-content: center;
+    margin-bottom: 1rem;
   }
   &-inputContainer-flex {
     margin: 2rem 0;
@@ -72,5 +114,15 @@
     font-size: 1.7rem;
     text-transform: uppercase;
     cursor: pointer;
+    color: $color-white;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
