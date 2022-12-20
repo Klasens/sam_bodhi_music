@@ -87,12 +87,13 @@
 
 .topnav {
   overflow: hidden;
-  border-top: 2px solid $color-orange;
-  position: static;
+  border-top: 2px solid $color-white;
+  position: sticky;
   top: 0;
   left: 0;
   display: none;
   z-index: 10;
+  transition: all 1s;
   @include respond(break-850) {
     top: 0;
   }
@@ -114,7 +115,7 @@
 
 .icon {
   overflow: hidden;
-  border-left: 2px solid $color-orange;
+  border-left: 2px solid $color-white;
   background-color: $color-black-transparent;
   color: $color-white;
   font-size: 1.8rem;

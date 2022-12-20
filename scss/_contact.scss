@@ -14,6 +14,10 @@
   background-repeat: no-repeat, no-repeat, no-repeat;
   z-index: 10;
   margin: 0;
+  @include respond(break-850) {
+    background-image: none;
+    background-color: $color-black;
+  }
 }
 
 .mainContent-heading--contact {

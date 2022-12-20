@@ -568,12 +568,13 @@ a {
 
 .topnav {
   overflow: hidden;
-  border-top: 2px solid rgba(255, 102, 0, 0.815);
-  position: static;
+  border-top: 2px solid white;
+  position: sticky;
   top: 0;
   left: 0;
   display: none;
   z-index: 10;
+  transition: all 1s;
   /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -617,7 +618,7 @@ a {
 
 .icon {
   overflow: hidden;
-  border-left: 2px solid rgba(255, 102, 0, 0.815);
+  border-left: 2px solid white;
   background-color: rgba(0, 0, 0, 0.95);
   color: white;
   font-size: 1.8rem;
@@ -1093,7 +1094,8 @@ a {
    *=============================================**/ }
     @media (max-width: 53.125em) {
       .videoPage-accentContainer {
-        padding: 1rem 0; } }
+        padding: 1rem 0;
+        background-image: none; } }
   .videoPage-innerContainer {
     padding: 0 3rem;
     width: 35%;
@@ -1132,7 +1134,8 @@ a {
    *=============================================**/ }
     @media (max-width: 53.125em) {
       .videoPage-innerContainer {
-        flex-direction: column; } }
+        flex-direction: column;
+        width: 100%; } }
   .videoPage-demoContainer {
     height: 100%;
     width: 100%;
@@ -1381,7 +1384,39 @@ a {
   background-position: left, center, right;
   background-repeat: no-repeat, no-repeat, no-repeat;
   z-index: 10;
-  margin: 0; }
+  margin: 0;
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-850X) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector > 1800
+   @include respond(break-1800) {}
+   *=============================================**/ }
+  @media (max-width: 53.125em) {
+    .mainContent-contact {
+      background-image: none;
+      background-color: #333333; } }
 
 .mainContent-heading--contact {
   font-size: 5rem;
