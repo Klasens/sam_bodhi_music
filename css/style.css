@@ -980,6 +980,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 90vh;
   /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -1094,9 +1095,8 @@ a {
       .videoPage-accentContainer {
         padding: 1rem 0; } }
   .videoPage-innerContainer {
-    margin: 3rem 0;
     padding: 0 3rem;
-    height: 90%;
+    width: 35%;
     border-radius: 20px;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     display: flex;
@@ -1134,8 +1134,8 @@ a {
       .videoPage-innerContainer {
         flex-direction: column; } }
   .videoPage-demoContainer {
-    width: 70%;
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1173,7 +1173,7 @@ a {
         width: 100%; } }
   .videoPage-videoContainer {
     height: 35rem;
-    width: 50rem;
+    width: 100%;
     background-color: #333333;
     margin-bottom: 1rem;
     /**============================================
@@ -1409,7 +1409,6 @@ a {
   width: 80%;
   font-size: 1.7rem;
   margin: 0 auto;
-  animation: fadeIn 1s 2s forwards;
   /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -1499,6 +1498,9 @@ a {
     text-transform: uppercase;
     cursor: pointer;
     color: white; }
+
+.fade-in {
+  animation: fadeIn 1s 0.5s forwards; }
 
 @keyframes fadeIn {
   from {

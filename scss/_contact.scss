@@ -42,7 +42,6 @@
   width: 80%;
   font-size: 1.7rem;
   margin: 0 auto;
-  animation: fadeIn 1s 2s forwards;
   & > * {
     color: $color-white;
   }
@@ -116,6 +115,10 @@
     cursor: pointer;
     color: $color-white;
   }
+}
+
+.fade-in {
+  animation: fadeIn 1s 0.5s forwards;
 }
 
 @keyframes fadeIn {
