@@ -1546,7 +1546,8 @@ a {
    *=============================================**/ }
     @media (max-width: 53.125em) {
       .videoPage-header {
-        font-size: 4rem; } }
+        font-size: 4rem;
+        text-align: center; } }
 
 .videoPage-songLinks-header {
   font-size: 4rem;

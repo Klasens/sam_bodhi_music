@@ -112,6 +112,7 @@
     font-weight: 300;
     @include respond(break-850) {
       font-size: 4rem;
+      text-align: center;
     }
   }
 }
