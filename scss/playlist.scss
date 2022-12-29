@@ -1,0 +1,18 @@
+/**========================================================================
+ *                         PLAYLIST 
+ *========================================================================**/
+.playlist {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+.playlist-iframe {
+  margin: 1rem;
+  border-radius: 12px;
+  width: 50%;
+  height: 95%;
+  @include respond(break-850) {
+    width: 95%;
+  }
+}
