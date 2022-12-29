@@ -95,7 +95,6 @@
     flex-direction: column;
     justify-content: center;
     // align-items: center;
-    text-align: center;
     @include respond(break-850) {
       width: 100%;
       text-align: center;
@@ -111,6 +110,7 @@
     font-size: 6rem;
     color: $color-white;
     font-weight: 300;
+    text-align: center;
     @include respond(break-850) {
       font-size: 4rem;
       text-align: center;
