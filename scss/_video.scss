@@ -9,7 +9,7 @@
   align-items: center;
   height: 90vh;
   @include respond(break-850) {
-    height: auto;
+    height: 90vh;
   }
   &-outterContainer {
     height: 100%;
@@ -52,7 +52,7 @@
     }
   }
   &-innerContainer {
-    padding: 0 3rem;
+    padding: 3rem;
     width: 35%;
     border-radius: 20px;
     background-image: linear-gradient(

@@ -26,8 +26,9 @@
       font-size: 1.8rem;
       color: $color-black;
       @include respond(break-850) {
-        // display: none;
+        width: 95%;
         padding: 2rem 0;
+        margin: 0 auto;
       }
     }
   }

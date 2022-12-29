@@ -4,6 +4,12 @@
 
 .about-image {
   object-fit: contain;
+
+  & img {
+    @include respond(break-850) {
+      border-radius: 50%;
+    }
+  }
 }
 
 .about-bio {
@@ -24,4 +30,7 @@
   width: 85%;
   line-height: 1.5;
   font-size: 1.7rem;
+  @include respond(break-850) {
+    width: 95%;
+  }
 }

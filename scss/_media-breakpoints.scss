@@ -70,13 +70,13 @@
   }
 
   /**============================================
-   *                Telvision/Projector > 1800
-   @include respond(break-1800) {}
+   *                Telvision/Projector >1600 
+   @include respond(break-1600) {}
    *=============================================**/
 
-  @if $breakpoint == break-1800 {
-    @media (min-width: 112.5em) {
+  @if $breakpoint == break-1600 {
+    @media (min-width: 100em) {
       @content;
-    } //1800px
+    } //1600px
   }
 }

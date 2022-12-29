@@ -12,6 +12,14 @@
     height: auto;
     position: relative;
     overflow: hidden;
+    @include respond(break-1600) {
+      height: 80vh;
+    }
+    @include respond(break-850) {
+      display: flex;
+      align-items: center;
+      height: 90vh;
+    }
   }
 
   &-centered {
@@ -43,6 +51,7 @@
     @include respond(break-850) {
       flex-direction: column-reverse;
       padding: 0;
+      align-items: center;
     }
   }
   &-multiColumn {
@@ -79,8 +88,7 @@
     width: 50%;
     @include respond(break-850) {
       width: 90%;
-      padding: 0;
-      display: none;
+      // display: none;
     }
   }
 }
@@ -91,11 +99,11 @@
   border-left: 1px solid $color-black;
   border-right: 1px solid $color-black;
   padding: 0 1rem;
-  @include respond(break-600) {
-    width: 80%;
-  }
   @include respond(break-850) {
     width: 40%;
+  }
+  @include respond(break-600) {
+    width: 80%;
   }
 }
 //UNIVERSAL HEADING
@@ -108,6 +116,8 @@
   overflow: hidden;
   background-color: $color-white;
   padding: 2rem 0;
+
+  border-bottom: 1px solid $color-gray-transparent;
 }
 
 .mainContent-heading--shows {
@@ -116,12 +126,17 @@
   text-align: center;
   font-weight: 300;
   width: 50%;
-  overflow: hidden;
   background-color: $color-white;
   padding: 2rem 0;
 }
 .mainContent-form {
-  width: 85%;
+  background-color: $color-gray-transparent;
+  padding: 1rem;
+  @include respond(break-850) {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+  }
 }
 
 .mainContent-video {
@@ -132,5 +147,17 @@
 
   &--src {
     width: 100%;
+  }
+}
+
+.mainContent-contact {
+  @include respond(break-1600) {
+    height: 90vh;
+  }
+}
+
+.mobile-display-none {
+  @include respond(break-850) {
+    display: none;
   }
 }
