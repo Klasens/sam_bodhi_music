@@ -8,6 +8,9 @@
   justify-content: space-between;
   align-items: center;
   border-top: 2px solid $color-dark-gray;
+  @include respond(break-850) {
+    padding-top: 1rem;
+  }
   &-logo {
     position: absolute;
     left: 0;
