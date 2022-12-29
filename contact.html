@@ -48,9 +48,9 @@
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="shows.html">Shows</a>
-        <!-- <a href="setList.html">Song List</a> -->
+        <a href="video.html">Video Sample</a>
+        <a href="songs.html">Song List</a>
         <a href="contact.html">Contact</a>
-        <a href="video.html">Video</a>
       </div>
     </div>
     <nav class="navBar">
@@ -65,14 +65,17 @@
         <li class="navBar-list--item">
           <a href="shows.html">Shows</a>
         </li>
-        <!-- <li class="navBar-list--item">
-          <a href="setList.html">Set List</a>
-        </li> -->
+        <li class="navBar-list--item">
+          <a href="video.html">Video Sample</a>
+        </li>
+        <li class="navBar-list--item">
+          <a href="songs.html">Song List</a>
+        </li>
         <li class="navBar-list--item">
           <a href="contact.html">Contact</a>
         </li>
         <li class="navBar-list--item">
-          <a href="video.html">Video</a>
+          <a href="video.html">Video Sample</a>
         </li>
       </ul>
     </nav>
@@ -81,35 +84,81 @@
       <div class="mainContent-centered--contact">
         <h3 class="mainContent-heading--contact">Contact</h3>
         <div class="mainContent-form">
-          <form class="contactForm">
+          <form
+            class="contactForm"
+            id="form"
+            method="post"
+            action="/contact"
+            enctype="multipart/form-data"
+          >
             <div class="contactForm-inputContainer-flex">
               <div class="contactForm-inputContainer--name">
                 <label class="contactForm-label" for="firstName">
                   First Name:
                 </label>
-                <input class="contactForm-name" type="text" name="firstName" />
+                <input
+                  value=""
+                  class="contactForm-name"
+                  type="text"
+                  name="firstName"
+                  id="formFirstName"
+                  required
+                />
               </div>
               <div class="contactForm-inputContainer--name">
                 <label class="contactForm-label" for="lastName">
                   Last Name:
                 </label>
-                <input class="contactForm-name" type="text" name="lastName" />
+                <input
+                  value=""
+                  class="contactForm-name"
+                  type="text"
+                  name="lastName"
+                  id="formLastName"
+                  required
+                />
               </div>
             </div>
             <div class="contactForm-inputContainer">
               <label class="contactForm-label" for="email">Email:</label>
-              <input class="contactForm-email" type="text" name="email" />
+              <input
+                value=""
+                class="contactForm-email"
+                type="text"
+                name="email"
+                id="formEmail"
+                required
+              />
             </div>
             <div class="contactForm-inputContainer">
               <label class="contactForm-label" for="subject">Subject:</label>
-              <input class="contactForm-subject" type="text" name="subject" />
+              <input
+                value=""
+                class="contactForm-subject"
+                type="text"
+                name="subject"
+                id="formSubject"
+                required
+              />
             </div>
             <div class="contactForm-inputContainer">
               <label class="contactForm-label" for="message">Message:</label>
-              <input class="contactForm-message" type="text" name="message" />
+              <textarea
+                value=""
+                class="contactForm-message"
+                type="text"
+                name="message"
+                id="formMessage"
+                required
+              ></textarea>
             </div>
             <div class="contactForm-inputContainer-btn">
-              <input class="contactForm-btn" type="submit" value="submit" />
+              <input
+                class="contactForm-btn"
+                type="submit"
+                value="submit"
+                id="formSubmit"
+              />
             </div>
           </form>
         </div>
@@ -118,5 +167,6 @@
     <!------- JAVASCRIPT ------->
 
     <script src="script.js"></script>
+    <script src="form.js"></script>
   </body>
 </html>
