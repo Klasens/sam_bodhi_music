@@ -95,6 +95,7 @@
     flex-direction: column;
     justify-content: center;
     // align-items: center;
+    text-align: center;
     @include respond(break-850) {
       width: 100%;
       text-align: center;

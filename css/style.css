@@ -1140,7 +1140,8 @@ a {
     .showList-setGroup > * {
       margin: 1rem 0; }
   .showList-upcoming {
-    height: 100%; }
+    height: 100%;
+    padding-bottom: 1rem; }
   .showList-date {
     font-size: 1.8rem; }
   .showList-location {
@@ -1476,6 +1477,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
