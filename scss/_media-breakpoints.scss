@@ -75,6 +75,16 @@
    *=============================================**/
 
   @if $breakpoint == break-1600 {
+    @media (max-width: 100em) {
+      @content;
+    } //1600px
+  }
+  /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600-over) {}
+   *=============================================**/
+
+  @if $breakpoint == break-1600-over {
     @media (min-width: 100em) {
       @content;
     } //1600px
