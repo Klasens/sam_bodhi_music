@@ -20,10 +20,11 @@
   }
 
   &-logo {
-    padding: 0 3rem;
-    font-size: 5rem;
+    position: relative;
+    margin: 0 3rem;
+    font-size: 6rem;
     color: $color-white;
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Dancing Script', cursive;
   }
 
   &-list {
@@ -138,4 +139,20 @@
 
 .active {
   display: block;
+}
+
+.letter1 {
+  // position: absolute;
+  // left: 2px;
+  // top: 2px;
+}
+.letter2 {
+  position: absolute;
+  left: 2rem;
+  top: 1rem;
+}
+.letter3 {
+  position: absolute;
+  left: 4.5rem;
+  top: 1.5rem;
 }

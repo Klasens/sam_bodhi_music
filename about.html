@@ -28,6 +28,12 @@
       rel="stylesheet"
     />
 
+    <!-- LOGO FONTS ======-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto+Slab:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- PAGE FONTS ======-->
 
     <!--====== STYLE SHEETS ======-->
@@ -53,7 +59,11 @@
       </div>
     </div>
     <nav class="navBar">
-      <div class="navBar-logo">SBJ</div>
+      <div class="navBar-logo">
+        <span class="letter1">S</span>
+        <span class="letter2">B</span>
+        <span class="letter3">J</span>
+      </div>
       <ul class="navBar-list">
         <li class="navBar-list--item">
           <a href="index.html">Home</a>
@@ -77,6 +87,23 @@
       <div class="mainContent-twoColumn">
         <div class="mainContent-leftColumn">
           <div class="about-bio">
+            <div class="origin-modal pointerEvents-none">
+              <span class="modal-close--origin">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+              </span>
+              <h4 class="modal-header">Anuttara Samyak Sambodhi</h4>
+              <p class="modal-text">
+                The enlightened mind knows all things everywhere. Translated
+                literally, Anuttara Samyak Sambodhi is the unexcelled, right,
+                all-pervading way. Sam Bodhi, in its musical form connects the
+                free flowing thought of man while separating the mundane from
+                the real. It unhinders the spirit giving us a chance to
+                experience something beyond ourselves for at least a few
+                minutes. One self can never reach all perfect enlightenment, but
+                music gives us a glimpse into a place where we can see the path.
+              </p>
+            </div>
             <h4 class="about-subHeading">Sam Bodhi</h4>
             <p class="about-text">
               True, accurate, complete, Sam Bodhi's Jazz slices down the middle,
@@ -103,6 +130,7 @@
               decades, Bodhi most recently returned to Green Bay, WI, spreading
               waves of jazz to whichever clubs he visits.
             </p>
+            <div class="about-origin">Origins of Sam Bodhi</div>
           </div>
         </div>
         <div class="mainContent-rightColumn">
@@ -129,5 +157,6 @@
     <!------- JAVASCRIPT ------->
 
     <script src="script.js"></script>
+    <script src="originModal.js"></script>
   </body>
 </html>

@@ -2,6 +2,8 @@
 
 const jazzBtn = document.querySelector('#jazz');
 const jazzModal = document.querySelector('#jazzModal');
+const bluesBtn = document.querySelector('#blues');
+const bluesModal = document.querySelector('#bluesModal');
 const americanaBtn = document.querySelector('#americana');
 const americanaModal = document.querySelector('#americanaModal');
 const originalBtn = document.querySelector('#original');
@@ -13,6 +15,10 @@ const modalClose = document.querySelectorAll('.modal-close');
 jazzBtn.addEventListener('click', function () {
   jazzModal.classList.add('fadeIn');
   jazzModal.classList.remove('pointerEvents-none');
+});
+bluesBtn.addEventListener('click', function () {
+  bluesModal.classList.add('fadeIn');
+  bluesModal.classList.remove('pointerEvents-none');
 });
 americanaBtn.addEventListener('click', function () {
   americanaModal.classList.add('fadeIn');
@@ -27,6 +33,8 @@ for (let i = 0; i < modalClose.length; i++) {
   modalClose[i].addEventListener('click', function () {
     jazzModal.classList.remove('fadeIn');
     jazzModal.classList.add('pointerEvents-none');
+    bluesModal.classList.remove('fadeIn');
+    bluesModal.classList.add('pointerEvents-none');
     americanaModal.classList.remove('fadeIn');
     americanaModal.classList.add('pointerEvents-none');
     originalModal.classList.remove('fadeIn');

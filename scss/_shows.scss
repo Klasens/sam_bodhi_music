@@ -74,3 +74,130 @@
     display: none;
   }
 }
+
+.shows-repertoireContainer {
+  margin-bottom: 2rem;
+}
+
+.shows-repertoire--text {
+  text-align: center;
+  color: $color-blue;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.shows-repertoireHeader {
+  font-size: 2.5rem;
+  color: $color-black;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+.shows-modalHeader {
+  font-size: 4.5rem;
+  font-weight: 300;
+  width: 100%;
+  text-align: center;
+}
+
+.shows-modal {
+  position: absolute;
+  background-color: $color-modal-transparent;
+  z-index: 10;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 90vh;
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: scroll;
+  @include respond(break-1600) {
+    width: 100%;
+  }
+}
+
+.shows-modal--list {
+  list-style: none;
+  padding: 1rem;
+  & > li:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
+.song {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+}
+
+.title {
+  font-weight: 600;
+}
+.artist {
+  font-style: italic;
+}
+
+.shows-modal--jazz {
+  opacity: 0;
+}
+.shows-modal--americana {
+  opacity: 0;
+}
+.shows-modal--blues {
+  opacity: 0;
+}
+.shows-modal--original {
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 1s forwards;
+}
+
+.pointerEvents-none {
+  pointer-events: none;
+}
+.modal-close {
+  height: 5rem;
+  width: 5rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  animation: scaleUp 2s infinite linear;
+  @include respond(break-850) {
+    top: 0.5rem;
+    right: 3rem;
+  }
+}
+
+.line-1,
+.line-2 {
+  width: 4rem;
+  margin: 1rem;
+  height: 2px;
+  background-color: $color-red;
+}
+
+.line-1 {
+  position: absolute;
+  top: 25%;
+  transform-origin: bottom;
+  transform: rotate(45deg);
+}
+.line-2 {
+  position: absolute;
+  top: 25%;
+  transform-origin: initial;
+  transform: rotate(-45deg);
+}

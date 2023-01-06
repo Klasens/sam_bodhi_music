@@ -21,6 +21,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- LOGO FONTS ======-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto+Slab:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- PAGE FONTS ======-->
 
     <!--====== STYLE SHEETS ======-->
@@ -46,7 +51,11 @@
       </div>
     </div>
     <nav class="navBar">
-      <div class="navBar-logo">SBJ</div>
+      <div class="navBar-logo">
+        <span class="letter1">S</span>
+        <span class="letter2">B</span>
+        <span class="letter3">J</span>
+      </div>
       <ul class="navBar-list">
         <li class="navBar-list--item">
           <a href="index.html">Home</a>
@@ -74,7 +83,7 @@
               <div class="videoPage-videoContainer">
                 <iframe
                   class="videoPage-video"
-                  src="https://www.youtube.com/embed/D_7D04WzwvU"
+                  src="https://www.youtube.com/embed/_CbiHtuKr3s"
                   ="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -85,6 +94,9 @@
             <div class="videoPage-repertoireContainer">
               <h4 class="videoPage-repertoireHeader">Selected Repertoire</h4>
               <div class="videoPage-repertoire--text" id="jazz">Jazz List</div>
+              <div class="videoPage-repertoire--text" id="blues">
+                Blues List
+              </div>
               <div class="videoPage-repertoire--text" id="americana">
                 Americana List
               </div>
@@ -158,6 +170,18 @@
             <span class="title">Lullaby of Birdland</span>
             <span class="artist">Shearing/Forster</span>
           </li>
+          <li class="song">
+            <span class="title">La Vie en Rose</span>
+            <span class="artist">Piaff</span>
+          </li>
+          <li class="song">
+            <span class="title">What a Wonderful World</span>
+            <span class="artist">Douglass Weiss</span>
+          </li>
+          <li class="song">
+            <span class="title">The Girl from Ipanema</span>
+            <span class="artist">Jobim/Moraes</span>
+          </li>
         </ul>
         <ul class="videoPage-modal--list">
           <li class="song">
@@ -213,17 +237,29 @@
             <span class="title">New Coat of Paint</span>
             <span class="artist">Waits</span>
           </li>
+          <li class="song">
+            <span class="title">Hang On St. Christopher</span>
+            <span class="artist">Waits</span>
+          </li>
+          <li class="song">
+            <span class="title">Jitterbug Boy</span>
+            <span class="artist">Waits</span>
+          </li>
+          <li class="song">
+            <span class="title">Insensetez</span>
+            <span class="artist">Jobim/Moraes</span>
+          </li>
         </ul>
       </div>
       <div
-        class="videoPage-modal videoPage-modal--americana pointerEvents-none"
-        id="americanaModal"
+        class="videoPage-modal videoPage-modal--blues pointerEvents-none"
+        id="bluesModal"
       >
         <span class="modal-close">
           <div class="line-1"></div>
           <div class="line-2"></div>
         </span>
-        <h4 class="videoPage-modalHeader">Selected Americana</h4>
+        <h4 class="videoPage-modalHeader">Selected Blues</h4>
         <ul class="videoPage-modal--list">
           <li class="song">
             <span class="title">Tipitina</span>
@@ -276,6 +312,18 @@
           <li class="song">
             <span class="title">The Silver Tongue Devil and I</span>
             <span class="artist">Kristofferson</span>
+          </li>
+          <li class="song">
+            <span class="title">Love in Vain</span>
+            <span class="artist">Johnson</span>
+          </li>
+          <li class="song">
+            <span class="title">Sweet Home Chicago</span>
+            <span class="artist">Johnson</span>
+          </li>
+          <li class="song">
+            <span class="title">Key to The Highway</span>
+            <span class="artist">Morganfield</span>
           </li>
         </ul>
         <ul class="videoPage-modal--list">
@@ -332,6 +380,168 @@
           <li class="song">
             <span class="title">I'm Ready</span>
             <span class="artist">Dixon</span>
+          </li>
+          <li class="song">
+            <span class="title">All Night Long</span>
+            <span class="artist">Dixon</span>
+          </li>
+          <li class="song">
+            <span class="title">Evil</span>
+            <span class="artist">Dixon</span>
+          </li>
+          <li class="song">
+            <span class="title">Hush Hush</span>
+            <span class="artist">Reed</span>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="videoPage-modal videoPage-modal--americana pointerEvents-none"
+        id="americanaModal"
+      >
+        <span class="modal-close">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+        </span>
+        <h4 class="videoPage-modalHeader">Selected Americana</h4>
+        <ul class="videoPage-modal--list">
+          <li class="song">
+            <span class="title">Folsom Prison Blues</span>
+            <span class="artist">Cash</span>
+          </li>
+          <li class="song">
+            <span class="title">City of New Orleans</span>
+            <span class="artist">Goodman</span>
+          </li>
+          <li class="song">
+            <span class="title">Mr Bojangles</span>
+            <span class="artist">Walker</span>
+          </li>
+          <li class="song">
+            <span class="title">None Pound Hammer</span>
+            <span class="artist">Travis</span>
+          </li>
+          <li class="song">
+            <span class="title">Mustang Sally</span>
+            <span class="artist">Rice</span>
+          </li>
+          <li class="song">
+            <span class="title">You Got to Move</span>
+            <span class="artist">McDowell/Davis</span>
+          </li>
+          <li class="song">
+            <span class="title">Use Me</span>
+            <span class="artist">Withers</span>
+          </li>
+          <li class="song">
+            <span class="title">Revolution</span>
+            <span class="artist">Lennon/McCartney</span>
+          </li>
+          <li class="song">
+            <span class="title">Heart Breawk Hotel</span>
+            <span class="artist">Durden/Axton</span>
+          </li>
+          <li class="song">
+            <span class="title">Jhonny B. Goode</span>
+            <span class="artist">Berry</span>
+          </li>
+          <li class="song">
+            <span class="title">Lightning Bar</span>
+            <span class="artist">Axton</span>
+          </li>
+          <li class="song">
+            <span class="title">Use Me</span>
+            <span class="artist">Withers</span>
+          </li>
+          <li class="song">
+            <span class="title">City of New Orleans</span>
+            <span class="artist">Goodman</span>
+          </li>
+          <li class="song">
+            <span class="title">Molly Malone</span>
+            <span class="artist">Traditional Irish</span>
+          </li>
+          <li class="song">
+            <span class="title">Carrickfergus</span>
+            <span class="artist">Traditional Irish</span>
+          </li>
+          <li class="song">
+            <span class="title">Galway Bay</span>
+            <span class="artist">Colahan</span>
+          </li>
+          <li class="song">
+            <span class="title">The Wild Rover</span>
+            <span class="artist">Traditioanl Irish</span>
+          </li>
+        </ul>
+        <ul class="videoPage-modal--list">
+          <li class="song">
+            <span class="title">Ripple</span>
+            <span class="artist">Garcia/Hunter</span>
+          </li>
+          <li class="song">
+            <span class="title">Friend of the Devil</span>
+            <span class="artist">Garccia/Dawson/Hunter</span>
+          </li>
+          <li class="song">
+            <span class="title">Stand By Me</span>
+            <span class="artist">King/Leiber/Stoller</span>
+          </li>
+          <li class="song">
+            <span class="title">Good Hearted Woman</span>
+            <span class="artist">Jennings/Nelson</span>
+          </li>
+          <li class="song">
+            <span class="title">Amanda</span>
+            <span class="artist">McDill</span>
+          </li>
+          <li class="song">
+            <span class="title">Motherless Children</span>
+            <span class="artist">Johnson</span>
+          </li>
+          <li class="song">
+            <span class="title">Lucille</span>
+            <span class="artist">Collins/Richard</span>
+          </li>
+          <li class="song">
+            <span class="title">House of the Rising Sun</span>
+            <span class="artist">Traditional</span>
+          </li>
+          <li class="song">
+            <span class="title">Kansas City</span>
+            <span class="artist">Leiber/Stoller</span>
+          </li>
+          <li class="song">
+            <span class="title">Been Down So Long</span>
+            <span class="artist">The Doors</span>
+          </li>
+          <li class="song">
+            <span class="title">Reason to Believe</span>
+            <span class="artist">Hardin</span>
+          </li>
+          <li class="song">
+            <span class="title">Up On Cripple Creek</span>
+            <span class="artist">Robertson</span>
+          </li>
+          <li class="song">
+            <span class="title">Johnny I hardly Knew Ye</span>
+            <span class="artist">Geoghegan</span>
+          </li>
+          <li class="song">
+            <span class="title">Finnegan's Wake</span>
+            <span class="artist">Traditioanl Irish</span>
+          </li>
+          <li class="song">
+            <span class="title">The Minsrel Boy</span>
+            <span class="artist">Moore</span>
+          </li>
+          <li class="song">
+            <span class="title">The Last Rose of Summer</span>
+            <span class="artist">Moore</span>
+          </li>
+          <li class="song">
+            <span class="title">Danny Boy</span>
+            <span class="artist">Weatherly</span>
           </li>
         </ul>
       </div>
