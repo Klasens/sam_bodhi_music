@@ -2242,8 +2242,9 @@ a {
    *=============================================**/ }
   @media (max-width: 53.125em) {
     .modal-close {
-      top: 0.5rem;
-      right: 3rem; } }
+      position: fixed;
+      top: 5rem;
+      right: 1rem; } }
 
 .line-1,
 .line-2 {
