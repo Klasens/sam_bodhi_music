@@ -1581,10 +1581,10 @@ a {
 .pointerEvents-none {
   pointer-events: none; }
 
-.modal-close {
+.modal-close--shows {
   height: 5rem;
   width: 5rem;
-  position: absolute;
+  position: fixed;
   top: 2rem;
   right: 2rem;
   cursor: pointer;
@@ -1622,7 +1622,7 @@ a {
    @include respond(break-1600-over) {}
    *=============================================**/ }
   @media (max-width: 53.125em) {
-    .modal-close {
+    .modal-close--shows {
       top: 0.5rem;
       right: 3rem; } }
 

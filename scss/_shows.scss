@@ -167,10 +167,10 @@
 .pointerEvents-none {
   pointer-events: none;
 }
-.modal-close {
+.modal-close--shows {
   height: 5rem;
   width: 5rem;
-  position: absolute;
+  position: fixed;
   top: 2rem;
   right: 2rem;
   cursor: pointer;
