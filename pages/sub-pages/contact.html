@@ -1,0 +1,23 @@
+<!-- Imports -->
+{% import 'macros/title-macro.html' as head %}
+
+<!-- Meta Blocks -->
+{% extends "layout_two.html" %}
+
+<!-- Block Title -->
+{% block title %} {{head.title('Contact')}} {% endblock %}
+
+<!-- Block Content -->
+{% block content %}
+
+<!-- Partial 1 NJK-->
+{% include "partials/nav/nav_mobile.html" %}
+
+<!-- Partial 2 NJK-->
+{% include "partials/nav/nav_desktop.html" %}
+
+<!-- Partial 3 NJK-->
+{% include "partials/pages/contact.html" %}
+
+<!-- Endblock -->
+{% endblock %}

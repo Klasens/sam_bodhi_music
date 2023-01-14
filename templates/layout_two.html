@@ -1,0 +1,54 @@
+<!-- layout.nunjucks -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block title %} {% endblock %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--====== FONT AWESOME ======-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
+    />
+
+    <!--====== ICONS ======-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--====== GOOGLE FONTS ======-->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <!-- BASE FONTS ======-->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- PAGE FONTS ======-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- LOGO FONTS ======-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto+Slab:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--====== STYLE SHEETS ======-->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    {% block content %} {% endblock %}
+    <!------- JAVASCRIPT ------->
+    <script src="/js/originModal.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/form.js"></script>
+  </body>
+</html>

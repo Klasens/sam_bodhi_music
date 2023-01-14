@@ -1,0 +1,13 @@
+<!-- TITLE MACRO -->
+
+{% macro title(title='Prologue') %} {%if title == 'Home' %}
+<title>Home</title>
+{% endif %} {%if title == 'About' %}
+<title>About</title>
+{% endif %} {%if title == 'Shows' %}
+<title>Shows</title>
+{% endif %} {%if title == 'Video' %}
+<title>Video</title>
+{% endif %} {%if title == 'Contact' %}
+<title>Contact</title>
+{% endif %}{% endmacro %}

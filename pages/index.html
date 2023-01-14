@@ -1,0 +1,23 @@
+<!-- Imports -->
+{% import 'macros/title-macro.html' as head %}
+
+<!-- Meta Blocks -->
+{% extends "layout_one.html" %}
+
+<!-- Block Title -->
+{% block title %} {{head.title('Home')}} {% endblock %}
+
+<!-- Block Content -->
+{% block content %}
+
+<!-- Partial 1 NJK-->
+{% include "partials/nav/nav_mobile.html" %}
+
+<!-- Partial 2 NJK-->
+{% include "partials/pages/index.html" %}
+
+<!-- Partial 3 NJK-->
+{% include "partials/footer.html" %}
+
+<!-- Endblock -->
+{% endblock %}

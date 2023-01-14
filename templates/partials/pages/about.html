@@ -1,0 +1,33 @@
+<section class="mainContent">
+  <h3 class="mainContent-heading margin-top">About</h3>
+  <div class="mainContent-twoColumn">
+    <div class="mainContent-leftColumn">
+      <div class="about-bio">
+        <div class="origin-modal pointerEvents-none">
+          <span class="modal-close--origin">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+          </span>
+          <h4 class="modal-header">Anuttara Samyak Sambodhi</h4>
+          {% for text in origin %}
+          <p class="modal-text">{{text.paragraph}}</p>
+          {% endfor %}
+        </div>
+        <h4 class="about-subHeading">Sam Bodhi</h4>
+        {% for text in about %}
+        <p class="about-text">{{text.paragraph}}</p>
+        {% endfor %}
+        <div class="about-origin">Origins of Sam Bodhi</div>
+      </div>
+    </div>
+    <div class="mainContent-rightColumn">
+      <div class="about-image">
+        <img
+          src="/img/sam-bodhi-landing3-cropped.JPG"
+          alt="Sam Bodi Sketch"
+          class="img"
+        />
+      </div>
+    </div>
+  </div>
+</section>

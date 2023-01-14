@@ -1,0 +1,649 @@
+{
+  "jazzOne": [
+    {
+      "song": {
+        "title": "Autumn in New York",
+        "artist": "Duke"
+      }
+    },
+    {
+      "song": {
+        "title": "Fly Me to the Moon",
+        "artist": "Bart Howard"
+      }
+    },
+    {
+      "song": {
+        "title": "Autumn Leaves",
+        "artist": "Joseph Kosma"
+      }
+    },
+    {
+      "song": {
+        "title": "The Very Thought of You",
+        "artist": "Ray Noble"
+      }
+    },
+    {
+      "song": {
+        "title": "How High the Moon",
+        "artist": "Hamilton/Lewis"
+      }
+    },
+    {
+      "song": {
+        "title": "Misty",
+        "artist": "Errol Garner"
+      }
+    },
+    {
+      "song": {
+        "title": "The Lady is a Tramp",
+        "artist": "Rodgers/Hart"
+      }
+    },
+    {
+      "song": {
+        "title": "My Funny Valentine",
+        "artist": "Rodgers/Hart"
+      }
+    },
+    {
+      "song": {
+        "title": "I Get Along Without You Very Well",
+        "artist": "Hoagy Carmichael"
+      }
+    },
+    {
+      "song": {
+        "title": "Angel Eyes",
+        "artist": "Dennis/Brent"
+      }
+    },
+    {
+      "song": {
+        "title": "Fascinating Rhythm",
+        "artist": "George/Ira Gershwin"
+      }
+    },
+    {
+      "song": {
+        "title": "Summertime",
+        "artist": "George/Ira Gershwin"
+      }
+    },
+    {
+      "song": {
+        "title": "Lullaby of Birdland",
+        "artist": "Shearing/Forster"
+      }
+    },
+    {
+      "song": {
+        "title": "La Vie en Rose",
+        "artist": "Piaff"
+      }
+    },
+    {
+      "song": {
+        "title": "What a Wonderful World",
+        "artist": "Douglass Weiss"
+      }
+    },
+    {
+      "song": {
+        "title": "The Girl from Ipanema",
+        "artist": "Jobim/Moraes"
+      }
+    }
+  ],
+
+  "jazzTwo": [
+    {
+      "song": {
+        "title": "More",
+        "artist": "lstone/Glazer"
+      }
+    },
+    {
+      "song": {
+        "title": "I've Got You Under My Skin",
+        "artist": "Cole Porter"
+      }
+    },
+    {
+      "song": {
+        "title": "Don't Get Around Much Anymore",
+        "artist": "Ellington"
+      }
+    },
+    {
+      "song": {
+        "title": "I'm Beginning to See the Light",
+        "artist": "Ellington/Hodges/James"
+      }
+    },
+    {
+      "song": {
+        "title": "Cry Me a River",
+        "artist": "Hamilton"
+      }
+    },
+    {
+      "song": {
+        "title": "Take 5",
+        "artist": "Desmond"
+      }
+    },
+    {
+      "song": {
+        "title": "Route 66",
+        "artist": "Troup"
+      }
+    },
+    {
+      "song": {
+        "title": "Twilight Time",
+        "artist": "Ram"
+      }
+    },
+    {
+      "song": {
+        "title": "Mack the Knife",
+        "artist": "Brecht/Weill"
+      }
+    },
+    {
+      "song": {
+        "title": "My One and Only Love",
+        "artist": "Wood/Mellin"
+      }
+    },
+    {
+      "song": {
+        "title": "Stormy Weather",
+        "artist": "Arlen/Koehler"
+      }
+    },
+    {
+      "song": {
+        "title": "Dance Me to the End of Love",
+        "artist": "Cohen"
+      }
+    },
+    {
+      "song": {
+        "title": "New Coat of Paint",
+        "artist": "Waits"
+      }
+    },
+    {
+      "song": {
+        "title": "Hang On St. Christopher",
+        "artist": "Waits"
+      }
+    },
+    {
+      "song": {
+        "title": "Jitterbug Boy",
+        "artist": "Waits"
+      }
+    },
+    {
+      "song": {
+        "title": "Insensetez",
+        "artist": "Jobim/Moraes"
+      }
+    }
+  ],
+  "bluesOne": [
+    {
+      "song": {
+        "title": "Tipitina",
+        "artist": "Professor Longhair"
+      }
+    },
+    {
+      "song": {
+        "title": "Iko Iko",
+        "artist": "Crawford"
+      }
+    },
+    {
+      "song": {
+        "title": "Walking to New Orleans",
+        "artist": "Charles/Domino"
+      }
+    },
+    {
+      "song": {
+        "title": "Jambalaya",
+        "artist": "Hank Williams"
+      }
+    },
+    {
+      "song": {
+        "title": "New Soul",
+        "artist": "Yael Naim"
+      }
+    },
+    {
+      "song": {
+        "title": "Beyond the Sea",
+        "artist": "Trenet/Lawrence"
+      }
+    },
+    {
+      "song": {
+        "title": "Come Away With Me",
+        "artist": "Norah Jones"
+      }
+    },
+    {
+      "song": {
+        "title": "Motherless Children",
+        "artist": "Traditional Blues"
+      }
+    },
+    {
+      "song": {
+        "title": "Wade in the Water",
+        "artist": "Traditioanl Spirtual"
+      }
+    },
+    {
+      "song": {
+        "title": "Sugar Man",
+        "artist": "Kristofferson"
+      }
+    },
+    {
+      "song": {
+        "title": "Sunday Morning Coming Down",
+        "artist": "Kristofferson"
+      }
+    },
+    {
+      "song": {
+        "title": "Me and Bobby McGee",
+        "artist": "Kristofferson"
+      }
+    },
+    {
+      "song": {
+        "title": "The Silver Tongue Devil and I",
+        "artist": "Kristofferson"
+      }
+    },
+    {
+      "song": {
+        "title": "Love in Vain",
+        "artist": "Johnson"
+      }
+    },
+    {
+      "song": {
+        "title": "Sweet Home Chicago",
+        "artist": "Johnson"
+      }
+    },
+    {
+      "song": {
+        "title": "Key to The Highway",
+        "artist": "Morganfield"
+      }
+    }
+  ],
+
+  "bluesTwo": [
+    {
+      "song": {
+        "title": "Help Me Make it Through the Night",
+        "artist": "Kristofferson"
+      }
+    },
+    {
+      "song": {
+        "title": "All Along the Watchtower",
+        "artist": "Dylan"
+      }
+    },
+    {
+      "song": {
+        "title": "Just Like Tom Thumbs Blues",
+        "artist": "Dylan"
+      }
+    },
+    {
+      "song": {
+        "title": "It Takes a Lot to Laugh, It Takes a Train to Cry",
+        "artist": "Dylan"
+      }
+    },
+    {
+      "song": {
+        "title": "Like a Rolling Stone",
+        "artist": "Dylan"
+      }
+    },
+    {
+      "song": {
+        "title": "Highway 61",
+        "artist": "Dylan"
+      }
+    },
+    {
+      "song": {
+        "title": "You Ain't Goin' Nowhere",
+        "artist": "Dylan"
+      }
+    },
+    {
+      "song": {
+        "title": "I Got My Mojo Working",
+        "artist": "Dixon"
+      }
+    },
+    {
+      "song": {
+        "title": "Hoochie Coochie Man",
+        "artist": "Dixon"
+      }
+    },
+    {
+      "song": {
+        "title": "Backdoor Man",
+        "artist": "Dixon"
+      }
+    },
+    {
+      "song": {
+        "title": "Rock Me",
+        "artist": "Dixon"
+      }
+    },
+    {
+      "song": {
+        "title": "Seventh Son",
+        "artist": "Dixon"
+      }
+    },
+    {
+      "song": {
+        "title": "I'm Ready",
+        "artist": "Dixon"
+      }
+    },
+    {
+      "song": {
+        "title": "All Night Long",
+        "artist": "Dixon"
+      }
+    },
+    {
+      "song": {
+        "title": "Evil",
+        "artist": "Dixon"
+      }
+    },
+    {
+      "song": {
+        "title": "Hush Hush",
+        "artist": "Reed"
+      }
+    }
+  ],
+  "americanaOne": [
+    {
+      "song": {
+        "title": "Folsom Prison Blues",
+        "artist": "Cash"
+      }
+    },
+    {
+      "song": {
+        "title": "City of New Orleans",
+        "artist": "Goodman"
+      }
+    },
+    {
+      "song": {
+        "title": "Mr Bojangles",
+        "artist": "Walker"
+      }
+    },
+    {
+      "song": {
+        "title": "None Pound Hammer",
+        "artist": "Travis"
+      }
+    },
+    {
+      "song": {
+        "title": "Mustang Sally",
+        "artist": "Rice"
+      }
+    },
+    {
+      "song": {
+        "title": "You Got to Move",
+        "artist": "McDowell/Davis"
+      }
+    },
+    {
+      "song": {
+        "title": "Use Me",
+        "artist": "Withers"
+      }
+    },
+    {
+      "song": {
+        "title": "Revolution",
+        "artist": "Lennon/McCartney"
+      }
+    },
+    {
+      "song": {
+        "title": "Heart Breawk Hotel",
+        "artist": "Durden/Axton"
+      }
+    },
+    {
+      "song": {
+        "title": "Jhonny B. Goode",
+        "artist": "Berry"
+      }
+    },
+    {
+      "song": {
+        "title": "Lightning Bar",
+        "artist": "Axton"
+      }
+    },
+    {
+      "song": {
+        "title": "Use Me",
+        "artist": "Withers"
+      }
+    },
+    {
+      "song": {
+        "title": "City of New Orleans",
+        "artist": "Goodman"
+      }
+    },
+    {
+      "song": {
+        "title": "Molly Malone",
+        "artist": "Traditional Irish"
+      }
+    },
+    {
+      "song": {
+        "title": "Carrickfergus",
+        "artist": "Traditional Irish"
+      }
+    },
+    {
+      "song": {
+        "title": "Galway Bay",
+        "artist": "Colahan"
+      }
+    },
+    {
+      "song": {
+        "title": "The Wild Rover",
+        "artist": "Traditional Irish"
+      }
+    }
+  ],
+
+  "americanaTwo": [
+    {
+      "song": {
+        "title": "Ripple",
+        "artist": "Garcia/Hunter"
+      }
+    },
+    {
+      "song": {
+        "title": "Friend of the Devil",
+        "artist": "Garccia/Dawson/Hunter"
+      }
+    },
+    {
+      "song": {
+        "title": "Stand By Me",
+        "artist": "King/Leiber/Stoller"
+      }
+    },
+    {
+      "song": {
+        "title": "Good Hearted Woman",
+        "artist": "Jennings/Nelson"
+      }
+    },
+    {
+      "song": {
+        "title": "Amanda",
+        "artist": "McDill"
+      }
+    },
+    {
+      "song": {
+        "title": "Motherless Children",
+        "artist": "Johnson"
+      }
+    },
+    {
+      "song": {
+        "title": "Lucille",
+        "artist": "Collins/Richard"
+      }
+    },
+    {
+      "song": {
+        "title": "House of the Rising Sun",
+        "artist": "Traditional"
+      }
+    },
+    {
+      "song": {
+        "title": "Kansas City",
+        "artist": "Leiber/Stoller"
+      }
+    },
+    {
+      "song": {
+        "title": "Been Down So Long",
+        "artist": "The Doors"
+      }
+    },
+    {
+      "song": {
+        "title": "Reason to Believe",
+        "artist": "Hardin"
+      }
+    },
+    {
+      "song": {
+        "title": "Up On Cripple Creek",
+        "artist": "Robertson"
+      }
+    },
+    {
+      "song": {
+        "title": "Johnny I hardly Knew Ye",
+        "artist": "Geoghegan"
+      }
+    },
+    {
+      "song": {
+        "title": "Finnegan's Wake",
+        "artist": "Traditioanl Irish"
+      }
+    },
+    {
+      "song": {
+        "title": "The Minsrel Boy",
+        "artist": "Moore"
+      }
+    },
+    {
+      "song": {
+        "title": "The Last Rose of Summer",
+        "artist": "Moore"
+      }
+    },
+    {
+      "song": {
+        "title": "Danny Boy",
+        "artist": "Weatherly"
+      }
+    }
+  ],
+  "originals": [
+    {
+      "song": {
+        "title": "Fishing Song",
+        "artist": "Bodhi"
+      }
+    },
+    {
+      "song": {
+        "title": "Bugged Out",
+        "artist": "Bodhi"
+      }
+    },
+    {
+      "song": {
+        "title": "Jessica's Song",
+        "artist": "Bodhi"
+      }
+    },
+    {
+      "song": {
+        "title": "White Horse Inn",
+        "artist": "Bodhi"
+      }
+    },
+    {
+      "song": {
+        "title": "West End Avenue",
+        "artist": "Bodhi"
+      }
+    },
+    {
+      "song": {
+        "title": "Albert's Story",
+        "artist": "Bodhi"
+      }
+    },
+    {
+      "song": {
+        "title": "I'm Still Missing You",
+        "artist": "Bodhi"
+      }
+    }
+  ]
+}

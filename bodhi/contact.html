@@ -1,0 +1,186 @@
+<!-- layout.nunjucks -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+          
+<title>Contact</title>
+ 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--====== FONT AWESOME ======-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
+    />
+
+    <!--====== ICONS ======-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--====== GOOGLE FONTS ======-->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <!-- BASE FONTS ======-->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- PAGE FONTS ======-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- LOGO FONTS ======-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto+Slab:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--====== STYLE SHEETS ======-->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    
+
+<!-- Partial 1 NJK-->
+<div class="mobileNav-container">
+  <div class="mobileNav-logo">SBJ</div>
+  <a href="index.html" class="mobileNav-text">Sam Bodhi Jazz</a>
+  <span class="icon" id="mobileNav"><i class="fa fa-bars"></i></span>
+</div>
+<div class="topnav">
+  <div id="myLinks">
+    <a href="/index.html">Home</a>
+    <a href="/bodhi/about.html">About</a>
+    <a href="/bodhi/shows.html">Shows</a>
+    <a href="/bodhi/video.html">Video Sample</a>
+    <a href="/bodhi/contact.html">Contact</a>
+  </div>
+</div>
+
+
+<!-- Partial 2 NJK-->
+<nav class="navBar">
+  <div class="navBar-logo">
+    <span class="letter1">S</span>
+    <span class="letter2">B</span>
+    <span class="letter3">J</span>
+  </div>
+  <ul class="navBar-list">
+    <li class="navBar-list--item">
+      <a href="/index.html">Home</a>
+    </li>
+    <li class="navBar-list--item">
+      <a href="/bodhi/about.html">About</a>
+    </li>
+    <li class="navBar-list--item">
+      <a href="/bodhi/shows.html">Shows</a>
+    </li>
+    <li class="navBar-list--item">
+      <a href="/bodhi/video.html">Video Sample</a>
+    </li>
+    <li class="navBar-list--item">
+      <a href="/bodhi/contact.html">Contact</a>
+    </li>
+  </ul>
+</nav>
+
+
+<!-- Partial 3 NJK-->
+<section class="mainContent mainContent-contact">
+  <div class="mainContent-centered--contact">
+    <h3 class="mainContent-heading--contact">Contact</h3>
+    <div class="mainContent-form">
+      <form
+        class="contactForm"
+        id="form"
+        method="post"
+        action="https://formsubmit.co/db92dabc6689ef63428cc369d4de7484"
+        enctype="multipart/form-data"
+      >
+        <div class="contactForm-inputContainer-flex">
+          <div class="contactForm-inputContainer--name">
+            <label class="contactForm-label" for="firstName">First Name:</label>
+            <input
+              value=""
+              class="contactForm-name"
+              type="text"
+              name="firstName"
+              id="formFirstName"
+              required
+            />
+          </div>
+          <div class="contactForm-inputContainer--name">
+            <label class="contactForm-label" for="lastName">Last Name:</label>
+            <input
+              value=""
+              class="contactForm-name"
+              type="text"
+              name="lastName"
+              id="formLastName"
+              required
+            />
+          </div>
+        </div>
+        <div class="contactForm-inputContainer">
+          <label class="contactForm-label" for="email">Email:</label>
+          <input
+            value=""
+            class="contactForm-email"
+            type="text"
+            name="email"
+            id="formEmail"
+            required
+          />
+        </div>
+        <div class="contactForm-inputContainer">
+          <label class="contactForm-label" for="subject">Subject:</label>
+          <input
+            value=""
+            class="contactForm-subject"
+            type="text"
+            name="subject"
+            id="formSubject"
+            required
+          />
+        </div>
+        <div class="contactForm-inputContainer">
+          <label class="contactForm-label" for="message">Message:</label>
+          <textarea
+            value=""
+            class="contactForm-message"
+            type="text"
+            name="message"
+            id="formMessage"
+            required
+          ></textarea>
+        </div>
+        <div class="contactForm-inputContainer-btn">
+          <input
+            class="contactForm-btn"
+            type="submit"
+            value="submit"
+            id="formSubmit"
+          />
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!-- Endblock -->
+
+    <!------- JAVASCRIPT ------->
+    <script src="/js/originModal.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/form.js"></script>
+  </body>
+</html>

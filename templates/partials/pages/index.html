@@ -1,0 +1,69 @@
+<section class="landing">
+  <nav class="landing-navBar">
+    <div class="navBar-logo">
+      <span class="letter1">S</span>
+      <span class="letter2">B</span>
+      <span class="letter3">J</span>
+    </div>
+    <ul class="navBar-list">
+      <li class="navBar-list--item">
+        <a href="/index.html">Home</a>
+      </li>
+      <li class="navBar-list--item">
+        <a href="/bodhi/about.html">About</a>
+      </li>
+      <li class="navBar-list--item">
+        <a href="/bodhi/shows.html">Shows</a>
+      </li>
+      <li class="navBar-list--item">
+        <a href="/bodhi/video.html">Video Sample</a>
+      </li>
+      <li class="navBar-list--item">
+        <a href="/bodhi/contact.html">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="landing-header">
+    <h1 class="landing-header--main">Sam Bodhi Jazz</h1>
+    <h2 class="landing-header--secondary">
+      Innovative Jazz Piano & Vocal Styling
+    </h2>
+    <button class="landing-btn">
+      <a href="/bodhi/contact.html">Contact</a>
+    </button>
+  </div>
+  <div id="landingArrow" class="landing-arrow">&#8595;</div>
+</section>
+<section id="landingBio" class="mainContent">
+  <h3 class="mainContent-heading margin-top">About</h3>
+  <div class="mainContent-twoColumn">
+    <div class="mainContent-leftColumn">
+      <div class="about-bio">
+        <div class="origin-modal pointerEvents-none">
+          <span class="modal-close--origin">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+          </span>
+          <h4 class="modal-header">Anuttara Samyak Sambodhi</h4>
+          {% for text in origin %}
+          <p class="modal-text">{{text.paragraph}}</p>
+          {% endfor %}
+        </div>
+        <h4 class="about-subHeading">Sam Bodhi</h4>
+        {% for text in about %}
+        <p class="about-text">{{text.paragraph}}</p>
+        {% endfor %}
+        <div class="about-origin">Origins of Sam Bodhi</div>
+      </div>
+    </div>
+    <div class="mainContent-rightColumn mobile-display-none">
+      <div class="about-image">
+        <img
+          src="img/sam-bodhi-landing3-cropped.JPG"
+          alt="Sam Bodi Sketch"
+          class="img"
+        />
+      </div>
+    </div>
+  </div>
+</section>

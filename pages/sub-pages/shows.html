@@ -1,0 +1,26 @@
+<!-- Imports -->
+{% import 'macros/title-macro.html' as head %}
+
+<!-- Meta Blocks -->
+{% extends "layout_three.html" %}
+
+<!-- Block Title -->
+{% block title %} {{head.title('Shows')}} {% endblock %}
+
+<!-- Block Content -->
+{% block content %}
+
+<!-- Partial 1 NJK-->
+{% include "partials/nav/nav_mobile.html" %}
+
+<!-- Partial 2 NJK-->
+{% include "partials/nav/nav_desktop.html" %}
+
+<!-- Partial 3 NJK-->
+{% include "partials/pages/shows.html" %}
+
+<!-- Partial 4 NJK-->
+{% include "partials/footer.html" %}
+
+<!-- Endblock -->
+{% endblock %}

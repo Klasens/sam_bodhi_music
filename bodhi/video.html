@@ -1,0 +1,744 @@
+<!-- layout.nunjucks -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+         
+<title>Video</title>
+  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--====== FONT AWESOME ======-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
+    />
+
+    <!--====== ICONS ======-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--====== GOOGLE FONTS ======-->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <!-- BASE FONTS ======-->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- PAGE FONTS ======-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- LOGO FONTS ======-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto+Slab:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--====== STYLE SHEETS ======-->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="outerModal">
+    
+
+<!-- Partial 1 NJK-->
+<div class="mobileNav-container">
+  <div class="mobileNav-logo">SBJ</div>
+  <a href="index.html" class="mobileNav-text">Sam Bodhi Jazz</a>
+  <span class="icon" id="mobileNav"><i class="fa fa-bars"></i></span>
+</div>
+<div class="topnav">
+  <div id="myLinks">
+    <a href="/index.html">Home</a>
+    <a href="/bodhi/about.html">About</a>
+    <a href="/bodhi/shows.html">Shows</a>
+    <a href="/bodhi/video.html">Video Sample</a>
+    <a href="/bodhi/contact.html">Contact</a>
+  </div>
+</div>
+
+
+<!-- Partial 2 NJK-->
+<nav class="navBar">
+  <div class="navBar-logo">
+    <span class="letter1">S</span>
+    <span class="letter2">B</span>
+    <span class="letter3">J</span>
+  </div>
+  <ul class="navBar-list">
+    <li class="navBar-list--item">
+      <a href="/index.html">Home</a>
+    </li>
+    <li class="navBar-list--item">
+      <a href="/bodhi/about.html">About</a>
+    </li>
+    <li class="navBar-list--item">
+      <a href="/bodhi/shows.html">Shows</a>
+    </li>
+    <li class="navBar-list--item">
+      <a href="/bodhi/video.html">Video Sample</a>
+    </li>
+    <li class="navBar-list--item">
+      <a href="/bodhi/contact.html">Contact</a>
+    </li>
+  </ul>
+</nav>
+
+
+<!-- Partial 3 NJK-->
+<section class="videoPage">
+  <div class="videoPage-outterContainer">
+    <div class="videoPage-accentContainer">
+      <div class="videoPage-innerContainer">
+        <div class="videoPage-demoContainer">
+          <h3 class="videoPage-header">The Autumn Leaves</h3>
+          <div class="videoPage-videoContainer">
+            <iframe
+              class="videoPage-video"
+              src="https://www.youtube.com/embed/_CbiHtuKr3s"
+              ="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="videoPage-repertoireContainer">
+          <h4 class="videoPage-repertoireHeader">Selected Repertoire</h4>
+          <div class="videoPage-repertoire--text" id="jazz">Jazz List</div>
+          <div class="videoPage-repertoire--text" id="blues">Blues List</div>
+          <div class="videoPage-repertoire--text" id="americana">
+            Americana List
+          </div>
+          <div class="videoPage-repertoire--text" id="original">
+            Original List
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="videoPage-modal videoPage-modal--jazz pointerEvents-none"
+    id="jazzModal"
+  >
+    <span class="modal-close">
+      <div class="line-1"></div>
+      <div class="line-2"></div>
+    </span>
+    <h4 class="videoPage-modalHeader">Selected Jazz</h4>
+
+    <ul class="videoPage-modal--list">
+      <!-- Nunjucks Render Jazz One -->
+      
+      <li class="song">
+        <span class="title">Autumn in New York</span>
+        <span class="artist">Duke</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Fly Me to the Moon</span>
+        <span class="artist">Bart Howard</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Autumn Leaves</span>
+        <span class="artist">Joseph Kosma</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">The Very Thought of You</span>
+        <span class="artist">Ray Noble</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">How High the Moon</span>
+        <span class="artist">Hamilton/Lewis</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Misty</span>
+        <span class="artist">Errol Garner</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">The Lady is a Tramp</span>
+        <span class="artist">Rodgers/Hart</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">My Funny Valentine</span>
+        <span class="artist">Rodgers/Hart</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">I Get Along Without You Very Well</span>
+        <span class="artist">Hoagy Carmichael</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Angel Eyes</span>
+        <span class="artist">Dennis/Brent</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Fascinating Rhythm</span>
+        <span class="artist">George/Ira Gershwin</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Summertime</span>
+        <span class="artist">George/Ira Gershwin</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Lullaby of Birdland</span>
+        <span class="artist">Shearing/Forster</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">La Vie en Rose</span>
+        <span class="artist">Piaff</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">What a Wonderful World</span>
+        <span class="artist">Douglass Weiss</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">The Girl from Ipanema</span>
+        <span class="artist">Jobim/Moraes</span>
+      </li>
+      
+    </ul>
+    <ul class="videoPage-modal--list">
+      <!-- Nunjucks Render Jazz Two -->
+      
+      <li class="song">
+        <span class="title">More</span>
+        <span class="artist">lstone/Glazer</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">I&#39;ve Got You Under My Skin</span>
+        <span class="artist">Cole Porter</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Don&#39;t Get Around Much Anymore</span>
+        <span class="artist">Ellington</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">I&#39;m Beginning to See the Light</span>
+        <span class="artist">Ellington/Hodges/James</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Cry Me a River</span>
+        <span class="artist">Hamilton</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Take 5</span>
+        <span class="artist">Desmond</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Route 66</span>
+        <span class="artist">Troup</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Twilight Time</span>
+        <span class="artist">Ram</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Mack the Knife</span>
+        <span class="artist">Brecht/Weill</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">My One and Only Love</span>
+        <span class="artist">Wood/Mellin</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Stormy Weather</span>
+        <span class="artist">Arlen/Koehler</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Dance Me to the End of Love</span>
+        <span class="artist">Cohen</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">New Coat of Paint</span>
+        <span class="artist">Waits</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Hang On St. Christopher</span>
+        <span class="artist">Waits</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Jitterbug Boy</span>
+        <span class="artist">Waits</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Insensetez</span>
+        <span class="artist">Jobim/Moraes</span>
+      </li>
+      
+    </ul>
+  </div>
+  <div
+    class="videoPage-modal videoPage-modal--blues pointerEvents-none"
+    id="bluesModal"
+  >
+    <span class="modal-close">
+      <div class="line-1"></div>
+      <div class="line-2"></div>
+    </span>
+    <h4 class="videoPage-modalHeader">Selected Blues</h4>
+    <ul class="videoPage-modal--list">
+      <!-- Nunjucks Render Blues One -->
+      
+      <li class="song">
+        <span class="title">Tipitina</span>
+        <span class="artist">Professor Longhair</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Iko Iko</span>
+        <span class="artist">Crawford</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Walking to New Orleans</span>
+        <span class="artist">Charles/Domino</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Jambalaya</span>
+        <span class="artist">Hank Williams</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">New Soul</span>
+        <span class="artist">Yael Naim</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Beyond the Sea</span>
+        <span class="artist">Trenet/Lawrence</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Come Away With Me</span>
+        <span class="artist">Norah Jones</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Motherless Children</span>
+        <span class="artist">Traditional Blues</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Wade in the Water</span>
+        <span class="artist">Traditioanl Spirtual</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Sugar Man</span>
+        <span class="artist">Kristofferson</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Sunday Morning Coming Down</span>
+        <span class="artist">Kristofferson</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Me and Bobby McGee</span>
+        <span class="artist">Kristofferson</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">The Silver Tongue Devil and I</span>
+        <span class="artist">Kristofferson</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Love in Vain</span>
+        <span class="artist">Johnson</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Sweet Home Chicago</span>
+        <span class="artist">Johnson</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Key to The Highway</span>
+        <span class="artist">Morganfield</span>
+      </li>
+      
+    </ul>
+    <ul class="videoPage-modal--list">
+      <!-- Nunjucks Render Blues Two -->
+      
+      <li class="song">
+        <span class="title">Help Me Make it Through the Night</span>
+        <span class="artist">Kristofferson</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">All Along the Watchtower</span>
+        <span class="artist">Dylan</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Just Like Tom Thumbs Blues</span>
+        <span class="artist">Dylan</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">It Takes a Lot to Laugh, It Takes a Train to Cry</span>
+        <span class="artist">Dylan</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Like a Rolling Stone</span>
+        <span class="artist">Dylan</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Highway 61</span>
+        <span class="artist">Dylan</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">You Ain&#39;t Goin&#39; Nowhere</span>
+        <span class="artist">Dylan</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">I Got My Mojo Working</span>
+        <span class="artist">Dixon</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Hoochie Coochie Man</span>
+        <span class="artist">Dixon</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Backdoor Man</span>
+        <span class="artist">Dixon</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Rock Me</span>
+        <span class="artist">Dixon</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Seventh Son</span>
+        <span class="artist">Dixon</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">I&#39;m Ready</span>
+        <span class="artist">Dixon</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">All Night Long</span>
+        <span class="artist">Dixon</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Evil</span>
+        <span class="artist">Dixon</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Hush Hush</span>
+        <span class="artist">Reed</span>
+      </li>
+      
+    </ul>
+  </div>
+  <div
+    class="videoPage-modal videoPage-modal--americana pointerEvents-none"
+    id="americanaModal"
+  >
+    <span class="modal-close">
+      <div class="line-1"></div>
+      <div class="line-2"></div>
+    </span>
+    <h4 class="videoPage-modalHeader">Selected Americana</h4>
+    <ul class="videoPage-modal--list">
+      <!-- Nunjucks Render Americana One -->
+      
+      <li class="song">
+        <span class="title">Folsom Prison Blues</span>
+        <span class="artist">Cash</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">City of New Orleans</span>
+        <span class="artist">Goodman</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Mr Bojangles</span>
+        <span class="artist">Walker</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">None Pound Hammer</span>
+        <span class="artist">Travis</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Mustang Sally</span>
+        <span class="artist">Rice</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">You Got to Move</span>
+        <span class="artist">McDowell/Davis</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Use Me</span>
+        <span class="artist">Withers</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Revolution</span>
+        <span class="artist">Lennon/McCartney</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Heart Breawk Hotel</span>
+        <span class="artist">Durden/Axton</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Jhonny B. Goode</span>
+        <span class="artist">Berry</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Lightning Bar</span>
+        <span class="artist">Axton</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Use Me</span>
+        <span class="artist">Withers</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">City of New Orleans</span>
+        <span class="artist">Goodman</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Molly Malone</span>
+        <span class="artist">Traditional Irish</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Carrickfergus</span>
+        <span class="artist">Traditional Irish</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Galway Bay</span>
+        <span class="artist">Colahan</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">The Wild Rover</span>
+        <span class="artist">Traditional Irish</span>
+      </li>
+      
+    </ul>
+    <ul class="videoPage-modal--list">
+      <!-- Nunjucks Render Americana Two -->
+      
+      <li class="song">
+        <span class="title">Ripple</span>
+        <span class="artist">Garcia/Hunter</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Friend of the Devil</span>
+        <span class="artist">Garccia/Dawson/Hunter</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Stand By Me</span>
+        <span class="artist">King/Leiber/Stoller</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Good Hearted Woman</span>
+        <span class="artist">Jennings/Nelson</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Amanda</span>
+        <span class="artist">McDill</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Motherless Children</span>
+        <span class="artist">Johnson</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Lucille</span>
+        <span class="artist">Collins/Richard</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">House of the Rising Sun</span>
+        <span class="artist">Traditional</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Kansas City</span>
+        <span class="artist">Leiber/Stoller</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Been Down So Long</span>
+        <span class="artist">The Doors</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Reason to Believe</span>
+        <span class="artist">Hardin</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Up On Cripple Creek</span>
+        <span class="artist">Robertson</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Johnny I hardly Knew Ye</span>
+        <span class="artist">Geoghegan</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Finnegan&#39;s Wake</span>
+        <span class="artist">Traditioanl Irish</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">The Minsrel Boy</span>
+        <span class="artist">Moore</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">The Last Rose of Summer</span>
+        <span class="artist">Moore</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Danny Boy</span>
+        <span class="artist">Weatherly</span>
+      </li>
+      
+    </ul>
+  </div>
+  <div
+    class="videoPage-modal videoPage-modal--original pointerEvents-none"
+    id="originalModal"
+  >
+    <span class="modal-close">
+      <div class="line-1"></div>
+      <div class="line-2"></div>
+    </span>
+    <h4 class="videoPage-modalHeader">Selected Originals</h4>
+    <ul class="videoPage-modal--list">
+      <!-- Nunjucks Render Originals -->
+      
+      <li class="song">
+        <span class="title">Fishing Song</span>
+        <span class="artist">Bodhi</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Bugged Out</span>
+        <span class="artist">Bodhi</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Jessica&#39;s Song</span>
+        <span class="artist">Bodhi</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">White Horse Inn</span>
+        <span class="artist">Bodhi</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">West End Avenue</span>
+        <span class="artist">Bodhi</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">Albert&#39;s Story</span>
+        <span class="artist">Bodhi</span>
+      </li>
+      
+      <li class="song">
+        <span class="title">I&#39;m Still Missing You</span>
+        <span class="artist">Bodhi</span>
+      </li>
+      
+    </ul>
+  </div>
+</section>
+
+
+<!-- Partial 4 NJK-->
+<section class="contactBooking">
+  <div class="contactBooking-info">
+    <p class="contactBooking-info--text">
+      For bookings or info, contact
+      <span class="contactBooking-highlight">Sam53@sambodhimusic.com</span>
+      or click
+      <a href="/bodhi/contact.html" class="contactBooking-link">here</a>
+    </p>
+  </div>
+</section>
+
+
+<!-- Endblock -->
+
+    <!------- JAVASCRIPT ------->
+    <script src="/js/script.js"></script>
+    <script src="/js/modals.js"></script>
+  </body>
+</html>
