@@ -4,7 +4,7 @@
       <div class="container__inner">
         <div class="container__demo">
           <h3 class="video__header">The Autumn Leaves</h3>
-          <!-- video__header -->
+          <!-- YT Video -->
           <div class="container__video">
             <iframe
               class="video__iframe"
@@ -16,6 +16,7 @@
             ></iframe>
           </div>
         </div>
+        <!-- Repertoire Links -->
         <div class="repertoire">
           <h4 class="repertoire__header">Selected Repertoire</h4>
           <div class="repertoire__link" id="jazz">Jazz List</div>
@@ -26,17 +27,15 @@
       </div>
     </div>
   </div>
+  <!-- Modal -->
   <div
     class="modal__video modal__video--jazz pointerEvents-none"
     id="jazzModal"
   >
-    <!-- modal__video modal__video--jazz pointerEvents-none-->
+    <!-- CloseModal -->
     <span class="modal__close">
-      <!-- modal -->
       <div class="modal__close--line1"></div>
-      <!-- modal__line--1 -->
       <div class="modal__close--line2"></div>
-      <!-- modal__line--2 -->
     </span>
     <h4 class="modal__header">Selected Jazz</h4>
 
@@ -44,11 +43,8 @@
       <!-- Nunjucks Render Jazz One -->
       {% for list in jazzOne %}
       <li class="list__song">
-        <!-- list__song -->
         <span class="list__song--title">{{list.song.title}}</span>
-        <!-- list__song--title -->
         <span class="list__song--artist">{{list.song.artist}}</span>
-        <!-- list__song--artist -->
       </li>
       {% endfor %}
     </ul>
@@ -62,11 +58,12 @@
       {% endfor %}
     </ul>
   </div>
+  <!-- Modal -->
   <div
     class="modal__video modal__video--blues pointerEvents-none"
     id="bluesModal"
   >
-    <!-- modal__video modal__video--blues pointerEvents-none -->
+    <!-- CloseModal -->
     <span class="modal__close">
       <div class="modal__close--line1"></div>
       <div class="modal__close--line2"></div>
@@ -91,11 +88,12 @@
       {% endfor %}
     </ul>
   </div>
+  <!-- Modal -->
   <div
     class="modal__video modal__video--americana pointerEvents-none"
     id="americanaModal"
   >
-    <!-- modal__video modal__video--americana pointerEvents-none -->
+    <!-- CloseModal -->
     <span class="modal__close">
       <div class="modal__close--line1"></div>
       <div class="modal__close--line2"></div>
@@ -120,11 +118,12 @@
       {% endfor %}
     </ul>
   </div>
+  <!-- Modal -->
   <div
     class="modal__video modal__video--original pointerEvents-none"
     id="originalModal"
   >
-    <!-- modal__video modal__video--original pointerEvents-none -->
+    <!-- CloseModal -->
     <span class="modal__close">
       <div class="modal__close--line1"></div>
       <div class="modal__close--line2"></div>

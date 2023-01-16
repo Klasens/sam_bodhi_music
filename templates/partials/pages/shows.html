@@ -1,6 +1,6 @@
-<section class="mainContent-shows">
+<section class="shows">
   <video
-    class="video-background-left"
+    class="shows__background shows__background--left"
     autoplay
     muted
     loop
@@ -8,40 +8,42 @@
     type="video/mp4"
   ></video>
   <video
-    class="video-background-right"
+    class="shows__background shows__background--right"
     autoplay
     muted
     loop
     src="/img/sam-bodhi-2_Trim.mp4"
     type="video/mp4"
   ></video>
-  <div class="mainContent-centered">
-    <h3 class="mainContent-heading--shows">Shows</h3>
-    <div class="showList">
-      <div class="showList-setGroup">
-        <p class="showList-date">Sun, Nov 13, 2022</p>
-        <p class="showList-location">The Neville Theater, Green Bay, WI</p>
-        <p class="showList-performers">Sam Bodhi</p>
+  <div class="container__content">
+    <h3 class="shows__header">Shows</h3>
+    <div class="upcomingShows">
+      <div class="showDetails">
+        <p class="showDetails__date">Sun, Nov 13, 2022</p>
+        <p class="showDetails__location">The Neville Theater, Green Bay, WI</p>
+        <p class="showDetails__performers">Sam Bodhi</p>
         <a
           target="_blank"
           href="https://www.youtube.com/embed/videoseries?list=PLcmfvySObjcrYFd4QsG6n51Wbh44C0NTI"
-          class="showList-tickets"
+          class="showDetails__link"
         >
           Watch Now
         </a>
       </div>
-      <div class="showList-setGroup">
-        <p class="showList-date">Tue, 5:30pm, Feb 7, 2023</p>
-        <p class="showList-location">C Street, 312 Cherry St, Green Bay, WI</p>
-        <p class="showList-performers">Sam Bodhi</p>
+      <div class="showDetails">
+        <p class="showDetails__date">Tue, 5:30pm, Feb 7, 2023</p>
+        <p class="showDetails__location">
+          C Street, 312 Cherry St, Green Bay, WI
+        </p>
+        <p class="showDetails__performers">Sam Bodhi</p>
       </div>
     </div>
-    <div class="shows-repertoireContainer">
-      <h4 class="shows-repertoireHeader">Selected Repertoire</h4>
-      <div class="shows-repertoire--text" id="jazz">Jazz List</div>
-      <div class="shows-repertoire--text" id="blues">Blues List</div>
-      <div class="shows-repertoire--text" id="americana">Americana List</div>
-      <div class="shows-repertoire--text" id="original">Original List</div>
+    <div class="repertoire">
+      <h4 class="repertoire__header">Selected Repertoire</h4>
+      <div class="repertoire__link" id="jazz">Jazz List</div>
+      <div class="repertoire__link" id="blues">Blues List</div>
+      <div class="repertoire__link" id="americana">Americana List</div>
+      <div class="repertoire__link" id="original">Original List</div>
     </div>
   </div>
   <div
