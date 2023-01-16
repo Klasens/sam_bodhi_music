@@ -1,284 +1,168 @@
 /**========================================================================
- *                           video
+ *                          VIDEO SAMPLE PAGE 
  *========================================================================**/
-
-.videoPage {
+// --------- VIDEO PAGE STYLES --------- //
+.video {
   position: relative;
+  //todo - flex column mixin
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 90vh;
   overflow: hidden;
-  @include respond(break-850) {
-    height: 90vh;
-  }
-  &-outterContainer {
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(
-      to bottom,
-      rgb(45, 45, 45),
-      rgb(70, 70, 70) 10%,
-      rgb(45, 45, 45)
-    );
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    @include respond(break-850) {
-      padding-bottom: 1rem;
-    }
-  }
 
-  &-accentContainer {
-    height: 90%;
-    width: 95%;
-    margin: 1rem 0;
-    border-radius: 20px;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.3)
-      ),
-      url('../img/sam-bodhi-walk.jpg'), url('../img/sam-bodhi-walk2.jpg');
-    background-position: left, right;
-    background-size: contain, contain;
-    background-repeat: no-repeat, no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @include respond(break-850) {
-      padding: 1rem 0;
-      background-image: none;
-    }
-  }
-  &-innerContainer {
-    padding: 3rem;
-    width: 35%;
-    border-radius: 20px;
-    background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    );
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @include respond(break-850) {
-      flex-direction: column;
-      width: 100%;
-    }
-  }
-
-  &-demoContainer {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    @include respond(break-850) {
-      width: 100%;
-    }
-  }
-  &-videoContainer {
-    height: 35rem;
-    width: 100%;
-    background-color: $color-black;
-    margin-bottom: 1rem;
-    @include respond(break-850) {
-      height: 30rem;
-      width: 100%;
-    }
-  }
-  &-songLinks-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    // align-items: center;
-    @include respond(break-850) {
-      width: 100%;
-      text-align: center;
-    }
-  }
-  &-video {
-    width: 100%;
-    height: 100%;
-  }
-
-  &-header {
+  &__header {
     margin-bottom: 2rem;
     font-size: 6rem;
     color: $color-white;
     font-weight: 300;
     text-align: center;
+
+    //* == MOBILE QUERIES == //
     @include respond(break-850) {
       font-size: 4rem;
       text-align: center;
     }
   }
-}
 
-.videoPage-songLinks {
-  &-header {
-    font-size: 4rem;
-    font-weight: 400;
-    color: $color-white;
-    @include respond(break-850) {
-      font-size: 3rem;
-    }
-  }
-  &-list {
-    list-style: none;
-  }
-  &-listItem {
-    padding: 1rem 0;
-    text-decoration: underline;
-    text-align: center;
+  &__iframe {
+    width: 100%;
+    height: 100%;
   }
 }
 
-.videoPage-link {
-  font-size: 2.5rem;
-  cursor: pointer;
-  color: $color-link;
-  @include respond(break-850) {
-    font-size: 1.5rem;
-  }
-}
-
-.u-margin-top-1rem-mobile {
-  margin-top: 1rem;
-}
-
-.videoPage-separator {
-  width: 2px;
-  height: 5rem;
-  background-color: $color-black;
-}
-
-.videoPage-repertoireContainer {
+// --------- REPERTOIRE STYLES --------- //
+.repertoire {
   margin-top: 2rem auto;
+
+  &__header {
+    font-size: 2.5rem;
+    color: $color-white;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+  }
+  &__link {
+    color: $color-blue;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
 }
 
-.videoPage-repertoire--text {
-  color: $color-blue;
-  font-size: 1.8rem;
-  cursor: pointer;
-}
-
-.videoPage-repertoireHeader {
-  font-size: 2.5rem;
-  color: $color-white;
-  text-decoration: underline;
-  margin-bottom: 1rem;
-}
-.videoPage-modalHeader {
-  font-size: 4.5rem;
-  font-weight: 300;
-  width: 100%;
-  text-align: center;
-}
-
-.videoPage-modal {
-  position: absolute;
-  background-color: $color-modal-transparent;
-  z-index: 10;
-  top: 0;
-  height: 90vh;
-  width: 40vw;
+// --------- LIST STYLES --------- //
+.list__song {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  font-size: 1.8rem;
+
+  &--title {
+    font-weight: 600;
+  }
+  &--artist {
+    font-style: italic;
+  }
+}
+
+// --------- CONTAINER STYLES --------- //
+
+// outter
+.container__outter {
+  height: 100%;
+  width: 100%;
+  //todo - flex column mixin
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  overflow: scroll;
-  @include respond(break-1600) {
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(45, 45, 45),
+    rgb(70, 70, 70) 10%,
+    rgb(45, 45, 45)
+  );
+
+  //* == MOBILE QUERIES == //
+  @include respond(break-850) {
+    padding-bottom: 1rem;
+  }
+}
+
+// accent
+.container__accent {
+  height: 90%;
+  width: 95%;
+  //todo - flex row mixin
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  border-radius: 20px;
+  //todo - video background mixin
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url('../img/sam-bodhi-walk.jpg'), url('../img/sam-bodhi-walk2.jpg');
+  background-position: left, right;
+  background-size: contain, contain;
+  background-repeat: no-repeat, no-repeat;
+
+  //* == MOBILE QUERIES == //
+  @include respond(break-850) {
+    padding: 1rem 0;
+    background-image: none;
+  }
+}
+
+// inner
+.container__inner {
+  padding: 3rem;
+  width: 35%;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  );
+  //todo - flex row mixin
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  //* == MOBILE QUERIES == //
+  @include respond(break-850) {
+    flex-direction: column;
     width: 100%;
   }
 }
 
-.videoPage-modal--list {
-  list-style: none;
-  padding: 1rem;
-  & > li:not(:first-child) {
-    margin-top: 1rem;
-  }
-}
-.song {
+// demo
+.container__demo {
+  height: 100%;
+  width: 100%;
+  //todo - flex column mixin
   display: flex;
   flex-direction: column;
-  font-size: 1.8rem;
-}
+  justify-content: center;
+  align-items: center;
 
-.title {
-  font-weight: 600;
-}
-.artist {
-  font-style: italic;
-}
-
-.videoPage-modal--jazz {
-  opacity: 0;
-}
-.videoPage-modal--americana {
-  opacity: 0;
-}
-.videoPage-modal--blues {
-  opacity: 0;
-}
-.videoPage-modal--original {
-  opacity: 0;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.fadeIn {
-  animation: fadeIn 1s forwards;
-}
-
-.pointerEvents-none {
-  pointer-events: none;
-}
-.modal-close {
-  height: 5rem;
-  width: 5rem;
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  cursor: pointer;
-  animation: scaleUp 2s infinite linear;
+  //* == MOBILE QUERIES == //
   @include respond(break-850) {
-    position: fixed;
-    top: 5rem;
-    right: 1rem;
+    width: 100%;
   }
 }
 
-.line-1,
-.line-2 {
-  width: 4rem;
-  margin: 1rem;
-  height: 2px;
-  background-color: $color-red;
-}
+// video
+.container__video {
+  height: 35rem;
+  width: 100%;
+  background-color: $color-black;
+  margin-bottom: 1rem;
 
-.line-1 {
-  position: absolute;
-  top: 25%;
-  transform-origin: bottom;
-  transform: rotate(45deg);
-}
-.line-2 {
-  position: absolute;
-  top: 25%;
-  transform-origin: initial;
-  transform: rotate(-45deg);
+  //* == MOBILE QUERIES == //
+  @include respond(break-850) {
+    height: 30rem;
+    width: 100%;
+  }
 }

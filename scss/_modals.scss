@@ -1,0 +1,82 @@
+/**========================================================================
+ *                          MODALS 
+ *========================================================================**/
+// --------- MODAL STYLES --------- //
+.modal {
+  &__video {
+    height: 90vh;
+    width: 40vw;
+    position: absolute;
+    top: 0;
+    //todo - flex column mixin
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: $color-modal-transparent;
+    z-index: 10;
+    overflow: scroll;
+
+    &--jazz,
+    &--americana,
+    &--blues,
+    &--original {
+      opacity: 0;
+    }
+
+    //* == MOBILE QUERIES == //
+    @include respond(break-1600) {
+      width: 100%;
+    }
+  }
+
+  &__header {
+    font-size: 4.5rem;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 1rem;
+    & > li:not(:first-child) {
+      margin-top: 1rem;
+    }
+  }
+
+  &__close {
+    height: 5rem;
+    width: 5rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    animation: scaleUp 2s infinite linear;
+
+    &--line1,
+    &--line2 {
+      position: absolute;
+      top: 25%;
+      width: 4rem;
+      margin: 1rem;
+      height: 2px;
+      background-color: $color-red;
+    }
+    &--line1 {
+      transform-origin: bottom;
+      transform: rotate(45deg);
+    }
+    &--line2 {
+      transform-origin: initial;
+      transform: rotate(-45deg);
+    }
+
+    //* == MOBILE QUERIES == //
+    @include respond(break-850) {
+      position: fixed;
+      top: 5rem;
+      right: 1rem;
+    }
+  }
+}

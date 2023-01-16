@@ -14,7 +14,7 @@ const originalBtn = document.querySelector('#original');
 const originalModal = document.querySelector('#originalModal');
 
 //modal close
-const modalClose = document.querySelectorAll('.modal-close');
+const modalClose = document.querySelectorAll('.modal__close');
 const modalCloseTwo = document.querySelectorAll('.modal-close--shows');
 
 jazzModal.addEventListener('click', function (e) {

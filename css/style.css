@@ -1099,17 +1099,6 @@ a {
       position: relative; } }
 
 /**========================================================================
- *                          setList
- *========================================================================**/
-.songInfo {
-  margin-bottom: 1rem;
-  padding-top: 1rem; }
-  .songInfo--title {
-    font-size: 1.6rem; }
-  .songInfo--artist {
-    font-size: 1.4rem; }
-
-/**========================================================================
  *                           BASE
  *========================================================================**/
 .about-image {
@@ -1646,313 +1635,17 @@ a {
   transform: rotate(-45deg); }
 
 /**========================================================================
- *                           video
+ *                          VIDEO SAMPLE PAGE 
  *========================================================================**/
-.videoPage {
+.video {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 90vh;
-  overflow: hidden;
-  /**============================================
-   *             Mobile Small - 600
-@include respond(break-600) {}
-   *=============================================**/
-  /**============================================
-   *             Mobile Large - 850
-@include respond(break-850) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-850X) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-1000) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Small - 1200
-   @include respond(break-1200) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Medium - 1400
-   @include respond(break-1400) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600-over) {}
-   *=============================================**/ }
-  @media (max-width: 53.125em) {
-    .videoPage {
-      height: 90vh; } }
-  .videoPage-outterContainer {
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(to bottom, #2d2d2d, #464646 10%, #2d2d2d);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /**============================================
-   *             Mobile Small - 600
-@include respond(break-600) {}
-   *=============================================**/
-    /**============================================
-   *             Mobile Large - 850
-@include respond(break-850) {}
-   *=============================================**/
-    /**============================================
-   *                Tablet - 1000
-@include respond(break-850X) {}
-   *=============================================**/
-    /**============================================
-   *                Tablet - 1000
-@include respond(break-1000) {}
-   *=============================================**/
-    /**============================================
-   *                Monitor Small - 1200
-   @include respond(break-1200) {}
-   *=============================================**/
-    /**============================================
-   *                Monitor Medium - 1400
-   @include respond(break-1400) {}
-   *=============================================**/
-    /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600) {}
-   *=============================================**/
-    /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600-over) {}
-   *=============================================**/ }
-    @media (max-width: 53.125em) {
-      .videoPage-outterContainer {
-        padding-bottom: 1rem; } }
-  .videoPage-accentContainer {
-    height: 90%;
-    width: 95%;
-    margin: 1rem 0;
-    border-radius: 20px;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/sam-bodhi-walk.jpg"), url("../img/sam-bodhi-walk2.jpg");
-    background-position: left, right;
-    background-size: contain, contain;
-    background-repeat: no-repeat, no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /**============================================
-   *             Mobile Small - 600
-@include respond(break-600) {}
-   *=============================================**/
-    /**============================================
-   *             Mobile Large - 850
-@include respond(break-850) {}
-   *=============================================**/
-    /**============================================
-   *                Tablet - 1000
-@include respond(break-850X) {}
-   *=============================================**/
-    /**============================================
-   *                Tablet - 1000
-@include respond(break-1000) {}
-   *=============================================**/
-    /**============================================
-   *                Monitor Small - 1200
-   @include respond(break-1200) {}
-   *=============================================**/
-    /**============================================
-   *                Monitor Medium - 1400
-   @include respond(break-1400) {}
-   *=============================================**/
-    /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600) {}
-   *=============================================**/
-    /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600-over) {}
-   *=============================================**/ }
-    @media (max-width: 53.125em) {
-      .videoPage-accentContainer {
-        padding: 1rem 0;
-        background-image: none; } }
-  .videoPage-innerContainer {
-    padding: 3rem;
-    width: 35%;
-    border-radius: 20px;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /**============================================
-   *             Mobile Small - 600
-@include respond(break-600) {}
-   *=============================================**/
-    /**============================================
-   *             Mobile Large - 850
-@include respond(break-850) {}
-   *=============================================**/
-    /**============================================
-   *                Tablet - 1000
-@include respond(break-850X) {}
-   *=============================================**/
-    /**============================================
-   *                Tablet - 1000
-@include respond(break-1000) {}
-   *=============================================**/
-    /**============================================
-   *                Monitor Small - 1200
-   @include respond(break-1200) {}
-   *=============================================**/
-    /**============================================
-   *                Monitor Medium - 1400
-   @include respond(break-1400) {}
-   *=============================================**/
-    /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600) {}
-   *=============================================**/
-    /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600-over) {}
-   *=============================================**/ }
-    @media (max-width: 53.125em) {
-      .videoPage-innerContainer {
-        flex-direction: column;
-        width: 100%; } }
-  .videoPage-demoContainer {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /**============================================
-   *             Mobile Small - 600
-@include respond(break-600) {}
-   *=============================================**/
-    /**============================================
-   *             Mobile Large - 850
-@include respond(break-850) {}
-   *=============================================**/
-    /**============================================
-   *                Tablet - 1000
-@include respond(break-850X) {}
-   *=============================================**/
-    /**============================================
-   *                Tablet - 1000
-@include respond(break-1000) {}
-   *=============================================**/
-    /**============================================
-   *                Monitor Small - 1200
-   @include respond(break-1200) {}
-   *=============================================**/
-    /**============================================
-   *                Monitor Medium - 1400
-   @include respond(break-1400) {}
-   *=============================================**/
-    /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600) {}
-   *=============================================**/
-    /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600-over) {}
-   *=============================================**/ }
-    @media (max-width: 53.125em) {
-      .videoPage-demoContainer {
-        width: 100%; } }
-  .videoPage-videoContainer {
-    height: 35rem;
-    width: 100%;
-    background-color: #333333;
-    margin-bottom: 1rem;
-    /**============================================
-   *             Mobile Small - 600
-@include respond(break-600) {}
-   *=============================================**/
-    /**============================================
-   *             Mobile Large - 850
-@include respond(break-850) {}
-   *=============================================**/
-    /**============================================
-   *                Tablet - 1000
-@include respond(break-850X) {}
-   *=============================================**/
-    /**============================================
-   *                Tablet - 1000
-@include respond(break-1000) {}
-   *=============================================**/
-    /**============================================
-   *                Monitor Small - 1200
-   @include respond(break-1200) {}
-   *=============================================**/
-    /**============================================
-   *                Monitor Medium - 1400
-   @include respond(break-1400) {}
-   *=============================================**/
-    /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600) {}
-   *=============================================**/
-    /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600-over) {}
-   *=============================================**/ }
-    @media (max-width: 53.125em) {
-      .videoPage-videoContainer {
-        height: 30rem;
-        width: 100%; } }
-  .videoPage-songLinks-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /**============================================
-   *             Mobile Small - 600
-@include respond(break-600) {}
-   *=============================================**/
-    /**============================================
-   *             Mobile Large - 850
-@include respond(break-850) {}
-   *=============================================**/
-    /**============================================
-   *                Tablet - 1000
-@include respond(break-850X) {}
-   *=============================================**/
-    /**============================================
-   *                Tablet - 1000
-@include respond(break-1000) {}
-   *=============================================**/
-    /**============================================
-   *                Monitor Small - 1200
-   @include respond(break-1200) {}
-   *=============================================**/
-    /**============================================
-   *                Monitor Medium - 1400
-   @include respond(break-1400) {}
-   *=============================================**/
-    /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600) {}
-   *=============================================**/
-    /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600-over) {}
-   *=============================================**/ }
-    @media (max-width: 53.125em) {
-      .videoPage-songLinks-container {
-        width: 100%;
-        text-align: center; } }
-  .videoPage-video {
-    width: 100%;
-    height: 100%; }
-  .videoPage-header {
+  overflow: hidden; }
+  .video__header {
     margin-bottom: 2rem;
     font-size: 6rem;
     color: white;
@@ -1991,137 +1684,289 @@ a {
    @include respond(break-1600-over) {}
    *=============================================**/ }
     @media (max-width: 53.125em) {
-      .videoPage-header {
+      .video__header {
         font-size: 4rem;
         text-align: center; } }
+  .video__iframe {
+    width: 100%;
+    height: 100%; }
 
-.videoPage-songLinks-header {
-  font-size: 4rem;
-  font-weight: 400;
-  color: white;
-  /**============================================
-   *             Mobile Small - 600
-@include respond(break-600) {}
-   *=============================================**/
-  /**============================================
-   *             Mobile Large - 850
-@include respond(break-850) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-850X) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-1000) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Small - 1200
-   @include respond(break-1200) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Medium - 1400
-   @include respond(break-1400) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600-over) {}
-   *=============================================**/ }
-  @media (max-width: 53.125em) {
-    .videoPage-songLinks-header {
-      font-size: 3rem; } }
-
-.videoPage-songLinks-list {
-  list-style: none; }
-
-.videoPage-songLinks-listItem {
-  padding: 1rem 0;
-  text-decoration: underline;
-  text-align: center; }
-
-.videoPage-link {
-  font-size: 2.5rem;
-  cursor: pointer;
-  color: #0000ee;
-  /**============================================
-   *             Mobile Small - 600
-@include respond(break-600) {}
-   *=============================================**/
-  /**============================================
-   *             Mobile Large - 850
-@include respond(break-850) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-850X) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-1000) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Small - 1200
-   @include respond(break-1200) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Medium - 1400
-   @include respond(break-1400) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600-over) {}
-   *=============================================**/ }
-  @media (max-width: 53.125em) {
-    .videoPage-link {
-      font-size: 1.5rem; } }
-
-.u-margin-top-1rem-mobile {
-  margin-top: 1rem; }
-
-.videoPage-separator {
-  width: 2px;
-  height: 5rem;
-  background-color: #333333; }
-
-.videoPage-repertoireContainer {
+.repertoire {
   margin-top: 2rem auto; }
+  .repertoire__header {
+    font-size: 2.5rem;
+    color: white;
+    text-decoration: underline;
+    margin-bottom: 1rem; }
+  .repertoire__link {
+    color: #328bf8;
+    font-size: 1.8rem;
+    cursor: pointer; }
 
-.videoPage-repertoire--text {
-  color: #328bf8;
-  font-size: 1.8rem;
-  cursor: pointer; }
+.list__song {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem; }
+  .list__song--title {
+    font-weight: 600; }
+  .list__song--artist {
+    font-style: italic; }
 
-.videoPage-repertoireHeader {
-  font-size: 2.5rem;
-  color: white;
-  text-decoration: underline;
-  margin-bottom: 1rem; }
-
-.videoPage-modalHeader {
-  font-size: 4.5rem;
-  font-weight: 300;
+.container__outter {
+  height: 100%;
   width: 100%;
-  text-align: center; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #2d2d2d, #464646 10%, #2d2d2d);
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-850X) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600-over) {}
+   *=============================================**/ }
+  @media (max-width: 53.125em) {
+    .container__outter {
+      padding-bottom: 1rem; } }
 
-.videoPage-modal {
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.96);
-  z-index: 10;
-  top: 0;
+.container__accent {
+  height: 90%;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  border-radius: 20px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/sam-bodhi-walk.jpg"), url("../img/sam-bodhi-walk2.jpg");
+  background-position: left, right;
+  background-size: contain, contain;
+  background-repeat: no-repeat, no-repeat;
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-850X) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600-over) {}
+   *=============================================**/ }
+  @media (max-width: 53.125em) {
+    .container__accent {
+      padding: 1rem 0;
+      background-image: none; } }
+
+.container__inner {
+  padding: 3rem;
+  width: 35%;
+  border-radius: 20px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-850X) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600-over) {}
+   *=============================================**/ }
+  @media (max-width: 53.125em) {
+    .container__inner {
+      flex-direction: column;
+      width: 100%; } }
+
+.container__demo {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-850X) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600-over) {}
+   *=============================================**/ }
+  @media (max-width: 53.125em) {
+    .container__demo {
+      width: 100%; } }
+
+.container__video {
+  height: 35rem;
+  width: 100%;
+  background-color: #333333;
+  margin-bottom: 1rem;
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-850X) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600-over) {}
+   *=============================================**/ }
+  @media (max-width: 53.125em) {
+    .container__video {
+      height: 30rem;
+      width: 100%; } }
+
+/**========================================================================
+ *                          JAVASCRIPT CLASSES 
+ *========================================================================**/
+.pointerEvents-none {
+  pointer-events: none; }
+
+/**========================================================================
+ *                          ANIMATIONS 
+ *========================================================================**/
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.fadeIn {
+  animation: fadeIn 1s forwards; }
+
+/**========================================================================
+ *                          MODALS 
+ *========================================================================**/
+.modal__video {
   height: 90vh;
   width: 40vw;
+  position: absolute;
+  top: 0;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.96);
+  z-index: 10;
   overflow: scroll;
   /**============================================
    *             Mobile Small - 600
@@ -2155,52 +2000,25 @@ a {
    *                Telvision/Projector >1600 
    @include respond(break-1600-over) {}
    *=============================================**/ }
+  .modal__video--jazz, .modal__video--americana, .modal__video--blues, .modal__video--original {
+    opacity: 0; }
   @media (max-width: 100em) {
-    .videoPage-modal {
+    .modal__video {
       width: 100%; } }
 
-.videoPage-modal--list {
+.modal__header {
+  font-size: 4.5rem;
+  font-weight: 300;
+  width: 100%;
+  text-align: center; }
+
+.modal__list {
   list-style: none;
   padding: 1rem; }
-  .videoPage-modal--list > li:not(:first-child) {
+  .modal__list > li:not(:first-child) {
     margin-top: 1rem; }
 
-.song {
-  display: flex;
-  flex-direction: column;
-  font-size: 1.8rem; }
-
-.title {
-  font-weight: 600; }
-
-.artist {
-  font-style: italic; }
-
-.videoPage-modal--jazz {
-  opacity: 0; }
-
-.videoPage-modal--americana {
-  opacity: 0; }
-
-.videoPage-modal--blues {
-  opacity: 0; }
-
-.videoPage-modal--original {
-  opacity: 0; }
-
-@keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-
-.fadeIn {
-  animation: fadeIn 1s forwards; }
-
-.pointerEvents-none {
-  pointer-events: none; }
-
-.modal-close {
+.modal__close {
   height: 5rem;
   width: 5rem;
   position: absolute;
@@ -2240,30 +2058,24 @@ a {
    *                Telvision/Projector >1600 
    @include respond(break-1600-over) {}
    *=============================================**/ }
+  .modal__close--line1, .modal__close--line2 {
+    position: absolute;
+    top: 25%;
+    width: 4rem;
+    margin: 1rem;
+    height: 2px;
+    background-color: red; }
+  .modal__close--line1 {
+    transform-origin: bottom;
+    transform: rotate(45deg); }
+  .modal__close--line2 {
+    transform-origin: initial;
+    transform: rotate(-45deg); }
   @media (max-width: 53.125em) {
-    .modal-close {
+    .modal__close {
       position: fixed;
       top: 5rem;
       right: 1rem; } }
-
-.line-1,
-.line-2 {
-  width: 4rem;
-  margin: 1rem;
-  height: 2px;
-  background-color: red; }
-
-.line-1 {
-  position: absolute;
-  top: 25%;
-  transform-origin: bottom;
-  transform: rotate(45deg); }
-
-.line-2 {
-  position: absolute;
-  top: 25%;
-  transform-origin: initial;
-  transform: rotate(-45deg); }
 
 /**========================================================================
  *                           contact
@@ -2440,55 +2252,6 @@ a {
     opacity: 0; }
   to {
     opacity: 1; } }
-
-/**========================================================================
- *                         PLAYLIST 
- *========================================================================**/
-.playlist {
-  height: 90vh;
-  display: flex;
-  justify-content: center; }
-
-.playlist-iframe {
-  margin: 1rem;
-  border-radius: 12px;
-  width: 50%;
-  height: 95%;
-  /**============================================
-   *             Mobile Small - 600
-@include respond(break-600) {}
-   *=============================================**/
-  /**============================================
-   *             Mobile Large - 850
-@include respond(break-850) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-850X) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-1000) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Small - 1200
-   @include respond(break-1200) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Medium - 1400
-   @include respond(break-1400) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600-over) {}
-   *=============================================**/ }
-  @media (max-width: 53.125em) {
-    .playlist-iframe {
-      width: 95%; } }
 
 /**========================================================================
  *                           landing
