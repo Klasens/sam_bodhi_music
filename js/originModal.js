@@ -1,9 +1,9 @@
 'use strict';
 
-const originModal = document.querySelector('.origin-modal');
-const originBtn = document.querySelector('.about-origin');
-const modalClose = document.querySelector('.modal-close--origin');
-const outerModal = document.querySelector('.mainContent');
+const originModal = document.querySelector('.modal__origin');
+const originBtn = document.querySelector('.about__link');
+const modalClose = document.querySelector('#modalCloseOrigin');
+const outerModal = document.querySelector('.about');
 
 originModal.addEventListener('click', function (e) {
   e.preventDefault();

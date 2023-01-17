@@ -51,11 +51,15 @@
 
 <!-- Partial 1 NJK-->
 <div class="mobileNav-container">
+  <!-- navBar__mobile -->
   <div class="mobileNav-logo">SBJ</div>
+  <!-- navBar__logo -->
   <a href="index.html" class="mobileNav-text">Sam Bodhi Jazz</a>
+  <!-- navBar__link -->
   <span class="icon" id="mobileNav"><i class="fa fa-bars"></i></span>
 </div>
 <div class="topnav">
+  <!-- subNav -->
   <div id="myLinks">
     <a href="/index.html">Home</a>
     <a href="/bodhi/about.html">About</a>
@@ -69,12 +73,18 @@
 <!-- Partial 2 NJK-->
 <nav class="navBar">
   <div class="navBar-logo">
-    <span class="letter1">S</span>
-    <span class="letter2">B</span>
-    <span class="letter3">J</span>
+    <!-- nav -->
+    <span class="navBar__letter1">S</span>
+    <!--  navBar__logo--letter1 -->
+    <span class="navBar__letter2">B</span>
+    <!--  navBar__logo--letter2 -->
+    <span class="navBar__letter3">J</span>
+    <!--  navBar__logo--letter3 -->
   </div>
   <ul class="navBar-list">
+    <!--  navBar__list -->
     <li class="navBar-list--item">
+      <!--  navBar__list--item -->
       <a href="/index.html">Home</a>
     </li>
     <li class="navBar-list--item">
@@ -94,81 +104,104 @@
 
 
 <!-- Partial 3 NJK-->
-<section class="mainContent mainContent-contact">
-  <div class="mainContent-centered--contact">
-    <h3 class="mainContent-heading--contact">Contact</h3>
-    <div class="mainContent-form">
+<section class="contact">
+  <!-- contact -->
+  <div class="container__centered">
+    <!-- container__centered -->
+    <h3 class="contact__heading">Contact</h3>
+    <!-- contact__heading -->
+    <div class="container__form">
+      <!-- container__form -->
       <form
-        class="contactForm"
+        class="form"
         id="form"
         method="post"
         action="https://formsubmit.co/db92dabc6689ef63428cc369d4de7484"
         enctype="multipart/form-data"
       >
-        <div class="contactForm-inputContainer-flex">
-          <div class="contactForm-inputContainer--name">
-            <label class="contactForm-label" for="firstName">First Name:</label>
+        <!-- form -->
+        <div class="form__miniContainer">
+          <!-- form__miniContainer -->
+          <div class="form__input--container">
+            <!-- form__input--container -->
+            <label class="form__label" for="firstName">First Name:</label>
+            <!-- form__label -->
             <input
               value=""
-              class="contactForm-name"
+              class="form__input"
               type="text"
               name="firstName"
               id="formFirstName"
               required
             />
+            <!-- form__input -->
           </div>
-          <div class="contactForm-inputContainer--name">
-            <label class="contactForm-label" for="lastName">Last Name:</label>
+          <div class="form__input--container">
+            <!-- form__input--container -->
+            <label class="form__label" for="lastName">Last Name:</label>
+            <!-- form__label -->
             <input
               value=""
-              class="contactForm-name"
+              class="form__input"
               type="text"
               name="lastName"
               id="formLastName"
               required
             />
+            <!-- form__input -->
           </div>
         </div>
-        <div class="contactForm-inputContainer">
-          <label class="contactForm-label" for="email">Email:</label>
+        <div class="form__input--container">
+          <!-- form__input--container -->
+          <label class="form__label" for="email">Email:</label>
+          <!-- form__label -->
           <input
             value=""
-            class="contactForm-email"
+            class="form__input"
             type="text"
             name="email"
             id="formEmail"
             required
           />
+          <!-- form__input -->
         </div>
-        <div class="contactForm-inputContainer">
-          <label class="contactForm-label" for="subject">Subject:</label>
+        <div class="form__input--container">
+          <!-- form__input--container -->
+          <label class="form__label" for="subject">Subject:</label>
+          <!-- form__label -->
           <input
             value=""
-            class="contactForm-subject"
+            class="form__input"
             type="text"
             name="subject"
             id="formSubject"
             required
           />
+          <!-- form__input -->
         </div>
-        <div class="contactForm-inputContainer">
-          <label class="contactForm-label" for="message">Message:</label>
+        <div class="form__input--container">
+          <!-- form__input--container -->
+          <label class="form__label" for="message">Message:</label>
+          <!-- form__label -->
           <textarea
             value=""
-            class="contactForm-message"
+            class="form__input"
             type="text"
             name="message"
             id="formMessage"
             required
           ></textarea>
+          <!-- form__input -->
         </div>
-        <div class="contactForm-inputContainer-btn">
+        <div class="form__input--container">
+          <!-- form__input--container -->
           <input
-            class="contactForm-btn"
+            class="form__btn"
             type="submit"
             value="submit"
             id="formSubmit"
           />
+          <!-- form__btn -->
         </div>
       </form>
     </div>

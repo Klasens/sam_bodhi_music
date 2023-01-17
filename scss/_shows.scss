@@ -2,6 +2,7 @@
  *                         SHOWS 
  *========================================================================**/
 
+// ---- SECTION CONTAINER ---- //
 .shows {
   height: auto;
   position: relative;
@@ -11,6 +12,7 @@
     align-items: center;
   }
 
+  // ---- BACKGROUND IMAGES ---- //
   &__background {
     position: absolute;
     top: 50%;
@@ -30,41 +32,44 @@
       display: none;
     }
   }
+
+  // ---- MAIN CONTENT ---- //
+  &__content {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.85) 20%,
+        rgba(255, 255, 255, 1) 25% 75%,
+        rgba(255, 255, 255, 0.85) 80%
+      ),
+      linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.6) 5%,
+        rgba(255, 255, 255, 0) 10% 75%,
+        rgba(255, 255, 255, 0.6) 95%
+      );
+  }
+
+  // ---- MAIN HEADER ---- //
+  &__header {
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    width: 50%;
+    background-color: $color-white;
+    padding: 2rem 0;
+  }
 }
 
-.container__content {
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.85) 20%,
-      rgba(255, 255, 255, 1) 25% 75%,
-      rgba(255, 255, 255, 0.85) 80%
-    ),
-    linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.6) 5%,
-      rgba(255, 255, 255, 0) 10% 75%,
-      rgba(255, 255, 255, 0.6) 95%
-    );
-}
-
-.shows__header {
-  font-size: 5rem;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 300;
-  width: 50%;
-  background-color: $color-white;
-  padding: 2rem 0;
-}
-
+// ---- UPCOMING SHOWS ---- //
 .upcomingShows {
   width: 50%;
   background-color: rgb(255, 255, 255);
@@ -74,6 +79,7 @@
   }
 }
 
+// ---- SHOW DETAILS ---- //
 .showDetails {
   margin: 2rem 0;
   display: flex;
@@ -81,6 +87,7 @@
   align-items: center;
   border-bottom: 1px solid $color-dark-gray-transparent;
 
+  // -- child spacing
   > * {
     margin: 1rem 0;
   }

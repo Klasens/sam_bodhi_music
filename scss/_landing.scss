@@ -1,47 +1,14 @@
 /**========================================================================
- *                           landing
+ *                          LANDING 
  *========================================================================**/
-.landing-arrow {
-  font-size: 6rem;
-  color: $color-white;
-  position: absolute;
-  bottom: 4rem;
-  right: 50%;
-  cursor: pointer;
-  animation: scrollArrow 4s infinite ease-in-out;
-  @include respond(break-850) {
-    display: none;
-  }
-}
-
-@keyframes scrollArrow {
-  0% {
-    transform: scale(1);
-    color: $color-white;
-  }
-  20% {
-    transform: scale(1.4);
-    color: $color-light-red;
-  }
-
-  60% {
-    transform: scale(1);
-    color: $color-blue;
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 .landing {
   height: 100vh;
-
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.45),
       rgba(0, 0, 0, 0.45)
     ),
     url('../img/sam-bodhi-landing2-cropped-hc.jpg');
-  // background-image: url('../img/sam-bodhi-landing2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -49,76 +16,63 @@
     background-position: 75%;
   }
 
-  &-header {
-    height: 100%;
-    margin: 0 2rem;
-    width: 55%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    font-family: 'Roboto';
+  &__arrow {
+    font-size: 6rem;
+    color: $color-white;
+    position: absolute;
+    bottom: 4rem;
+    right: 50%;
+    cursor: pointer;
+    animation: scrollArrow 4s infinite ease-in-out;
     @include respond(break-850) {
-      width: 90%;
-    }
-
-    &--main {
-      color: $color-white;
-      font-size: 10rem;
-      margin: 0 auto;
-      font-weight: 300;
-      @include respond(break-850) {
-        text-align: center;
-      }
-      &2 {
-        color: $color-white;
-        font-size: 8rem;
-        margin: 0 auto;
-        font-family: 'Roboto';
-      }
-      &3 {
-        color: $color-white;
-        font-size: 13rem;
-        margin: 0 auto;
-        font-family: 'Teko', sans-serif;
-      }
-      &4 {
-        color: $color-white;
-        font-size: 9rem;
-        margin: 0 auto;
-        font-family: 'Chakra Petch', sans-serif;
-      }
-      &5 {
-        color: $color-white;
-        font-size: 9rem;
-        margin: 0 auto;
-        font-family: 'Architects Daughter', cursive;
-      }
-    }
-
-    &--secondary {
-      color: $color-white;
-      font-weight: 300;
-      font-family: 'Roboto';
-      font-size: 4rem;
+      display: none;
     }
   }
 }
 
-.landing-btn {
-  margin-top: 2rem;
-  background-color: transparent;
-  border: 2px solid $color-white;
-  padding: 1rem 2rem;
-  font-size: 1.7rem;
+.landing__header {
+  height: 100%;
+  margin: 0 2rem;
+  width: 55%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-transform: uppercase;
-  cursor: pointer;
-  color: $color-white;
-  transition: background-color 0.4s;
-  border-radius: 20px;
-  &:hover {
-    background-color: $color-red;
+  font-family: 'Roboto';
+
+  @include respond(break-850) {
+    width: 90%;
+  }
+  &--mainHead {
+    color: $color-white;
+    font-size: 10rem;
+    margin: 0 auto;
+    font-weight: 300;
+    @include respond(break-850) {
+      text-align: center;
+    }
+  }
+  &--subHead {
+    color: $color-white;
+    font-weight: 300;
+    font-family: 'Roboto';
+    font-size: 4rem;
+  }
+  &--btn {
+    margin-top: 3rem;
+    background-color: transparent;
+    border: 2px solid $color-white;
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: $color-white;
+    transition: background-color 0.4s;
+    border-radius: 20px;
+    &:hover {
+      background-color: $color-red;
+    }
   }
 }

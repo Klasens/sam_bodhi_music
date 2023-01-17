@@ -1,78 +1,98 @@
-<section class="mainContent mainContent-contact">
-  <div class="mainContent-centered--contact">
-    <h3 class="mainContent-heading--contact">Contact</h3>
-    <div class="mainContent-form">
+<section class="contact">
+  <div class="container__centered">
+    <h3 class="contact__heading">Contact</h3>
+    <div class="container__form">
+      <!-- container__form -->
       <form
-        class="contactForm"
+        class="form"
         id="form"
         method="post"
         action="https://formsubmit.co/db92dabc6689ef63428cc369d4de7484"
         enctype="multipart/form-data"
       >
-        <div class="contactForm-inputContainer-flex">
-          <div class="contactForm-inputContainer--name">
-            <label class="contactForm-label" for="firstName">First Name:</label>
+        <!-- form -->
+        <div class="form__miniContainer">
+          <!-- form__miniContainer -->
+          <div class="form__input--container">
+            <!-- form__input--container -->
+            <label class="form__label" for="firstName">First Name:</label>
+            <!-- form__label -->
             <input
               value=""
-              class="contactForm-name"
+              class="form__input"
               type="text"
               name="firstName"
               id="formFirstName"
               required
             />
+            <!-- form__input -->
           </div>
-          <div class="contactForm-inputContainer--name">
-            <label class="contactForm-label" for="lastName">Last Name:</label>
+          <div class="form__input--container">
+            <!-- form__input--container -->
+            <label class="form__label" for="lastName">Last Name:</label>
+            <!-- form__label -->
             <input
               value=""
-              class="contactForm-name"
+              class="form__input"
               type="text"
               name="lastName"
               id="formLastName"
               required
             />
+            <!-- form__input -->
           </div>
         </div>
-        <div class="contactForm-inputContainer">
-          <label class="contactForm-label" for="email">Email:</label>
+        <div class="form__input--container">
+          <!-- form__input--container -->
+          <label class="form__label" for="email">Email:</label>
+          <!-- form__label -->
           <input
             value=""
-            class="contactForm-email"
+            class="form__input"
             type="text"
             name="email"
             id="formEmail"
             required
           />
+          <!-- form__input -->
         </div>
-        <div class="contactForm-inputContainer">
-          <label class="contactForm-label" for="subject">Subject:</label>
+        <div class="form__input--container">
+          <!-- form__input--container -->
+          <label class="form__label" for="subject">Subject:</label>
+          <!-- form__label -->
           <input
             value=""
-            class="contactForm-subject"
+            class="form__input"
             type="text"
             name="subject"
             id="formSubject"
             required
           />
+          <!-- form__input -->
         </div>
-        <div class="contactForm-inputContainer">
-          <label class="contactForm-label" for="message">Message:</label>
+        <div class="form__input--container">
+          <!-- form__input--container -->
+          <label class="form__label" for="message">Message:</label>
+          <!-- form__label -->
           <textarea
             value=""
-            class="contactForm-message"
+            class="form__input"
             type="text"
             name="message"
             id="formMessage"
             required
           ></textarea>
+          <!-- form__input -->
         </div>
-        <div class="contactForm-inputContainer-btn">
+        <div class="form__btn--container">
+          <!-- form__input--container -->
           <input
-            class="contactForm-btn"
+            class="form__btn"
             type="submit"
             value="submit"
             id="formSubmit"
           />
+          <!-- form__btn -->
         </div>
       </form>
     </div>

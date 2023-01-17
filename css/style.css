@@ -48,13 +48,45 @@ a {
   color: inherit;
   text-decoration: none; }
 
-.img {
+.image {
   width: 100%;
   height: 100%;
-  border-radius: 4px; }
-
-.margin-top {
-  margin-top: 3rem; }
+  border-radius: 4px;
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-850X) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600-over) {}
+   *=============================================**/ }
+  @media (max-width: 53.125em) {
+    .image {
+      border-radius: 50%; } }
 
 /**========================================================================
  *                           mainContent
@@ -591,6 +623,7 @@ a {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.35);
+  z-index: 10;
   /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -1014,11 +1047,29 @@ a {
       position: relative; } }
 
 /**========================================================================
- *                           BASE
+ *                          ABOUT 
  *========================================================================**/
-.about-image {
-  object-fit: contain; }
-  .about-image img {
+.about {
+  margin-bottom: 1rem; }
+  .about__heading {
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    padding: 2rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+    margin-top: 3rem; }
+  .about__subHeading {
+    font-size: 4rem;
+    margin: 2rem 0;
+    font-weight: 300; }
+  .about__text {
+    width: 85%;
+    line-height: 1.5;
+    font-size: 1.7rem;
     /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -1052,29 +1103,31 @@ a {
    @include respond(break-1600-over) {}
    *=============================================**/ }
     @media (max-width: 53.125em) {
-      .about-image img {
-        border-radius: 50%; } }
+      .about__text {
+        width: 100%; } }
+  .about__link {
+    color: #0000ee;
+    font-size: 2rem;
+    cursor: pointer; }
+  .about__bio {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .about__bio > :last-child {
+      margin-top: 2rem; }
+    .about__bio > p {
+      margin-top: 1rem; }
+  .about__image {
+    object-fit: contain; }
 
-.about-bio {
-  position: relative;
-  height: 100%;
+.about__column--left {
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center; }
-  .about-bio > :last-child {
-    margin-top: 2rem; }
-  .about-bio > p {
-    margin-top: 1rem; }
-
-.about-subHeading {
-  font-size: 4rem;
-  margin: 2rem 0;
-  font-weight: 300; }
-
-.about-text {
-  width: 85%;
-  line-height: 1.5;
-  font-size: 1.7rem;
+  align-items: center;
+  width: 50%;
   /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -1108,21 +1161,16 @@ a {
    @include respond(break-1600-over) {}
    *=============================================**/ }
   @media (max-width: 53.125em) {
-    .about-text {
-      width: 100%; } }
+    .about__column--left {
+      width: 90%;
+      height: 90%; } }
 
-.about-origin {
-  color: #0000ee;
-  font-size: 2rem;
-  cursor: pointer; }
-
-.origin-modal {
-  position: absolute;
-  bottom: -5rem;
-  opacity: 0;
-  width: 75%;
-  border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.85);
+.about__column--right {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
   /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -1156,32 +1204,13 @@ a {
    @include respond(break-1600-over) {}
    *=============================================**/ }
   @media (max-width: 53.125em) {
-    .origin-modal {
-      width: 100%;
-      bottom: 0; } }
+    .about__column--right {
+      width: 90%; } }
 
-.modal-text {
-  color: white;
-  font-size: 1.7rem;
-  width: 90%;
-  padding: 1rem;
-  margin: 0 auto; }
-
-.modal-header {
-  color: white;
-  margin: 1rem 0;
-  font-size: 2.7rem;
-  width: 100%;
-  text-align: center; }
-
-.modal-close--origin {
-  height: 5rem;
-  width: 5rem;
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  cursor: pointer;
-  animation: scaleUp 2s infinite linear;
+.container__columns--2 {
+  display: flex;
+  height: 100%;
+  padding: 3rem 0;
   /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -1215,9 +1244,10 @@ a {
    @include respond(break-1600-over) {}
    *=============================================**/ }
   @media (max-width: 53.125em) {
-    .modal-close--origin {
-      top: 0.5rem;
-      right: 0.5rem; } }
+    .container__columns--2 {
+      flex-direction: column-reverse;
+      padding: 0;
+      align-items: center; } }
 
 /**========================================================================
  *                         SHOWS 
@@ -1308,26 +1338,24 @@ a {
     @media (max-width: 53.125em) {
       .shows__background {
         display: none; } }
-
-.container__content {
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.85) 20%, white 25% 75%, rgba(255, 255, 255, 0.85) 80%), linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 5%, rgba(255, 255, 255, 0) 10% 75%, rgba(255, 255, 255, 0.6) 95%); }
-
-.shows__header {
-  font-size: 5rem;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 300;
-  width: 50%;
-  background-color: white;
-  padding: 2rem 0; }
+  .shows__content {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.85) 20%, white 25% 75%, rgba(255, 255, 255, 0.85) 80%), linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 5%, rgba(255, 255, 255, 0) 10% 75%, rgba(255, 255, 255, 0.6) 95%); }
+  .shows__header {
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    width: 50%;
+    background-color: white;
+    padding: 2rem 0; }
 
 .upcomingShows {
   width: 50%;
@@ -1444,18 +1472,6 @@ a {
   .video__iframe {
     width: 100%;
     height: 100%; }
-
-.repertoire {
-  margin-top: 2rem auto; }
-  .repertoire__header {
-    font-size: 2.5rem;
-    color: white;
-    text-decoration: underline;
-    margin-bottom: 1rem; }
-  .repertoire__link {
-    color: #328bf8;
-    font-size: 1.8rem;
-    cursor: pointer; }
 
 .list__song {
   display: flex;
@@ -1707,10 +1723,38 @@ a {
 .fadeIn {
   animation: fadeIn 1s forwards; }
 
+@keyframes scrollArrow {
+  0% {
+    transform: scale(1);
+    color: white; }
+  20% {
+    transform: scale(1.4);
+    color: #f16161; }
+  60% {
+    transform: scale(1);
+    color: #328bf8; }
+  100% {
+    transform: scale(1); } }
+
+.scrollArrow {
+  animation: scrollArrow 4s infinite ease-in-out; }
+
 /**========================================================================
  *                          MODALS 
  *========================================================================**/
-.modal__video {
+.songList {
+  margin-top: 2rem auto; }
+  .songList__header {
+    font-size: 2.5rem;
+    color: white;
+    text-decoration: underline;
+    margin-bottom: 1rem; }
+  .songList__link {
+    color: #328bf8;
+    font-size: 1.8rem;
+    cursor: pointer; }
+
+.modal__songs {
   height: 90vh;
   width: 40vw;
   position: absolute;
@@ -1754,17 +1798,73 @@ a {
    *                Telvision/Projector >1600 
    @include respond(break-1600-over) {}
    *=============================================**/ }
-  .modal__video--jazz, .modal__video--americana, .modal__video--blues, .modal__video--original {
+  .modal__songs--jazz, .modal__songs--americana, .modal__songs--blues, .modal__songs--original {
     opacity: 0; }
   @media (max-width: 100em) {
-    .modal__video {
+    .modal__songs {
       width: 100%; } }
 
+.modal__origin {
+  position: absolute;
+  bottom: -5rem;
+  opacity: 0;
+  width: 75%;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.85);
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-850X) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600-over) {}
+   *=============================================**/ }
+  @media (max-width: 53.125em) {
+    .modal__origin {
+      width: 100%;
+      bottom: 0; } }
+
 .modal__header {
-  font-size: 4.5rem;
-  font-weight: 300;
   width: 100%;
   text-align: center; }
+  .modal__header--songs {
+    font-size: 4.5rem;
+    font-weight: 300; }
+  .modal__header--about {
+    color: white;
+    margin: 1rem 0;
+    font-size: 2.7rem; }
+
+.modal__text {
+  color: white;
+  font-size: 1.7rem;
+  width: 90%;
+  padding: 1rem;
+  margin: 0 auto; }
 
 .modal__list {
   list-style: none;
@@ -1832,9 +1932,9 @@ a {
       right: 1rem; } }
 
 /**========================================================================
- *                           contact
+ *                           CONTACT
  *========================================================================**/
-.mainContent-contact {
+.contact {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/sam-bodhi-blue.jpg"), url("../img/sam-bodhi-red.jpg"), url("../img/sam-bodhi-green.jpg");
   background-size: contain, 50%, contain;
   background-position: left, center, right;
@@ -1872,34 +1972,57 @@ a {
   /**============================================
    *                Telvision/Projector >1600 
    @include respond(break-1600-over) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-850X) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600-over) {}
    *=============================================**/ }
+  @media (max-width: 100em) {
+    .contact {
+      height: 90vh; } }
   @media (max-width: 53.125em) {
-    .mainContent-contact {
+    .contact {
       background-image: none;
       background-color: #333333; } }
+  .contact__heading {
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    width: 100%;
+    overflow: hidden;
+    padding: 2rem 0;
+    color: white; }
 
-.mainContent-heading--contact {
-  font-size: 5rem;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 300;
-  width: 100%;
-  overflow: hidden;
-  padding: 2rem 0;
-  color: white; }
-
-.mainContent-centered--contact {
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  padding-bottom: 3rem; }
-
-.contactForm {
+.form {
   opacity: 0;
   width: 80%;
   font-size: 1.7rem;
@@ -1936,59 +2059,31 @@ a {
    *                Telvision/Projector >1600 
    @include respond(break-1600-over) {}
    *=============================================**/ }
-  .contactForm > * {
+  .form > * {
     color: white; }
   @media (max-width: 53.125em) {
-    .contactForm {
+    .form {
       width: 100%; } }
-  .contactForm-inputContainer {
-    margin: 2rem 0;
-    width: 100%; }
-    .contactForm-inputContainer--name {
-      width: 100%; }
-      .contactForm-inputContainer--name:first-child {
-        margin-right: 5px; }
-  .contactForm-inputContainer-btn {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem; }
-  .contactForm-inputContainer-flex {
+  .form__miniContainer {
     margin: 2rem 0;
     display: flex;
     flex-wrap: nowrap; }
-  .contactForm-label {
+  .form__input {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #aeacac;
+    width: 100%;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    margin-top: 7px; }
+    .form__input--container {
+      width: 100%;
+      margin: 2rem 0; }
+      .form__input--container:first-child {
+        margin-right: 5px; }
+  .form__label {
     width: 100%;
     font-size: 1.9; }
-  .contactForm-name {
-    background-color: rgba(255, 255, 255, 0.9);
-    border: 2px solid #aeacac;
-    width: 100%;
-    font-size: 1.7rem;
-    padding: 1rem 0;
-    margin-top: 7px; }
-  .contactForm-email {
-    background-color: rgba(255, 255, 255, 0.9);
-    border: 2px solid #aeacac;
-    width: 100%;
-    font-size: 1.7rem;
-    padding: 1rem 0;
-    margin-top: 7px; }
-  .contactForm-subject {
-    background-color: rgba(255, 255, 255, 0.9);
-    border: 2px solid #aeacac;
-    width: 100%;
-    font-size: 1.7rem;
-    padding: 1rem 0;
-    margin-top: 7px; }
-  .contactForm-message {
-    background-color: rgba(255, 255, 255, 0.9);
-    border: 2px solid #aeacac;
-    width: 100%;
-    font-size: 1.7rem;
-    padding: 2rem 0;
-    height: 10rem;
-    margin-top: 7px; }
-  .contactForm-btn {
+  .form__btn {
     background-color: transparent;
     border: 2px solid #aeacac;
     border-radius: 5px;
@@ -1997,27 +2092,24 @@ a {
     text-transform: uppercase;
     cursor: pointer;
     color: white; }
+    .form__btn--container {
+      display: flex;
+      justify-content: center; }
 
-.fade-in {
-  animation: fadeIn 1s 0.5s forwards; }
+.container__centered {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 3rem; }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-
-/**========================================================================
- *                           landing
- *========================================================================**/
-.landing-arrow {
-  font-size: 6rem;
-  color: white;
-  position: absolute;
-  bottom: 4rem;
-  right: 50%;
-  cursor: pointer;
-  animation: scrollArrow 4s infinite ease-in-out;
+.container__form {
+  background-color: rgba(0, 0, 0, 0.35);
+  padding: 1rem;
   /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -2051,22 +2143,14 @@ a {
    @include respond(break-1600-over) {}
    *=============================================**/ }
   @media (max-width: 53.125em) {
-    .landing-arrow {
-      display: none; } }
+    .container__form {
+      display: flex;
+      align-items: center;
+      height: 90vh; } }
 
-@keyframes scrollArrow {
-  0% {
-    transform: scale(1);
-    color: white; }
-  20% {
-    transform: scale(1.4);
-    color: #f16161; }
-  60% {
-    transform: scale(1);
-    color: #328bf8; }
-  100% {
-    transform: scale(1); } }
-
+/**========================================================================
+ *                          LANDING 
+ *========================================================================**/
 .landing {
   height: 100vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/sam-bodhi-landing2-cropped-hc.jpg");
@@ -2108,17 +2192,14 @@ a {
   @media (max-width: 53.125em) {
     .landing {
       background-position: 75%; } }
-  .landing-header {
-    height: 100%;
-    margin: 0 2rem;
-    width: 55%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    font-family: 'Roboto';
+  .landing__arrow {
+    font-size: 6rem;
+    color: white;
+    position: absolute;
+    bottom: 4rem;
+    right: 50%;
+    cursor: pointer;
+    animation: scrollArrow 4s infinite ease-in-out;
     /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -2152,84 +2233,110 @@ a {
    @include respond(break-1600-over) {}
    *=============================================**/ }
     @media (max-width: 53.125em) {
-      .landing-header {
-        width: 90%; } }
-    .landing-header--main {
-      color: white;
-      font-size: 10rem;
-      margin: 0 auto;
-      font-weight: 300;
-      /**============================================
+      .landing__arrow {
+        display: none; } }
+
+.landing__header {
+  height: 100%;
+  margin: 0 2rem;
+  width: 55%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
    *=============================================**/
-      /**============================================
+  /**============================================
    *             Mobile Large - 850
 @include respond(break-850) {}
    *=============================================**/
-      /**============================================
+  /**============================================
    *                Tablet - 1000
 @include respond(break-850X) {}
    *=============================================**/
-      /**============================================
+  /**============================================
    *                Tablet - 1000
 @include respond(break-1000) {}
    *=============================================**/
-      /**============================================
+  /**============================================
    *                Monitor Small - 1200
    @include respond(break-1200) {}
    *=============================================**/
-      /**============================================
+  /**============================================
    *                Monitor Medium - 1400
    @include respond(break-1400) {}
    *=============================================**/
-      /**============================================
+  /**============================================
    *                Telvision/Projector >1600 
    @include respond(break-1600) {}
    *=============================================**/
-      /**============================================
+  /**============================================
    *                Telvision/Projector >1600 
    @include respond(break-1600-over) {}
    *=============================================**/ }
-      @media (max-width: 53.125em) {
-        .landing-header--main {
-          text-align: center; } }
-      .landing-header--main2 {
-        color: white;
-        font-size: 8rem;
-        margin: 0 auto;
-        font-family: 'Roboto'; }
-      .landing-header--main3 {
-        color: white;
-        font-size: 13rem;
-        margin: 0 auto;
-        font-family: 'Teko', sans-serif; }
-      .landing-header--main4 {
-        color: white;
-        font-size: 9rem;
-        margin: 0 auto;
-        font-family: 'Chakra Petch', sans-serif; }
-      .landing-header--main5 {
-        color: white;
-        font-size: 9rem;
-        margin: 0 auto;
-        font-family: 'Architects Daughter', cursive; }
-    .landing-header--secondary {
-      color: white;
-      font-weight: 300;
-      font-family: 'Roboto';
-      font-size: 4rem; }
-
-.landing-btn {
-  margin-top: 2rem;
-  background-color: transparent;
-  border: 2px solid white;
-  padding: 1rem 2rem;
-  font-size: 1.7rem;
-  text-transform: uppercase;
-  cursor: pointer;
-  color: white;
-  transition: background-color 0.4s;
-  border-radius: 20px; }
-  .landing-btn:hover {
-    background-color: red; }
+  @media (max-width: 53.125em) {
+    .landing__header {
+      width: 90%; } }
+  .landing__header--mainHead {
+    color: white;
+    font-size: 10rem;
+    margin: 0 auto;
+    font-weight: 300;
+    /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+    /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+    /**============================================
+   *                Tablet - 1000
+@include respond(break-850X) {}
+   *=============================================**/
+    /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+    /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600) {}
+   *=============================================**/
+    /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600-over) {}
+   *=============================================**/ }
+    @media (max-width: 53.125em) {
+      .landing__header--mainHead {
+        text-align: center; } }
+  .landing__header--subHead {
+    color: white;
+    font-weight: 300;
+    font-family: 'Roboto';
+    font-size: 4rem; }
+  .landing__header--btn {
+    margin-top: 3rem;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.4s;
+    border-radius: 20px; }
+    .landing__header--btn:hover {
+      background-color: red; }

@@ -52,6 +52,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: $color-gray-transparent;
+  z-index: 10;
   @include respond(break-850) {
     display: none;
   }

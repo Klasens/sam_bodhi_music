@@ -1,31 +1,31 @@
-<section class="mainContent">
-  <h3 class="mainContent-heading margin-top">About</h3>
-  <div class="mainContent-twoColumn">
-    <div class="mainContent-leftColumn">
-      <div class="about-bio">
-        <div class="origin-modal pointerEvents-none">
-          <span class="modal-close--origin">
-            <div class="line-1"></div>
-            <div class="line-2"></div>
+<section class="about">
+  <h3 class="about__heading">About</h3>
+  <div class="container__columns--2">
+    <div class="about__column--left">
+      <div class="about__bio">
+        <div class="modal__origin pointerEvents-none">
+          <span class="modal__close" id="modalCloseOrigin">
+            <div class="modal__close--line1"></div>
+            <div class="modal__close--line2"></div>
           </span>
-          <h4 class="modal-header">Anuttara Samyak Sambodhi</h4>
+          <h4 class="modal__header">Anuttara Samyak Sambodhi</h4>
           {% for text in origin %}
-          <p class="modal-text">{{text.paragraph}}</p>
+          <p class="modal__text">{{text.paragraph}}</p>
           {% endfor %}
         </div>
-        <h4 class="about-subHeading">Sam Bodhi</h4>
+        <h4 class="about__subHeading">Sam Bodhi</h4>
         {% for text in about %}
-        <p class="about-text">{{text.paragraph}}</p>
+        <p class="about__text">{{text.paragraph}}</p>
         {% endfor %}
-        <div class="about-origin">Origins of Sam Bodhi</div>
+        <div class="about__link">Origins of Sam Bodhi</div>
       </div>
     </div>
-    <div class="mainContent-rightColumn">
-      <div class="about-image">
+    <div class="about__column--right">
+      <div class="about__image">
         <img
           src="/img/sam-bodhi-landing3-cropped.JPG"
           alt="Sam Bodi Sketch"
-          class="img"
+          class="image"
         />
       </div>
     </div>

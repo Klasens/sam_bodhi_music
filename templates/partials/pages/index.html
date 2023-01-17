@@ -1,67 +1,43 @@
 <section class="landing">
-  <nav class="landing-navBar">
-    <div class="navBar-logo">
-      <span class="letter1">S</span>
-      <span class="letter2">B</span>
-      <span class="letter3">J</span>
-    </div>
-    <ul class="navBar-list">
-      <li class="navBar-list--item">
-        <a href="/index.html">Home</a>
-      </li>
-      <li class="navBar-list--item">
-        <a href="/bodhi/about.html">About</a>
-      </li>
-      <li class="navBar-list--item">
-        <a href="/bodhi/shows.html">Shows</a>
-      </li>
-      <li class="navBar-list--item">
-        <a href="/bodhi/video.html">Video Sample</a>
-      </li>
-      <li class="navBar-list--item">
-        <a href="/bodhi/contact.html">Contact</a>
-      </li>
-    </ul>
-  </nav>
-  <div class="landing-header">
-    <h1 class="landing-header--main">Sam Bodhi Jazz</h1>
-    <h2 class="landing-header--secondary">
+  <div class="landing__header">
+    <h1 class="landing__header--mainHead">Sam Bodhi Jazz</h1>
+    <h2 class="landing__header--subHead">
       Innovative Jazz Piano & Vocal Styling
     </h2>
-    <button class="landing-btn">
+    <button class="landing__header--btn">
       <a href="/bodhi/contact.html">Contact</a>
     </button>
   </div>
-  <div id="landingArrow" class="landing-arrow">&#8595;</div>
+  <div id="landingArrow" class="landing__arrow scrollArrow">&#8595;</div>
 </section>
-<section id="landingBio" class="mainContent">
-  <h3 class="mainContent-heading margin-top">About</h3>
-  <div class="mainContent-twoColumn">
-    <div class="mainContent-leftColumn">
-      <div class="about-bio">
-        <div class="origin-modal pointerEvents-none">
-          <span class="modal-close--origin">
-            <div class="line-1"></div>
-            <div class="line-2"></div>
+<section id="about" class="mainContent">
+  <h3 class="about__heading">About</h3>
+  <div class="container__columns--2">
+    <div class="about__column--left">
+      <div class="about__bio">
+        <div class="modal__origin pointerEvents-none">
+          <span class="modal__close">
+            <div class="modal__close--line1"></div>
+            <div class="modal__close--line2"></div>
           </span>
-          <h4 class="modal-header">Anuttara Samyak Sambodhi</h4>
+          <h4 class="modal__header">Anuttara Samyak Sambodhi</h4>
           {% for text in origin %}
-          <p class="modal-text">{{text.paragraph}}</p>
+          <p class="modal__text">{{text.paragraph}}</p>
           {% endfor %}
         </div>
-        <h4 class="about-subHeading">Sam Bodhi</h4>
+        <h4 class="about__subHeading">Sam Bodhi</h4>
         {% for text in about %}
-        <p class="about-text">{{text.paragraph}}</p>
+        <p class="about__text">{{text.paragraph}}</p>
         {% endfor %}
-        <div class="about-origin">Origins of Sam Bodhi</div>
+        <div class="about__link">Origins of Sam Bodhi</div>
       </div>
     </div>
-    <div class="mainContent-rightColumn mobile-display-none">
-      <div class="about-image">
+    <div class="about__column--right mobile-display-none">
+      <div class="about__image">
         <img
-          src="img/sam-bodhi-landing3-cropped.JPG"
+          src="/img/sam-bodhi-landing3-cropped.JPG"
           alt="Sam Bodi Sketch"
-          class="img"
+          class="image"
         />
       </div>
     </div>

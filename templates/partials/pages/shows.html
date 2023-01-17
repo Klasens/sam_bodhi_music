@@ -1,4 +1,5 @@
 <section class="shows">
+  <!-- Background Image -->
   <video
     class="shows__background shows__background--left"
     autoplay
@@ -7,6 +8,7 @@
     src="/img/sam-bodhi-2_Trim.mp4"
     type="video/mp4"
   ></video>
+  <!-- Background Image -->
   <video
     class="shows__background shows__background--right"
     autoplay
@@ -15,9 +17,12 @@
     src="/img/sam-bodhi-2_Trim.mp4"
     type="video/mp4"
   ></video>
-  <div class="container__content">
+  <!-- Main Content -->
+  <div class="shows__content">
     <h3 class="shows__header">Shows</h3>
+    <!-- Upcoming Shows -->
     <div class="upcomingShows">
+      <!-- Show Details -->
       <div class="showDetails">
         <p class="showDetails__date">Sun, Nov 13, 2022</p>
         <p class="showDetails__location">The Neville Theater, Green Bay, WI</p>
@@ -30,6 +35,7 @@
           Watch Now
         </a>
       </div>
+      <!-- Show Details -->
       <div class="showDetails">
         <p class="showDetails__date">Tue, 5:30pm, Feb 7, 2023</p>
         <p class="showDetails__location">
@@ -38,18 +44,21 @@
         <p class="showDetails__performers">Sam Bodhi</p>
       </div>
     </div>
-    <div class="repertoire">
-      <h4 class="repertoire__header">Selected Repertoire</h4>
-      <div class="repertoire__link" id="jazz">Jazz List</div>
-      <div class="repertoire__link" id="blues">Blues List</div>
-      <div class="repertoire__link" id="americana">Americana List</div>
-      <div class="repertoire__link" id="original">Original List</div>
+    <!-- Song List -->
+    <div class="songList">
+      <h4 class="songList__header">Selected Repertoire</h4>
+      <div class="songList__link" id="jazz">Jazz List</div>
+      <div class="songList__link" id="blues">Blues List</div>
+      <div class="songList__link" id="americana">Americana List</div>
+      <div class="songList__link" id="original">Original List</div>
     </div>
   </div>
+  <!-- Modal -->
   <div
-    class="modal__video modal__video--jazz pointerEvents-none"
+    class="modal__songs modal__songs--jazz pointerEvents-none"
     id="jazzModal"
   >
+    <!-- closeModal -->
     <span class="modal__close">
       <div class="modal__close--line1"></div>
       <div class="modal__close--line2"></div>
@@ -57,7 +66,7 @@
     <h4 class="modal__header">Selected Jazz</h4>
 
     <ul class="modal__list">
-      <!-- Nunjucks Render Jazz One -->
+      <!-- Nunjucks Render List - Jazz One -->
       {% for list in jazzOne %}
       <li class="list__song">
         <span class="list__song--title">{{list.song.title}}</span>
@@ -66,7 +75,7 @@
       {% endfor %}
     </ul>
     <ul class="modal__list">
-      <!-- Nunjucks Render Jazz Two -->
+      <!-- Nunjucks Render List - Jazz Two -->
       {% for list in jazzTwo %}
       <li class="list__song">
         <span class="list__song--title">{{list.song.title}}</span>
@@ -75,17 +84,19 @@
       {% endfor %}
     </ul>
   </div>
+  <!-- Modal -->
   <div
-    class="modal__video modal__video--blues pointerEvents-none"
+    class="modal__songs modal__songs--blues pointerEvents-none"
     id="bluesModal"
   >
+    <!-- closeModal -->
     <span class="modal__close">
       <div class="modal__close--line1"></div>
       <div class="modal__close--line2"></div>
     </span>
     <h4 class="modal__header">Selected Blues</h4>
     <ul class="modal__list">
-      <!-- Nunjucks Render Blues One -->
+      <!-- Nunjucks Render List - Blues One -->
       {% for list in bluesOne %}
       <li class="list__song">
         <span class="list__song--title">{{list.song.title}}</span>
@@ -94,7 +105,7 @@
       {% endfor %}
     </ul>
     <ul class="modal__list">
-      <!-- Nunjucks Render Blues Two -->
+      <!-- Nunjucks Render List - Blues Two -->
       {% for list in bluesTwo %}
       <li class="list__song">
         <span class="list__song--title">{{list.song.title}}</span>
@@ -103,17 +114,19 @@
       {% endfor %}
     </ul>
   </div>
+  <!-- Modal -->
   <div
-    class="modal__video modal__video--americana pointerEvents-none"
+    class="modal__songs modal__songs--americana pointerEvents-none"
     id="americanaModal"
   >
+    <!-- closeModal -->
     <span class="modal__close">
       <div class="modal__close--line1"></div>
       <div class="modal__close--line2"></div>
     </span>
     <h4 class="modal__header">Selected Americana</h4>
     <ul class="modal__list">
-      <!-- Nunjucks Render Americana One -->
+      <!-- Nunjucks Render List - Americana One -->
       {% for list in americanaOne %}
       <li class="list__song">
         <span class="list__song--title">{{list.song.title}}</span>
@@ -122,7 +135,7 @@
       {% endfor %}
     </ul>
     <ul class="modal__list">
-      <!-- Nunjucks Render Americana Two -->
+      <!-- Nunjucks Render List - Americana Two -->
       {% for list in americanaTwo %}
       <li class="list__song">
         <span class="list__song--title">{{list.song.title}}</span>
@@ -131,17 +144,19 @@
       {% endfor %}
     </ul>
   </div>
+  <!-- Modal -->
   <div
-    class="modal__video modal__video--original pointerEvents-none"
+    class="modal__songs modal__songs--original pointerEvents-none"
     id="originalModal"
   >
+    <!-- closeModal -->
     <span class="modal__close">
       <div class="modal__close--line1"></div>
       <div class="modal__close--line2"></div>
     </span>
     <h4 class="modal__header">Selected Originals</h4>
     <ul class="modal__list">
-      <!-- Nunjucks Render Originals -->
+      <!-- Nunjucks Render List - Originals -->
       {% for list in originals %}
       <li class="list__song">
         <span class="list__song--title">{{list.song.title}}</span>

@@ -1,7 +1,7 @@
 /**========================================================================
- *                           contact
+ *                           CONTACT
  *========================================================================**/
-.mainContent-contact {
+.contact {
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.3),
@@ -14,34 +14,27 @@
   background-repeat: no-repeat, no-repeat, no-repeat;
   z-index: 10;
   margin: 0;
+  @include respond(break-1600) {
+    height: 90vh;
+  }
   @include respond(break-850) {
     background-image: none;
     background-color: $color-black;
   }
+
+  &__heading {
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    width: 100%;
+    overflow: hidden;
+    padding: 2rem 0;
+    color: $color-white;
+  }
 }
 
-.mainContent-heading--contact {
-  font-size: 5rem;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 300;
-  width: 100%;
-  overflow: hidden;
-  padding: 2rem 0;
-  color: $color-white;
-}
-.mainContent-centered--contact {
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  padding-bottom: 3rem;
-}
-.contactForm {
+.form {
   opacity: 0;
   width: 80%;
   font-size: 1.7rem;
@@ -52,64 +45,34 @@
   @include respond(break-850) {
     width: 100%;
   }
-  &-inputContainer {
-    margin: 2rem 0;
-    &--name {
-      width: 100%;
-      &:first-child {
-        margin-right: 5px;
-      }
-    }
-    width: 100%;
-  }
-  &-inputContainer-btn {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-  }
-  &-inputContainer-flex {
+  &__miniContainer {
     margin: 2rem 0;
     display: flex;
     flex-wrap: nowrap;
   }
-  &-label {
+
+  &__input {
+    background-color: $color-form-transparent;
+    border: 2px solid $color-light-gray;
+    width: 100%;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    margin-top: 7px;
+    &--container {
+      width: 100%;
+      margin: 2rem 0;
+      &:first-child {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &__label {
     width: 100%;
     font-size: 1.9;
   }
-  &-name {
-    background-color: $color-form-transparent;
-    border: 2px solid $color-light-gray;
-    width: 100%;
-    font-size: 1.7rem;
-    padding: 1rem 0;
-    margin-top: 7px;
-  }
-  &-email {
-    background-color: $color-form-transparent;
-    border: 2px solid $color-light-gray;
-    width: 100%;
-    font-size: 1.7rem;
-    padding: 1rem 0;
-    margin-top: 7px;
-  }
-  &-subject {
-    background-color: $color-form-transparent;
-    border: 2px solid $color-light-gray;
-    width: 100%;
-    font-size: 1.7rem;
-    padding: 1rem 0;
-    margin-top: 7px;
-  }
-  &-message {
-    background-color: $color-form-transparent;
-    border: 2px solid $color-light-gray;
-    width: 100%;
-    font-size: 1.7rem;
-    padding: 2rem 0;
-    height: 10rem;
-    margin-top: 7px;
-  }
-  &-btn {
+
+  &__btn {
     background-color: transparent;
     border: 2px solid $color-light-gray;
     border-radius: 5px;
@@ -118,18 +81,31 @@
     text-transform: uppercase;
     cursor: pointer;
     color: $color-white;
+    &--container {
+      display: flex;
+      justify-content: center;
+    }
   }
 }
 
-.fade-in {
-  animation: fadeIn 1s 0.5s forwards;
+.container__centered {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 3rem;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+.container__form {
+  background-color: $color-gray-transparent;
+  padding: 1rem;
+  @include respond(break-850) {
+    display: flex;
+    align-items: center;
+    height: 90vh;
   }
 }
