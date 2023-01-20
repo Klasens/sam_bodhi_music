@@ -1,8 +1,7 @@
 'use strict';
 
-const mobileNav = document.getElementById('mobileNav');
-const mobileLinks = document.querySelector('.topnav');
-const contactImages = document.querySelector('.mainContent-contact');
+const mobileNav = document.getElementById('navBar__mobile');
+const mobileLinks = document.querySelector('.sunNav');
 const form = document.querySelector('.form');
 
 function displayMobileLinks() {

@@ -89,431 +89,19 @@ a {
       border-radius: 50%; } }
 
 /**========================================================================
- *                           mainContent
+ *                           NAVBAR
  *========================================================================**/
-.mainContent {
-  /**============================================
-   *             Mobile Small - 600
-@include respond(break-600) {}
-   *=============================================**/
-  /**============================================
-   *             Mobile Large - 850
-@include respond(break-850) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-850X) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-1000) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Small - 1200
-   @include respond(break-1200) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Medium - 1400
-   @include respond(break-1400) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600-over) {}
-   *=============================================**/
-  margin-bottom: 1rem; }
-  @media (max-width: 53.125em) {
-    .mainContent {
-      height: min-content; } }
-  .mainContent-centered {
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.85) 20%, white 25% 75%, rgba(255, 255, 255, 0.85) 80%), linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 5%, rgba(255, 255, 255, 0) 10% 75%, rgba(255, 255, 255, 0.6) 95%); }
-  .mainContent-twoColumn {
-    display: flex;
-    height: 100%;
-    padding: 3rem 0;
-    /**============================================
-   *             Mobile Small - 600
-@include respond(break-600) {}
-   *=============================================**/
-    /**============================================
-   *             Mobile Large - 850
-@include respond(break-850) {}
-   *=============================================**/
-    /**============================================
-   *                Tablet - 1000
-@include respond(break-850X) {}
-   *=============================================**/
-    /**============================================
-   *                Tablet - 1000
-@include respond(break-1000) {}
-   *=============================================**/
-    /**============================================
-   *                Monitor Small - 1200
-   @include respond(break-1200) {}
-   *=============================================**/
-    /**============================================
-   *                Monitor Medium - 1400
-   @include respond(break-1400) {}
-   *=============================================**/
-    /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600) {}
-   *=============================================**/
-    /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600-over) {}
-   *=============================================**/ }
-    @media (max-width: 53.125em) {
-      .mainContent-twoColumn {
-        flex-direction: column-reverse;
-        padding: 0;
-        align-items: center; } }
-  .mainContent-multiColumn {
-    display: flex;
-    padding: 3rem 0;
-    justify-content: center;
-    /**============================================
-   *             Mobile Small - 600
-@include respond(break-600) {}
-   *=============================================**/
-    /**============================================
-   *             Mobile Large - 850
-@include respond(break-850) {}
-   *=============================================**/
-    /**============================================
-   *                Tablet - 1000
-@include respond(break-850X) {}
-   *=============================================**/
-    /**============================================
-   *                Tablet - 1000
-@include respond(break-1000) {}
-   *=============================================**/
-    /**============================================
-   *                Monitor Small - 1200
-   @include respond(break-1200) {}
-   *=============================================**/
-    /**============================================
-   *                Monitor Medium - 1400
-   @include respond(break-1400) {}
-   *=============================================**/
-    /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600) {}
-   *=============================================**/
-    /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600-over) {}
-   *=============================================**/
-    /**============================================
-   *             Mobile Small - 600
-@include respond(break-600) {}
-   *=============================================**/
-    /**============================================
-   *             Mobile Large - 850
-@include respond(break-850) {}
-   *=============================================**/
-    /**============================================
-   *                Tablet - 1000
-@include respond(break-850X) {}
-   *=============================================**/
-    /**============================================
-   *                Tablet - 1000
-@include respond(break-1000) {}
-   *=============================================**/
-    /**============================================
-   *                Monitor Small - 1200
-   @include respond(break-1200) {}
-   *=============================================**/
-    /**============================================
-   *                Monitor Medium - 1400
-   @include respond(break-1400) {}
-   *=============================================**/
-    /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600) {}
-   *=============================================**/
-    /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600-over) {}
-   *=============================================**/ }
-    @media (max-width: 37.5em) {
-      .mainContent-multiColumn {
-        flex-direction: column;
-        align-items: center; } }
-    @media (max-width: 53.125em) {
-      .mainContent-multiColumn {
-        flex-wrap: wrap; } }
-
-.mainContent-leftColumn {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-  /**============================================
-   *             Mobile Small - 600
-@include respond(break-600) {}
-   *=============================================**/
-  /**============================================
-   *             Mobile Large - 850
-@include respond(break-850) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-850X) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-1000) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Small - 1200
-   @include respond(break-1200) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Medium - 1400
-   @include respond(break-1400) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600-over) {}
-   *=============================================**/ }
-  @media (max-width: 53.125em) {
-    .mainContent-leftColumn {
-      width: 90%;
-      height: 90%; } }
-
-.mainContent-rightColumn {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-  /**============================================
-   *             Mobile Small - 600
-@include respond(break-600) {}
-   *=============================================**/
-  /**============================================
-   *             Mobile Large - 850
-@include respond(break-850) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-850X) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-1000) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Small - 1200
-   @include respond(break-1200) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Medium - 1400
-   @include respond(break-1400) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600-over) {}
-   *=============================================**/ }
-  @media (max-width: 53.125em) {
-    .mainContent-rightColumn {
-      width: 90%; } }
-
-.mainContent-column {
-  margin: 0 2rem;
-  border-left: 1px solid #333333;
-  border-right: 1px solid #333333;
-  padding: 0 1rem;
-  /**============================================
-   *             Mobile Small - 600
-@include respond(break-600) {}
-   *=============================================**/
-  /**============================================
-   *             Mobile Large - 850
-@include respond(break-850) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-850X) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-1000) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Small - 1200
-   @include respond(break-1200) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Medium - 1400
-   @include respond(break-1400) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600-over) {}
-   *=============================================**/
-  /**============================================
-   *             Mobile Small - 600
-@include respond(break-600) {}
-   *=============================================**/
-  /**============================================
-   *             Mobile Large - 850
-@include respond(break-850) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-850X) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-1000) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Small - 1200
-   @include respond(break-1200) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Medium - 1400
-   @include respond(break-1400) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600-over) {}
-   *=============================================**/ }
-  @media (max-width: 53.125em) {
-    .mainContent-column {
-      width: 40%; } }
-  @media (max-width: 37.5em) {
-    .mainContent-column {
-      width: 80%; } }
-
-.mainContent-heading {
-  font-size: 5rem;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 300;
+.navBar__landing {
+  height: 13vh;
   width: 100%;
-  overflow: hidden;
-  background-color: white;
-  padding: 2rem 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.35); }
-
-.mainContent-form {
-  background-color: rgba(0, 0, 0, 0.35);
-  padding: 1rem;
-  /**============================================
-   *             Mobile Small - 600
-@include respond(break-600) {}
-   *=============================================**/
-  /**============================================
-   *             Mobile Large - 850
-@include respond(break-850) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-850X) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-1000) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Small - 1200
-   @include respond(break-1200) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Medium - 1400
-   @include respond(break-1400) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600-over) {}
-   *=============================================**/ }
-  @media (max-width: 53.125em) {
-    .mainContent-form {
-      display: flex;
-      align-items: center;
-      height: 90vh; } }
-
-.mainContent-video {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
-  justify-content: center;
-  height: 75vh;
-  padding: 5rem 0; }
-  .mainContent-video--src {
-    width: 100%; }
-
-.mainContent-contact {
-  /**============================================
-   *             Mobile Small - 600
-@include respond(break-600) {}
-   *=============================================**/
-  /**============================================
-   *             Mobile Large - 850
-@include respond(break-850) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-850X) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-1000) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Small - 1200
-   @include respond(break-1200) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Medium - 1400
-   @include respond(break-1400) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600-over) {}
-   *=============================================**/ }
-  @media (max-width: 100em) {
-    .mainContent-contact {
-      height: 90vh; } }
-
-.mobile-display-none {
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 10;
   /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -547,12 +135,9 @@ a {
    @include respond(break-1600-over) {}
    *=============================================**/ }
   @media (max-width: 53.125em) {
-    .mobile-display-none {
+    .navBar__landing {
       display: none; } }
 
-/**========================================================================
- *                           navBar
- *========================================================================**/
 .navBar {
   background-position: 50% 50%;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/piano-background.jpg);
@@ -597,79 +182,34 @@ a {
   @media (max-width: 53.125em) {
     .navBar {
       display: none; } }
-  .navBar-logo {
+  .navBar__logo {
     position: relative;
     margin: 0 3rem;
     font-size: 6rem;
     color: white;
     font-family: 'Dancing Script', cursive; }
-  .navBar-list {
+    .navBar__logo--letter2 {
+      position: absolute;
+      left: 2rem;
+      top: 1rem; }
+    .navBar__logo--letter3 {
+      position: absolute;
+      left: 4.5rem;
+      top: 1.5rem; }
+  .navBar__list {
     display: flex;
     list-style: none;
     padding: 0 3rem;
     font-size: 2rem;
     color: white; }
-    .navBar-list--item {
+    .navBar__list--item {
       padding: 0 2rem;
       text-decoration: underline; }
 
-.landing-navBar {
-  height: 13vh;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.35);
-  z-index: 10;
-  /**============================================
-   *             Mobile Small - 600
-@include respond(break-600) {}
-   *=============================================**/
-  /**============================================
-   *             Mobile Large - 850
-@include respond(break-850) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-850X) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-1000) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Small - 1200
-   @include respond(break-1200) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Medium - 1400
-   @include respond(break-1400) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600-over) {}
-   *=============================================**/ }
-  @media (max-width: 53.125em) {
-    .landing-navBar {
-      display: none; } }
-
-.mobileNav-logo {
-  font-size: 1.8rem;
-  margin: 0 1rem;
-  color: white; }
-
-.mobileNav-text {
-  color: white;
-  font-size: 1.8rem; }
-
-.mobileNav-container {
+/**========================================================================
+ *                           NAVBAR-MOBILE
+ *========================================================================**/
+.navBar__mobile {
   background-color: rgba(0, 0, 0, 0.95);
   display: flex;
   justify-content: space-between;
@@ -739,69 +279,15 @@ a {
    @include respond(break-1600-over) {}
    *=============================================**/ }
   @media (min-width: 53.125em) {
-    .mobileNav-container {
+    .navBar__mobile {
       display: none; } }
   @media (max-width: 53.125em) {
-    .mobileNav-container {
+    .navBar__mobile {
       z-index: 10;
       width: 100%;
       top: 0; } }
 
-.topnav {
-  overflow: hidden;
-  border-top: 2px solid white;
-  position: sticky;
-  top: 0;
-  left: 0;
-  display: none;
-  z-index: 10;
-  transition: all 1s;
-  /**============================================
-   *             Mobile Small - 600
-@include respond(break-600) {}
-   *=============================================**/
-  /**============================================
-   *             Mobile Large - 850
-@include respond(break-850) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-850X) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-1000) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Small - 1200
-   @include respond(break-1200) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Medium - 1400
-   @include respond(break-1400) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600-over) {}
-   *=============================================**/ }
-  @media (max-width: 53.125em) {
-    .topnav {
-      top: 0; } }
-
-.topnav a {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.95);
-  padding: 1.4rem 1.6rem;
-  text-decoration: none;
-  font-size: 1.7rem;
-  display: block;
-  overflow: hidden; }
-
-.icon {
+.navBar__icon {
   overflow: hidden;
   border-left: 2px solid white;
   background-color: rgba(0, 0, 0, 0.95);
@@ -845,25 +331,77 @@ a {
    @include respond(break-1600-over) {}
    *=============================================**/ }
   @media (min-width: 53.125em) {
-    .icon {
+    .navBar__icon {
       display: none; } }
 
-.topnav a:hover {
+.navBar__logo--link {
+  color: white;
+  font-size: 1.8rem; }
+
+.navBar__logo--mobile {
+  font-size: 1.8rem;
+  margin: 0 1rem;
+  color: white; }
+
+.subNav {
+  overflow: hidden;
+  border-top: 2px solid white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 10;
+  transition: all 1s;
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-850X) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600-over) {}
+   *=============================================**/ }
+  @media (max-width: 53.125em) {
+    .subNav {
+      top: 0; } }
+
+.subNav a {
+  color: white;
   background-color: rgba(0, 0, 0, 0.95);
-  color: #333333; }
+  padding: 1.4rem 1.6rem;
+  text-decoration: none;
+  font-size: 1.7rem;
+  display: block;
+  overflow: hidden; }
+  .subNav a:hover {
+    background-color: rgba(0, 0, 0, 0.95);
+    color: #333333; }
 
 .active {
   display: block; }
-
-.letter2 {
-  position: absolute;
-  left: 2rem;
-  top: 1rem; }
-
-.letter3 {
-  position: absolute;
-  left: 4.5rem;
-  top: 1.5rem; }
 
 /**========================================================================
  *                           contactBooking
@@ -2340,3 +1878,43 @@ a {
     border-radius: 20px; }
     .landing__header--btn:hover {
       background-color: red; }
+
+/**========================================================================
+ *                          UTILITY 
+ *========================================================================**/
+.mobile-display-none {
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-850X) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600-over) {}
+   *=============================================**/ }
+  @media (max-width: 53.125em) {
+    .mobile-display-none {
+      display: none; } }
