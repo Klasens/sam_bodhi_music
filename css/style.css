@@ -1287,6 +1287,8 @@ a {
     color: white;
     text-decoration: underline;
     margin-bottom: 1rem; }
+    .songList__header--shows {
+      color: #333333; }
   .songList__link {
     color: #328bf8;
     font-size: 1.8rem;

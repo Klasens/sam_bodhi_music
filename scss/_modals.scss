@@ -10,6 +10,9 @@
     color: $color-white;
     text-decoration: underline;
     margin-bottom: 1rem;
+    &--shows {
+      color: $color-black;
+    }
   }
   &__link {
     color: $color-blue;
