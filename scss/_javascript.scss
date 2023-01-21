@@ -6,4 +6,8 @@
 
 .pointerEvents-none {
   pointer-events: none;
+
+  & > * {
+    pointer-events: none;
+  }
 }

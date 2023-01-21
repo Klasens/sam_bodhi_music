@@ -1,11 +1,11 @@
 'use strict';
 
-const originModal = document.querySelector('.modal__origin');
-const originBtn = document.querySelector('.about__link');
+const originModal = document.querySelector('.modal__origin--outer');
+const originBtn = document.querySelector('.about__link--container');
 const modalClose = document.querySelector('#modalCloseOrigin');
-const outerModal = document.querySelector('.about');
+const originModalContent = document.querySelector('.modal__origin');
 
-originModal.addEventListener('click', function (e) {
+originModalContent.addEventListener('click', function (e) {
   e.preventDefault();
   e.stopPropagation();
   e.stopImmediatePropagation();
@@ -18,7 +18,7 @@ originBtn.addEventListener('click', function (e) {
   originModal.classList.add('fadeIn');
   originModal.classList.remove('pointerEvents-none');
 });
-outerModal.addEventListener('click', function () {
+originModal.addEventListener('click', function () {
   originModal.classList.remove('fadeIn');
   originModal.classList.add('pointerEvents-none');
 });

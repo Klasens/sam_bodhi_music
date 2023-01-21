@@ -5,7 +5,7 @@ const outerModalTwo = document.querySelector('.outerModalTwo');
 
 //btns
 const jazzBtn = document.querySelector('#jazz');
-const jazzModal = document.querySelector('#jazzModal');
+const jazzModal = document.querySelector('.modal__songs--outer');
 const bluesBtn = document.querySelector('#blues');
 const bluesModal = document.querySelector('#bluesModal');
 const americanaBtn = document.querySelector('#americana');
@@ -93,16 +93,16 @@ for (let i = 0; i < modalCloseTwo.length; i++) {
   });
 }
 
-outerModalTwo.addEventListener('click', function () {
-  jazzModal.classList.remove('fadeIn');
-  jazzModal.classList.add('pointerEvents-none');
-  bluesModal.classList.remove('fadeIn');
-  bluesModal.classList.add('pointerEvents-none');
-  americanaModal.classList.remove('fadeIn');
-  americanaModal.classList.add('pointerEvents-none');
-  originalModal.classList.remove('fadeIn');
-  originalModal.classList.add('pointerEvents-none');
-});
+// outerModalTwo.addEventListener('click', function () {
+//   jazzModal.classList.remove('fadeIn');
+//   jazzModal.classList.add('pointerEvents-none');
+//   bluesModal.classList.remove('fadeIn');
+//   bluesModal.classList.add('pointerEvents-none');
+//   americanaModal.classList.remove('fadeIn');
+//   americanaModal.classList.add('pointerEvents-none');
+//   originalModal.classList.remove('fadeIn');
+//   originalModal.classList.add('pointerEvents-none');
+// });
 
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') {

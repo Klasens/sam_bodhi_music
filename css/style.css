@@ -205,6 +205,9 @@ a {
     .navBar__list--item {
       padding: 0 2rem;
       text-decoration: underline; }
+  .navBar__link {
+    color: white;
+    font-size: 1.8rem; }
 
 /**========================================================================
  *                           NAVBAR-MOBILE
@@ -588,7 +591,7 @@ a {
  *                          ABOUT 
  *========================================================================**/
 .about {
-  margin-bottom: 1rem; }
+  position: relative; }
   .about__heading {
     font-size: 5rem;
     text-transform: uppercase;
@@ -598,8 +601,7 @@ a {
     overflow: hidden;
     background-color: white;
     padding: 2rem 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.35);
-    margin-top: 3rem; }
+    border-bottom: 1px solid rgba(0, 0, 0, 0.35); }
   .about__subHeading {
     font-size: 4rem;
     margin: 2rem 0;
@@ -644,9 +646,14 @@ a {
       .about__text {
         width: 100%; } }
   .about__link {
-    color: #0000ee;
-    font-size: 2rem;
-    cursor: pointer; }
+    color: #333333;
+    font-size: 2rem; }
+    .about__link--container {
+      border: 1px solid #6e6e6e;
+      cursor: pointer;
+      padding: 1rem;
+      border-radius: 5px;
+      background-color: #e9e9e9; }
   .about__bio {
     position: relative;
     height: 100%;
@@ -791,7 +798,7 @@ a {
  *                         SHOWS 
  *========================================================================**/
 .shows {
-  height: auto;
+  height: 100vh;
   position: relative;
   overflow: hidden;
   /**============================================
@@ -1248,6 +1255,8 @@ a {
  *========================================================================**/
 .pointerEvents-none {
   pointer-events: none; }
+  .pointerEvents-none > * {
+    pointer-events: none; }
 
 /**========================================================================
  *                          ANIMATIONS 
@@ -1294,63 +1303,20 @@ a {
     font-size: 1.8rem;
     cursor: pointer; }
 
-.modal__songs {
-  height: 90vh;
-  width: 40vw;
-  position: absolute;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-color: rgba(255, 255, 255, 0.96);
-  z-index: 10;
-  overflow: scroll;
-  /**============================================
-   *             Mobile Small - 600
-@include respond(break-600) {}
-   *=============================================**/
-  /**============================================
-   *             Mobile Large - 850
-@include respond(break-850) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-850X) {}
-   *=============================================**/
-  /**============================================
-   *                Tablet - 1000
-@include respond(break-1000) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Small - 1200
-   @include respond(break-1200) {}
-   *=============================================**/
-  /**============================================
-   *                Monitor Medium - 1400
-   @include respond(break-1400) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600) {}
-   *=============================================**/
-  /**============================================
-   *                Telvision/Projector >1600 
-   @include respond(break-1600-over) {}
-   *=============================================**/ }
-  .modal__songs--jazz, .modal__songs--americana, .modal__songs--blues, .modal__songs--original {
-    opacity: 0; }
-  @media (max-width: 100em) {
-    .modal__songs {
-      width: 100%; } }
-
 .modal__origin {
-  position: absolute;
-  bottom: -5rem;
-  opacity: 0;
-  width: 75%;
+  position: relative;
+  z-index: 10;
+  width: 90%;
+  height: 90%;
+  display: flex;
   border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.85);
+  border: 2px solid white;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("/img/bodhi_sketch.jpg");
+  background-size: contain;
+  background-position: center;
   /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -1385,41 +1351,123 @@ a {
    *=============================================**/ }
   @media (max-width: 53.125em) {
     .modal__origin {
-      width: 100%;
-      bottom: 0; } }
+      width: 95%;
+      height: 90%;
+      justify-content: center; } }
+  .modal__origin--content {
+    position: relative;
+    border: solid 1px white;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 2rem; }
+  .modal__origin--separator {
+    display: block;
+    content: ' ';
+    width: 70%;
+    height: 2px;
+    background-color: white;
+    margin: 2rem 0; }
+  .modal__origin--inner {
+    z-index: 100;
+    width: 85rem;
+    height: 70rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.25);
+    /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+    /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+    /**============================================
+   *                Tablet - 1000
+@include respond(break-850X) {}
+   *=============================================**/
+    /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+    /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600) {}
+   *=============================================**/
+    /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600-over) {}
+   *=============================================**/ }
+    @media (max-width: 53.125em) {
+      .modal__origin--inner {
+        width: 95%;
+        height: 90%; } }
+  .modal__origin--outer {
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.85); }
 
 .modal__header {
-  width: 100%;
   text-align: center; }
   .modal__header--songs {
     font-size: 4.5rem;
     font-weight: 300; }
   .modal__header--about {
+    text-align: center;
     color: white;
     margin: 1rem 0;
-    font-size: 2.7rem; }
+    font-size: 4rem; }
 
 .modal__text {
   color: white;
-  font-size: 1.7rem;
-  width: 90%;
+  font-size: 1.9rem;
+  width: 95%;
   padding: 1rem;
   margin: 0 auto; }
 
-.modal__list {
-  list-style: none;
-  padding: 1rem; }
-  .modal__list > li:not(:first-child) {
-    margin-top: 1rem; }
-
 .modal__close {
-  height: 5rem;
-  width: 5rem;
+  cursor: pointer;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid white;
   position: absolute;
   top: 2rem;
   right: 2rem;
-  cursor: pointer;
-  animation: scaleUp 2s infinite linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s;
+  transform: scale(1); }
+  .modal__close:hover {
+    transform: scale(1.1); }
+
+.flex {
+  display: flex; }
+
+.modal {
   /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -1452,24 +1500,100 @@ a {
    *                Telvision/Projector >1600 
    @include respond(break-1600-over) {}
    *=============================================**/ }
-  .modal__close--line1, .modal__close--line2 {
+  .modal__songs {
+    height: 100%;
+    width: 100%;
     position: absolute;
-    top: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    overflow: scroll; }
+    .modal__songs--outer {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 0.85); }
+    .modal__songs--inner {
+      z-index: 100;
+      width: 85rem;
+      height: 70rem;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+      /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+      /**============================================
+   *                Tablet - 1000
+@include respond(break-850X) {}
+   *=============================================**/
+      /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+      /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+      /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+      /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600) {}
+   *=============================================**/
+      /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600-over) {}
+   *=============================================**/ }
+      @media (max-width: 53.125em) {
+        .modal__songs--inner {
+          width: 95%;
+          height: 90%; } }
+  .modal__list {
+    list-style: none;
+    padding: 1rem; }
+    .modal__list > li:not(:first-child) {
+      margin-top: 1rem; }
+  .modal--jazz, .modal--americana, .modal--blues, .modal--original {
+    opacity: 0; }
+  .modal__close--songs {
+    cursor: pointer;
+    height: 4rem;
     width: 4rem;
-    margin: 1rem;
-    height: 2px;
-    background-color: red; }
-  .modal__close--line1 {
-    transform-origin: bottom;
-    transform: rotate(45deg); }
-  .modal__close--line2 {
-    transform-origin: initial;
-    transform: rotate(-45deg); }
-  @media (max-width: 53.125em) {
-    .modal__close {
-      position: fixed;
-      top: 5rem;
-      right: 1rem; } }
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #333333;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s;
+    transform: scale(1); }
+    .modal__close--songs:hover {
+      transform: scale(1.1); }
+  @media (max-width: 100em) {
+    .modal {
+      width: 100%; } }
 
 /**========================================================================
  *                           CONTACT

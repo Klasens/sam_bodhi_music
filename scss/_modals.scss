@@ -22,108 +22,120 @@
 }
 // --------- MODAL STYLES --------- //
 .modal {
-  &__songs {
-    height: 90vh;
-    width: 40vw;
-    position: absolute;
-    top: 0;
-    //todo - flex column mixin
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: $color-modal-transparent;
-    z-index: 10;
-    overflow: scroll;
-
-    &--jazz,
-    &--americana,
-    &--blues,
-    &--original {
-      opacity: 0;
-    }
-
-    //* == MOBILE QUERIES == //
-    @include respond(break-1600) {
-      width: 100%;
-    }
-  }
-
   &__origin {
-    position: absolute;
-    bottom: -5rem;
-    opacity: 0;
-    width: 75%;
+    position: relative;
+    z-index: 10;
+    width: 90%;
+    height: 90%;
+    display: flex;
     border-radius: 15px;
-    background-color: $color-black-transparent-2;
+    border: 2px solid $color-white;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.15),
+        rgba(0, 0, 0, 0.15)
+      ),
+      url('/img/bodhi_sketch.jpg');
+    background-size: contain;
+    background-position: center;
     @include respond(break-850) {
+      width: 95%;
+      height: 90%;
+      justify-content: center;
+    }
+
+    &--content {
+      position: relative;
+      border: solid 1px $color-white;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      margin-bottom: 2rem;
+    }
+
+    &--separator {
+      display: block;
+      content: ' ';
+      width: 70%;
+      height: 2px;
+      background-color: $color-white;
+      margin: 2rem 0;
+    }
+    &--inner {
+      z-index: 100;
+      width: 85rem;
+      height: 70rem;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.25);
+      @include respond(break-850) {
+        width: 95%;
+        height: 90%;
+      }
+    }
+
+    &--outer {
+      z-index: 100;
+      position: absolute;
       width: 100%;
-      bottom: 0;
+      height: 100%;
+      opacity: 0;
+      background-color: rgba(0, 0, 0, 0.85);
     }
   }
 
   &__header {
-    width: 100%;
     text-align: center;
     &--songs {
       font-size: 4.5rem;
       font-weight: 300;
     }
     &--about {
+      text-align: center;
       color: $color-white;
       margin: 1rem 0;
-      font-size: 2.7rem;
+      font-size: 4rem;
     }
   }
 
   &__text {
     color: $color-white;
-    font-size: 1.7rem;
-    width: 90%;
+    font-size: 1.9rem;
+    width: 95%;
     padding: 1rem;
     margin: 0 auto;
   }
 
-  &__list {
-    list-style: none;
-    padding: 1rem;
-    & > li:not(:first-child) {
-      margin-top: 1rem;
-    }
-  }
-
   &__close {
-    height: 5rem;
-    width: 5rem;
+    cursor: pointer;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid $color-white;
     position: absolute;
     top: 2rem;
     right: 2rem;
-    cursor: pointer;
-    animation: scaleUp 2s infinite linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s;
+    transform: scale(1);
 
-    &--line1,
-    &--line2 {
-      position: absolute;
-      top: 25%;
-      width: 4rem;
-      margin: 1rem;
-      height: 2px;
-      background-color: $color-red;
-    }
-    &--line1 {
-      transform-origin: bottom;
-      transform: rotate(45deg);
-    }
-    &--line2 {
-      transform-origin: initial;
-      transform: rotate(-45deg);
-    }
-
-    //* == MOBILE QUERIES == //
-    @include respond(break-850) {
-      position: fixed;
-      top: 5rem;
-      right: 1rem;
+    &:hover {
+      transform: scale(1.1);
     }
   }
 }

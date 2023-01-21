@@ -1,0 +1,16 @@
+<div class="modal__origin--outer pointerEvents-none">
+  <div class="modal__origin--inner">
+    <div class="modal__origin">
+      <span class="modal__close" id="modalCloseOrigin">
+        <img src="/img/x.png" alt="" />
+      </span>
+      <div class="modal__origin--content">
+        <h4 class="modal__header--about">Anuttara Samyak Sambodhi</h4>
+        <div class="modal__origin--separator"></div>
+        {% for text in origin %}
+        <p class="modal__text">{{text.paragraph}}</p>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,7 +1,7 @@
 'use strict';
 
-const mobileNav = document.getElementById('navBar__mobile');
-const mobileLinks = document.querySelector('.sunNav');
+const mobileNav = document.getElementById('mobileNav');
+const mobileLinks = document.querySelector('.subNav');
 const form = document.querySelector('.form');
 
 function displayMobileLinks() {
@@ -12,7 +12,4 @@ function displayMobileLinks() {
   }
 }
 
-window.addEventListener('DOMContentLoaded', function () {
-  form.classList.add('fadeIn');
-});
 mobileNav.addEventListener('click', displayMobileLinks);

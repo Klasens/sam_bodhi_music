@@ -2,7 +2,7 @@
  *                          ABOUT 
  *========================================================================**/
 .about {
-  margin-bottom: 1rem;
+  position: relative;
 
   &__heading {
     font-size: 5rem;
@@ -14,7 +14,6 @@
     background-color: $color-white;
     padding: 2rem 0;
     border-bottom: 1px solid $color-gray-transparent;
-    margin-top: 3rem;
   }
 
   &__subHeading {
@@ -33,9 +32,16 @@
   }
 
   &__link {
-    color: $color-link;
+    color: $color-black;
     font-size: 2rem;
-    cursor: pointer;
+
+    &--container {
+      border: 1px solid $color-dark-gray;
+      cursor: pointer;
+      padding: 1rem;
+      border-radius: 5px;
+      background-color: $color-off-white;
+    }
   }
 
   &__bio {

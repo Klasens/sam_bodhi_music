@@ -1,0 +1,85 @@
+.flex {
+  display: flex;
+}
+
+.modal {
+  &__songs {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    //todo - flex column mixin
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    overflow: scroll;
+
+    &--outer {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 0.85);
+    }
+    &--inner {
+      z-index: 100;
+      width: 85rem;
+      height: 70rem;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $color-white;
+      @include respond(break-850) {
+        width: 95%;
+        height: 90%;
+      }
+    }
+  }
+  &__list {
+    list-style: none;
+    padding: 1rem;
+    & > li:not(:first-child) {
+      margin-top: 1rem;
+    }
+  }
+
+  &--jazz,
+  &--americana,
+  &--blues,
+  &--original {
+    opacity: 0;
+  }
+  &__close--songs {
+    cursor: pointer;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid $color-black;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s;
+    transform: scale(1);
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  //* == MOBILE QUERIES == //
+  @include respond(break-1600) {
+    width: 100%;
+  }
+}

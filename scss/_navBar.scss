@@ -66,4 +66,8 @@
       text-decoration: underline;
     }
   }
+  &__link {
+    color: $color-white;
+    font-size: 1.8rem;
+  }
 }
