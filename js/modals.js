@@ -1,5 +1,3 @@
-'use strict';
-
 //outer containers
 const outerModalTwo = document.querySelector('.outerModalTwo');
 

@@ -4,43 +4,47 @@
 
 .modal {
   &__songs {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    //todo - flex column mixin
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-color: red;
+    width: 50rem;
+    height: 50rem;
     z-index: 10;
-    overflow: scroll;
-
+    overflow: auto;
     &--outer {
-      z-index: 1;
       position: absolute;
       top: 0;
-      width: 100%;
       height: 100%;
-      opacity: 1;
-      background-color: rgba(0, 0, 0, 0.85);
-    }
-    &--inner {
-      z-index: 100;
-      width: 85rem;
-      height: 70rem;
-      position: absolute;
+      width: 100%;
+      background-color: blue;
       display: flex;
       justify-content: center;
       align-items: center;
-      border-radius: 15px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: $color-white;
-      @include respond(break-850) {
-        width: 95%;
-        height: 90%;
-      }
+    }
+    &--inner {
+      position: relative;
+      width: 95%;
+      height: 95%;
+      background-color: green;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &--jazz {
+      opacity: 1;
+    }
+    &--americana {
+      opacity: 0;
+    }
+    &--blues {
+      opacity: 0;
+    }
+    &--original {
+      opacity: 0;
+    }
+    &--jazz,
+    &--americana,
+    &--blues,
+    &--original {
+      // opacity: 0;
     }
   }
   &__list {
@@ -51,12 +55,6 @@
     }
   }
 
-  &--jazz,
-  &--americana,
-  &--blues,
-  &--original {
-    opacity: 0;
-  }
   &__close--songs {
     cursor: pointer;
     height: 4rem;

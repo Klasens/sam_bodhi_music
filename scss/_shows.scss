@@ -4,7 +4,8 @@
 
 // ---- SECTION CONTAINER ---- //
 .shows {
-  height: 100vh;
+  height: calc(100vh - 70px);
+  min-height: 100%;
   position: relative;
   overflow: hidden;
   @include respond(break-850) {

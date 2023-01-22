@@ -1,19 +1,43 @@
 <!-- Modal -->
+<div class="modal__songs modal__songs--jazz" id="jazzModal">
+  <!-- closeModal -->
+  <span class="modal__close--songs">
+    <img src="/img/x.png" alt="" />
+  </span>
+  <div class="modal__songs--content">
+    <h4 class="modal__header--songs">Selected Jazz</h4>
+    <ul class="modal__list">
+      <!-- Nunjucks Render List - Jazz One -->
+      {% for list in jazzOne %}
+      <li class="list__song">
+        <span class="list__song--title">{{list.song.title}}</span>
+        <span class="list__song--artist">{{list.song.artist}}</span>
+      </li>
+      {% endfor %}
+    </ul>
+    <ul class="modal__list">
+      <!-- Nunjucks Render List - Jazz Two -->
+      {% for list in jazzTwo %}
+      <li class="list__song">
+        <span class="list__song--title">{{list.song.title}}</span>
+        <span class="list__song--artist">{{list.song.artist}}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<!-- Modal -->
 <div class="modal__songs--outer">
   <div class="modal__songs--inner">
-    <div
-      class="modal__songs modal__songs--jazz pointerEvents-none"
-      id="jazzModal"
-    >
+    <div class="modal__songs modal__songs--blues" id="bluesModal">
       <!-- closeModal -->
       <span class="modal__close--songs">
         <img src="/img/x.png" alt="" />
       </span>
-      <h4 class="modal__header">Selected Jazz</h4>
-
+      <h4 class="modal__header--songs">Selected Blues</h4>
       <ul class="modal__list">
-        <!-- Nunjucks Render List - Jazz One -->
-        {% for list in jazzOne %}
+        <!-- Nunjucks Render List - Blues One -->
+        {% for list in bluesOne %}
         <li class="list__song">
           <span class="list__song--title">{{list.song.title}}</span>
           <span class="list__song--artist">{{list.song.artist}}</span>
@@ -21,8 +45,8 @@
         {% endfor %}
       </ul>
       <ul class="modal__list">
-        <!-- Nunjucks Render List - Jazz Two -->
-        {% for list in jazzTwo %}
+        <!-- Nunjucks Render List - Blues Two -->
+        {% for list in bluesTwo %}
         <li class="list__song">
           <span class="list__song--title">{{list.song.title}}</span>
           <span class="list__song--artist">{{list.song.artist}}</span>
@@ -33,80 +57,53 @@
   </div>
 </div>
 <!-- Modal -->
-<div
-  class="modal__songs modal__songs--blues pointerEvents-none"
-  id="bluesModal"
->
-  <!-- closeModal -->
-  <span class="modal__close--songs">
-    <img src="/img/x.png" alt="" />
-  </span>
-  <h4 class="modal__header">Selected Blues</h4>
-  <ul class="modal__list">
-    <!-- Nunjucks Render List - Blues One -->
-    {% for list in bluesOne %}
-    <li class="list__song">
-      <span class="list__song--title">{{list.song.title}}</span>
-      <span class="list__song--artist">{{list.song.artist}}</span>
-    </li>
-    {% endfor %}
-  </ul>
-  <ul class="modal__list">
-    <!-- Nunjucks Render List - Blues Two -->
-    {% for list in bluesTwo %}
-    <li class="list__song">
-      <span class="list__song--title">{{list.song.title}}</span>
-      <span class="list__song--artist">{{list.song.artist}}</span>
-    </li>
-    {% endfor %}
-  </ul>
+<div class="modal__songs--outer">
+  <div class="modal__songs--inner">
+    <div class="modal__songs modal__songs--americana" id="americanaModal">
+      <!-- closeModal -->
+      <span class="modal__close--songs">
+        <img src="/img/x.png" alt="" />
+      </span>
+      <h4 class="modal__header--songs">Selected Americana</h4>
+      <ul class="modal__list">
+        <!-- Nunjucks Render List - Americana One -->
+        {% for list in americanaOne %}
+        <li class="list__song">
+          <span class="list__song--title">{{list.song.title}}</span>
+          <span class="list__song--artist">{{list.song.artist}}</span>
+        </li>
+        {% endfor %}
+      </ul>
+      <ul class="modal__list">
+        <!-- Nunjucks Render List - Americana Two -->
+        {% for list in americanaTwo %}
+        <li class="list__song">
+          <span class="list__song--title">{{list.song.title}}</span>
+          <span class="list__song--artist">{{list.song.artist}}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 </div>
 <!-- Modal -->
-<div
-  class="modal__songs modal__songs--americana pointerEvents-none"
-  id="americanaModal"
->
-  <!-- closeModal -->
-  <span class="modal__close--songs">
-    <img src="/img/x.png" alt="" />
-  </span>
-  <h4 class="modal__header">Selected Americana</h4>
-  <ul class="modal__list">
-    <!-- Nunjucks Render List - Americana One -->
-    {% for list in americanaOne %}
-    <li class="list__song">
-      <span class="list__song--title">{{list.song.title}}</span>
-      <span class="list__song--artist">{{list.song.artist}}</span>
-    </li>
-    {% endfor %}
-  </ul>
-  <ul class="modal__list">
-    <!-- Nunjucks Render List - Americana Two -->
-    {% for list in americanaTwo %}
-    <li class="list__song">
-      <span class="list__song--title">{{list.song.title}}</span>
-      <span class="list__song--artist">{{list.song.artist}}</span>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
-<!-- Modal -->
-<div
-  class="modal__songs modal__songs--original pointerEvents-none"
-  id="originalModal"
->
-  <!-- closeModal -->
-  <span class="modal__close--songs">
-    <img src="/img/x.png" alt="" />
-  </span>
-  <h4 class="modal__header">Selected Originals</h4>
-  <ul class="modal__list">
-    <!-- Nunjucks Render List - Originals -->
-    {% for list in originals %}
-    <li class="list__song">
-      <span class="list__song--title">{{list.song.title}}</span>
-      <span class="list__song--artist">{{list.song.artist}}</span>
-    </li>
-    {% endfor %}
-  </ul>
+<div class="modal__songs--outer">
+  <div class="modal__songs--inner">
+    <div class="modal__songs modal__songs--original" id="originalModal">
+      <!-- closeModal -->
+      <span class="modal__close--songs">
+        <img src="/img/x.png" alt="" />
+      </span>
+      <h4 class="modal__header--songs">Selected Originals</h4>
+      <ul class="modal__list">
+        <!-- Nunjucks Render List - Originals -->
+        {% for list in originals %}
+        <li class="list__song">
+          <span class="list__song--title">{{list.song.title}}</span>
+          <span class="list__song--artist">{{list.song.artist}}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 </div>
