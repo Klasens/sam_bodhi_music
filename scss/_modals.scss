@@ -54,6 +54,8 @@
       width: 95%;
       height: 90%;
       justify-content: center;
+      background-image: none;
+      background-color: $color-off-white;
     }
 
     &--content {
@@ -68,6 +70,7 @@
       margin-bottom: 2rem;
       @include respond(break-850) {
         width: 100%;
+        background-color: rgba(0, 0, 0, 0.85);
       }
     }
 
@@ -147,6 +150,11 @@
 
     &:hover {
       transform: scale(1.1);
+    }
+    @include respond(break-850) {
+      border: solid 1px $color-black;
+      top: 0.5rem;
+      right: 0.5rem;
     }
   }
 }

@@ -4,13 +4,12 @@
 
 // ---- SECTION CONTAINER ---- //
 .shows {
-  height: calc(100vh - 70px);
-  min-height: 100%;
   position: relative;
   overflow: hidden;
   @include respond(break-850) {
     display: flex;
     align-items: center;
+    height: auto;
   }
 
   // ---- BACKGROUND IMAGES ---- //

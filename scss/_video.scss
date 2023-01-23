@@ -11,6 +11,9 @@
   align-items: center;
   height: 90vh;
   overflow: hidden;
+  @include respond(break-850) {
+    height: auto;
+  }
 
   &__header {
     margin-bottom: 2rem;
