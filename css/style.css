@@ -1716,7 +1716,7 @@ a {
           align-items: center;
           width: 95%;
           justify-content: start;
-          height: auto; } }
+          height: 85%; } }
     .modal__songs--jazz {
       opacity: 0; }
     .modal__songs--americana {
