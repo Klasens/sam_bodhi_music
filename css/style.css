@@ -1662,7 +1662,8 @@ a {
    *=============================================**/ }
     @media (max-width: 53.125em) {
       .modal__songs {
-        width: 95%; } }
+        width: 95%;
+        height: 90%; } }
     .modal__songs--separator {
       display: block;
       width: 70%;
@@ -1776,9 +1777,45 @@ a {
     justify-content: center;
     align-items: center;
     transition: transform 0.5s;
-    transform: scale(1); }
+    transform: scale(1);
+    /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+    /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+    /**============================================
+   *                Tablet - 1000
+@include respond(break-850X) {}
+   *=============================================**/
+    /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+    /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+    /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600) {}
+   *=============================================**/
+    /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600-over) {}
+   *=============================================**/ }
     .modal__close--songs:hover {
       transform: scale(1.1); }
+    @media (max-width: 53.125em) {
+      .modal__close--songs {
+        top: 0.5rem;
+        right: 0.5rem; } }
   @media (max-width: 100em) {
     .modal {
       width: 100%; } }

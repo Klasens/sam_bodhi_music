@@ -15,6 +15,7 @@
     padding: 3rem;
     @include respond(break-850) {
       width: 95%;
+      height: 90%;
     }
 
     &--separator {
@@ -86,6 +87,10 @@
 
     &:hover {
       transform: scale(1.1);
+    }
+    @include respond(break-850) {
+      top: 0.5rem;
+      right: 0.5rem;
     }
   }
 
