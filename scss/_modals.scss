@@ -3,7 +3,9 @@
  *========================================================================**/
 // --------- SONG LIST STYLES --------- //
 .songList {
-  margin-top: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &__header {
     font-size: 2.5rem;
@@ -15,9 +17,16 @@
     }
   }
   &__link {
+    padding: 1rem 0.5rem;
+    border: 1px solid $color-black;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: $color-off-white;
     color: $color-blue;
+    text-align: center;
     font-size: 1.8rem;
     cursor: pointer;
+    width: 75%;
   }
 }
 // --------- MODAL STYLES --------- //
@@ -57,11 +66,13 @@
       align-items: center;
       width: 90%;
       margin-bottom: 2rem;
+      @include respond(break-850) {
+        width: 100%;
+      }
     }
 
     &--separator {
       display: block;
-      content: ' ';
       width: 70%;
       height: 2px;
       background-color: $color-white;
@@ -82,7 +93,6 @@
       background-color: rgba(0, 0, 0, 0.25);
       @include respond(break-850) {
         width: 95%;
-        height: 90%;
       }
     }
 

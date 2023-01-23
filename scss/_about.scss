@@ -61,6 +61,8 @@
 
   &__image {
     object-fit: contain;
+    display: flex;
+    justify-content: center;
   }
 }
 .about__column--left {
