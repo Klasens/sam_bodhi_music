@@ -2349,3 +2349,6 @@ a {
   @media (max-width: 53.125em) {
     .mobile-display-none {
       display: none; } }
+
+.u__font-size--small {
+  font-size: 2.5rem; }
