@@ -973,8 +973,40 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
   overflow: hidden;
+  height: auto;
+  /**============================================
+   *             Mobile Small - 600
+@include respond(break-600) {}
+   *=============================================**/
+  /**============================================
+   *             Mobile Large - 850
+@include respond(break-850) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-850X) {}
+   *=============================================**/
+  /**============================================
+   *                Tablet - 1000
+@include respond(break-1000) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Small - 1200
+   @include respond(break-1200) {}
+   *=============================================**/
+  /**============================================
+   *                Monitor Medium - 1400
+   @include respond(break-1400) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600) {}
+   *=============================================**/
+  /**============================================
+   *                Telvision/Projector >1600 
+   @include respond(break-1600-over) {}
+   *=============================================**/
   /**============================================
    *             Mobile Small - 600
 @include respond(break-600) {}
@@ -1007,9 +1039,9 @@ a {
    *                Telvision/Projector >1600 
    @include respond(break-1600-over) {}
    *=============================================**/ }
-  @media (max-width: 53.125em) {
+  @media (min-width: 100em) {
     .video {
-      height: auto; } }
+      height: 90vh; } }
   .video__header {
     margin-bottom: 2rem;
     font-size: 6rem;

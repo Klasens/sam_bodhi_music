@@ -15,6 +15,9 @@ const originalModal = document.querySelector('#originalModal');
 const modalClose = document.querySelectorAll('.modal__close');
 const modalCloseTwo = document.querySelectorAll('.modal__close--songs');
 
+// Y offset
+const yOffset = 10;
+const y = jazzModal.getBoundingClientRect().top + window.pageYOffset - yOffset;
 jazzModal.addEventListener('click', function (e) {
   e.preventDefault();
   e.stopPropagation();
@@ -40,6 +43,7 @@ jazzBtn.addEventListener('click', function (e) {
   e.preventDefault();
   e.stopPropagation();
   e.stopImmediatePropagation();
+  window.scrollTo({ top: y, behavior: 'smooth' });
   jazzModal.classList.add('fadeIn');
   jazzModal.classList.remove('pointerEvents-none');
   outerModal.classList.add('fadeIn');
@@ -49,6 +53,7 @@ bluesBtn.addEventListener('click', function (e) {
   e.preventDefault();
   e.stopPropagation();
   e.stopImmediatePropagation();
+  window.scrollTo({ top: y, behavior: 'smooth' });
   bluesModal.classList.add('fadeIn');
   bluesModal.classList.remove('pointerEvents-none');
   outerModal.classList.add('fadeIn');
@@ -58,6 +63,7 @@ americanaBtn.addEventListener('click', function (e) {
   e.preventDefault();
   e.stopPropagation();
   e.stopImmediatePropagation();
+  window.scrollTo({ top: y, behavior: 'smooth' });
   americanaModal.classList.add('fadeIn');
   americanaModal.classList.remove('pointerEvents-none');
   outerModal.classList.add('fadeIn');
@@ -67,6 +73,7 @@ originalBtn.addEventListener('click', function (e) {
   e.preventDefault();
   e.stopPropagation();
   e.stopImmediatePropagation();
+  window.scrollTo({ top: y, behavior: 'smooth' });
   originalModal.classList.add('fadeIn');
   originalModal.classList.remove('pointerEvents-none');
   outerModal.classList.add('fadeIn');
