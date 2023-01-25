@@ -4,6 +4,7 @@ const originModal = document.querySelector('.modal__origin--outer');
 const originBtn = document.querySelector('.about__link--container');
 const modalClose = document.querySelector('#modalCloseOrigin');
 const originModalContent = document.querySelector('.modal__origin');
+const originModalInner = document.querySelector('.modal__origin--inner');
 
 originModalContent.addEventListener('click', function (e) {
   e.preventDefault();
@@ -15,7 +16,7 @@ originBtn.addEventListener('click', function (e) {
   e.preventDefault();
   e.stopPropagation();
   e.stopImmediatePropagation();
-  originModalContent.scrollIntoView({ behavior: 'smooth' });
+  originModalInner.scrollIntoView({ behavior: 'smooth' });
   originModal.classList.add('fadeIn');
   originModal.classList.remove('pointerEvents-none');
 });
