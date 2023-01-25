@@ -6,3 +6,13 @@
     display: none;
   }
 }
+
+.u__font-size--small {
+  @include respond(break-1400) {
+    font-size: 2.5rem;
+  }
+}
+
+.u__z-index--1 {
+  z-index: 1;
+}
