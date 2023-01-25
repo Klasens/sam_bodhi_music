@@ -183,6 +183,7 @@ a {
     .navBar {
       display: none; } }
   .navBar__logo {
+    top: -0.5rem;
     position: relative;
     margin: 0 3rem;
     font-size: 6rem;
