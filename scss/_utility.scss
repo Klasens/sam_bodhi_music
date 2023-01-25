@@ -8,5 +8,11 @@
 }
 
 .u__font-size--small {
-  font-size: 2.5rem;
+  @include respond(break-1400) {
+    font-size: 2.5rem;
+  }
+}
+
+.u__z-index--1 {
+  z-index: 1;
 }
