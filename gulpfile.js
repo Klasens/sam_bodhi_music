@@ -1,4 +1,5 @@
-'Use strict';
+// gulp nunjucks-index nunjucks-pages
+
 // ==== Requirements ==== //
 const gulp = require('gulp');
 const nunjucksRender = require('gulp-nunjucks-render');
